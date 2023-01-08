@@ -1,13 +1,11 @@
 # Expressions for Cloudflare WAF
 
 ## 📝 Info
-Block all useless requests.
+Block all useless requests.  
+I recommend enabling Bot Fight Mode in the Security tab.
 
 ## ⚠ Warning
 Don't use this if you're using WordPress.
-
-## 🤖 Bot Fight Mode
-I recommend enabling Bot Fight Mode in the Security tab.
 
 ## ✨ When incoming requests match…
 ```
