@@ -1,4 +1,6 @@
-# Expressions for Cloudflare WAF
+<div align="center">
+    <h1>Expressions for Cloudflare Web Application Firewall</h1>
+</div>
 
 ## 📝 Info
 Block all useless requests.  
