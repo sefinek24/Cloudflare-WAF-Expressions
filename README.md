@@ -2,7 +2,6 @@
     <h1>Expressions for Cloudflare Web Application Firewall</h1>
 </div>
 
-## 📝 Info
 Block all useless requests.  
 I recommend enabling Bot Fight Mode in the Security tab.
 
