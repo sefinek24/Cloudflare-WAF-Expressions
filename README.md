@@ -12,6 +12,7 @@ Don't use this if you're using WordPress.
 (http.request.uri.path eq "/2018") or
 (http.request.uri.path eq "/2018/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/2019/wp-includes/wlwmanifest.xml") or
+(http.request.uri.path eq "/admin/index.php") or
 (http.request.uri.path eq "/blog") or
 (http.request.uri.path eq "/blog/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/cms") or
