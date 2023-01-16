@@ -43,5 +43,6 @@
 (http.request.uri.path eq "/xmlrpc.php?rsd") or
 (http.user_agent eq "Chrome/88.0.4240.193") or
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.1.0") or
+(http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.2.0") or
 (http.user_agent eq "wp_is_mobile")
 ```
