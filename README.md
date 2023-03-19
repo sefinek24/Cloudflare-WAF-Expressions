@@ -13,14 +13,12 @@ It is important to note that these expressions should not be used if you are usi
 
 ## ✨ When incoming requests match…
 <div align="center">
-    <h3>
-        <a href="Expressions.md">Expressions.md</a>
-    </h3>
+    <h3><a href="Expressions.md">Expressions.md</a></h3>
 </div>
 
 ## 🌠 Then…
 Block
 
 <div align="center">
-    <h1>⭐ » Star the repo if you found it useful « ⭐</h1>
+    <h2>⭐ » Star the repo if you found it useful « ⭐</h2>
 </div>
