@@ -18,7 +18,6 @@
 (http.request.uri.path eq "/3/license.txt") or
 (http.request.uri.path eq "/?rest_route=/wp/v2/users") or
 (http.request.uri.path eq "/ALFA_DATA/alfacgiapi/perl.alfa") or
-(http.request.uri.path eq "/admin/index.php") or
 (http.request.uri.path eq "/administrator/index.php") or
 (http.request.uri.path eq "/api/search?folderIds=0") or
 (http.request.uri.path eq "/assets/backend/plugins/jquery-file-upload/server/php/index.php?file=tf2rghf.jpg") or
