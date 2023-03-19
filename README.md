@@ -12,7 +12,11 @@ However, it is worth noting that this feature may also block legitimate traffic,
 It is important to note that these expressions should not be used if you are using WordPress or any similar CMS. They are highly recommended for Node.js applications based on frameworks like Express.
 
 ## ✨ When incoming requests match…
-[Expressions.md](Expressions.md)
+<div align="center">
+    <h3>
+        <a href="Expressions.md">Expressions.md</a>
+    </h3>
+</div>
 
 ## 🌠 Then…
 Block
