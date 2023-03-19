@@ -5,9 +5,11 @@
 ```
 (http.request.uri.path eq "/.DS_Store") or
 (http.request.uri.path eq "/.env") or
+(http.request.uri.path eq "/.git") or
 (http.request.uri.path eq "/.git/config") or
 (http.request.uri.path eq "/.vscode/sftp.json") or
 (http.request.uri.path eq "//feed") or
+(http.request.uri.path eq "//feed/") or
 (http.request.uri.path eq "//wp-content/themes/seotheme/db.php?u") or
 (http.request.uri.path eq "/03/license.txt") or
 (http.request.uri.path eq "/2017/wp-includes/wlwmanifest.xml") or
