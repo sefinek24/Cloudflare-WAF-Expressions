@@ -2,7 +2,7 @@
     <h2>📥 » Last changes: 19.03.2023</h2>
 </div>
 
-## 🌌 Part 1
+## 🌌 Part 1 - sefinek24/cloudflare-waf-expressions 
 ```regexp
 (http.request.uri.path eq "/.DS_Store") or
 (http.request.uri.path eq "/.env") or
@@ -55,7 +55,7 @@
 (http.request.uri.path eq "/v2/_catalog")
 ```
 
-## 🌠 Part 2
+## 🌠 Part 2 - sefinek24/cloudflare-waf-expressions
 ```regexp
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/web/wp-includes/wlwmanifest.xml") or
