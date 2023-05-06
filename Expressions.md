@@ -1,8 +1,8 @@
 <div align="center">
-    <h2>📥 » Last changes: 07.05.2023 [DD.MM.YYYY]</h2>
+    <h1>📥 » Last changes: 07.05.2023 [DD.MM.YYYY]</h1>
 </div>
 
-## 🌌 Part 1 - sefinek24/cloudflare-waf-expressions 
+### 🌌 Part 1 - sefinek24/cloudflare-waf-expressions 
 ```regexp
 (http.request.uri.path eq "/.DS_Store") or
 (http.request.uri.path eq "/.env") or
@@ -55,7 +55,7 @@
 (http.request.uri.path eq "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php")
 ```
 
-## 🌠 Part 2 - sefinek24/cloudflare-waf-expressions
+### 🌠 Part 2 - sefinek24/cloudflare-waf-expressions
 ```regexp
 (http.request.uri.path contains "/web") or
 (http.request.uri.path eq "/web/wp-includes/wlwmanifest.xml") or
