@@ -1,20 +1,19 @@
 <div align="center">
-    <h2>📥 » Last changes: 19.03.2023</h2>
+    <h2>📥 » Last changes: 07.05.2023 [DD.MM.YYYY]</h2>
 </div>
 
 ## 🌌 Part 1 - sefinek24/cloudflare-waf-expressions 
 ```regexp
 (http.request.uri.path eq "/.DS_Store") or
 (http.request.uri.path eq "/.env") or
-(http.request.uri.path eq "/.git") or
-(http.request.uri.path eq "/.git/config") or
+(http.request.uri.path contains "/.git") or
+(http.request.uri.path contains "/.git/config") or
 (http.request.uri.path eq "/.vscode/sftp.json") or
-(http.request.uri.path eq "//feed") or
-(http.request.uri.path eq "//feed/") or
+(http.request.uri.path contains "//feed") or
 (http.request.uri.path eq "//wp-content/themes/seotheme/db.php?u") or
 (http.request.uri.path eq "/03/license.txt") or
 (http.request.uri.path eq "/2017/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/2018") or
+(http.request.uri.path contains "/2018") or
 (http.request.uri.path eq "/2018/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/2019/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/2020/wp-includes/wlwmanifest.xml") or
@@ -23,63 +22,62 @@
 (http.request.uri.path eq "/2023/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/2024/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/3/license.txt") or
-(http.request.uri.path eq "/?rest_route=/wp/v2/users") or
+(http.request.uri.path contains "/?rest_route=/wp/v2/users") or
 (http.request.uri.path eq "/ALFA_DATA/alfacgiapi/perl.alfa") or
 (http.request.uri.path eq "/administrator/index.php") or
-(http.request.uri.path eq "/api/search?folderIds=0") or
+(http.request.uri.path contains "/api/search?folderIds=0") or
 (http.request.uri.path eq "/assets/backend/plugins/jquery-file-upload/server/php/index.php?file=tf2rghf.jpg") or
-(http.request.uri.path eq "/blog") or
+(http.request.uri.path contains "/blog") or
 (http.request.uri.path eq "/blog/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/cms") or
+(http.request.uri.path contains "/cms") or
 (http.request.uri.path eq "/cms/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/config.json") or
-(http.request.uri.path eq "/debug/default/view?panel=config") or
-(http.request.uri.path eq "/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application") or
-(http.request.uri.path eq "/feed") or
+(http.request.uri.path contains "/debug/default/view?panel=config") or
+(http.request.uri.path contains "/ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application") or
+(http.request.uri.path contains "/feed") or
 (http.request.uri.path eq "/info.php") or
-(http.request.uri.path eq "/login.action") or
-(http.request.uri.path eq "/media") or
+(http.request.uri.path contains "/login.action") or
+(http.request.uri.path contains "/media") or
 (http.request.uri.path eq "/media/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/news/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/s/33e27393e2431313e2838313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties") or
-(http.request.uri.path eq "/server-status") or
+(http.request.uri.path contains "/s/33e27393e2431313e2838313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties") or
+(http.request.uri.path contains "/server-status") or
 (http.request.uri.path eq "/sftp-config.json") or
 (http.request.uri.path eq "/shop/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/side") or
+(http.request.uri.path contains "/side") or
 (http.request.uri.path eq "/site/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/sito") or
+(http.request.uri.path contains "/sito") or
 (http.request.uri.path eq "/sito/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/telescope/requests") or
-(http.request.uri.path eq "/test") or
+(http.request.uri.path contains "/telescope/requests") or
+(http.request.uri.path contains "/test") or
 (http.request.uri.path eq "/test/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/v2/_catalog")
+(http.request.uri.path contains "/v2/_catalog") or
+(http.request.uri.path eq "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php")
 ```
 
 ## 🌠 Part 2 - sefinek24/cloudflare-waf-expressions
 ```regexp
-(http.request.uri.path eq "/web") or
+(http.request.uri.path contains "/web") or
 (http.request.uri.path eq "/web/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/website/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/wordpress") or
+(http.request.uri.path contains "/wordpress") or
 (http.request.uri.path eq "/wordpress/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/wp") or
-(http.request.uri.path eq "/wp-admin") or
+(http.request.uri.path contains "/wp") or
+(http.request.uri.path contains "/wp-admin") or
 (http.request.uri.path eq "/wp-content/plugins/seoplugins/mar.php") or
 (http.request.uri.path eq "/wp-content/themes/seotheme/db.php?u") or
 (http.request.uri.path eq "/wp-content/themes/seotheme/mar.php") or
-(http.request.uri.path eq "/wp-includes") or
-(http.request.uri.path eq "/wp-includes/ID3/license.txt") or
-(http.request.uri.path eq "/wp-includes/wlwmanifest.xml") or
+(http.request.uri.path contains "/wp-includes") or
 (http.request.uri.path eq "/wp-login.php") or
 (http.request.uri.path eq "/wp/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/wp1") or
+(http.request.uri.path contains "/wp1") or
 (http.request.uri.path eq "/wp1/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/wp2") or
+(http.request.uri.path contains "/wp2") or
 (http.request.uri.path eq "/wp2/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/xmlrpc.php") or
-(http.user_agent eq "Chrome/88.0.4240.193") or
-(http.user_agent eq "Chrome/95.0.4638.69") or
+(http.user_agent contains "Chrome/88.0.4240.193") or
+(http.user_agent contains "Chrome/95.0.4638.69") or
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.1.0") or
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.2.0") or
 (http.user_agent eq "wp_is_mobile")
