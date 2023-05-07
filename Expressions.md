@@ -57,7 +57,7 @@
 
 ### 🌠 Part 2 - sefinek24/cloudflare-waf-expressions
 ```regexp
-(http.request.uri.path contains "/web") or
+(http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/web/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/website/wp-includes/wlwmanifest.xml") or
