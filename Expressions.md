@@ -49,7 +49,7 @@
 (http.request.uri.path contains "/sito") or
 (http.request.uri.path eq "/sito/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path contains "/telescope/requests") or
-(http.request.uri.path contains "/test") or
+(http.request.uri.path eq "/test") or
 (http.request.uri.path eq "/test/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path contains "/v2/_catalog") or
 (http.request.uri.path eq "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php")
