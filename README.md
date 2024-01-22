@@ -12,9 +12,6 @@ However, they are **highly recommended for Node.js applications** based on frame
 
 <div align="center">
     <h3><a href="Expressions.md">View Expressions.md</a></h3>
-</div>
-
-<div align="center">
-    <br><br>
+    <br>
     <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
