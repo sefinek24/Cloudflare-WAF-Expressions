@@ -27,6 +27,7 @@
 (http.request.uri.path contains "ssh") or
 (http.request.uri.path contains "telescope/requests") or
 (http.request.uri.path contains "v2/_catalog") or
+(http.request.uri.path contains "/user.action") or
 (http.request.uri.path contains "wordpress") or
 (http.request.uri.path eq ".DS_Store") or
 (http.request.uri.path eq ".env") or
@@ -70,6 +71,7 @@
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.19 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2226.0 Safari/537.36")
 ```
 
