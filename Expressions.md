@@ -1,13 +1,11 @@
 <div align="center">
-    <h1>📥 » Last changes: 21.01.2024 [DD.MM.YYYY]</h1>
+    <h1>📥 » Last changes: 22.01.2024 [DD.MM.YYYY]</h1>
 </div>
 
-### 🌌 Part 1 - sefinek24/cloudflare-waf-expressions 
+### 🌌 Part 1 - Block unnecessary requests
+> **Action:** Block
 ```regexp
-(http.request.uri.path contains ".git") or
-(http.request.uri.path contains ".idea") or
 (http.request.uri.path contains ".php") or
-(http.request.uri.path contains ".vs") or
 (http.request.uri.path contains "//feed") or
 (http.request.uri.path contains "/2018") or
 (http.request.uri.path contains "/?rest_route=/wp/v2/users") or
@@ -27,8 +25,6 @@
 (http.request.uri.path contains "/sito") or
 (http.request.uri.path contains "/wordpress") or
 (http.request.uri.path contains "/wp") or
-(http.request.uri.path contains "/wp-admin") or
-(http.request.uri.path contains "/wp-includes") or
 (http.request.uri.path contains "/wp1") or
 (http.request.uri.path contains "/wp2") or
 (http.request.uri.path contains "sftp") or
@@ -38,6 +34,10 @@
 (http.request.uri.path contains "wordpress") or
 (http.request.uri.path eq ".DS_Store") or
 (http.request.uri.path eq ".env") or
+(http.request.uri.path eq ".git") or
+(http.request.uri.path eq ".idea") or
+(http.request.uri.path eq ".php") or
+(http.request.uri.path eq ".vs") or
 (http.request.uri.path eq "/03/license.txt") or
 (http.request.uri.path eq "/3/license.txt") or
 (http.request.uri.path eq "/ALFA_DATA/alfacgiapi/perl.alfa") or
@@ -45,29 +45,88 @@
 (http.request.uri.path eq "/feed") or
 (http.request.uri.path eq "/test") or
 (http.request.uri.path eq "/web") or
-(http.request.uri.path eq "/web/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/website/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/wordpress/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/wp-content/plugins/seoplugins/mar.php") or
-(http.request.uri.path eq "/wp-content/themes/seotheme/db.php?u") or
-(http.request.uri.path eq "/wp-content/themes/seotheme/mar.php") or
-(http.request.uri.path eq "/wp-login.php") or
-(http.request.uri.path eq "/wp/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/wp1/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/wp2/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/xmlrpc.php") or
 (http.request.uri.path eq "wp-admin") or
 (http.request.uri.path eq "wp-content") or
 (http.request.uri.path eq "wp-includes") or
-(http.user_agent contains "Chrome/88.0.4240.193") or
-(http.user_agent contains "Chrome/95.0.4638.69") or
+(http.user_agent contains "/bsh.servlet.BshServlet") or
+(http.user_agent contains "/s=set&_method=__construct&method=*&filter[]=system") or
+(http.user_agent contains "/seeyon/htmlofficeser") or
+(http.user_agent contains "/seeyon/test123456.jsp") or
+(http.user_agent contains "ipconfig") or
 (http.user_agent contains "wlwmanifest") or
 (http.user_agent contains "wp_is_mobile") or
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.1.0") or
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.2.0")
 ```
 
-[//]: # (### 🌠 Part 2 - sefinek24/cloudflare-waf-expressions)
-[//]: # (```regexp)
-[//]: # (```)
+### 🗑️ Part 2 - Block deprecated browsers
+> **Action:** Managed Challenge
+```regexp
+(http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.19 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36")
+```
+
+### 🤖 Part 3 - Block unnecessary bots
+> **Action:** Block
+```regexp
+(lower(http.user_agent) contains "adbeat") or
+(lower(http.user_agent) contains "admantx") or
+(lower(http.user_agent) contains "ahrefsbot") or
+(lower(http.user_agent) contains "appinsights") or
+(lower(http.user_agent) contains "aspiegelbot") or
+(lower(http.user_agent) contains "awariosmartbot") or
+(lower(http.user_agent) contains "barkrowler") or
+(lower(http.user_agent) contains "blexbot") or
+(lower(http.user_agent) contains "bomborabot") or
+(lower(http.user_agent) contains "buck") or
+(lower(http.user_agent) contains "bvbot") or
+(lower(http.user_agent) contains "bytespider") or
+(lower(http.user_agent) contains "cincraw") or
+(lower(http.user_agent) contains "clickagy") or
+(lower(http.user_agent) contains "cocolyzebot") or
+(lower(http.user_agent) contains "df bot 1.0") or
+(lower(http.user_agent) contains "domainstatsbot") or
+(lower(http.user_agent) contains "domcopbot") or
+(lower(http.user_agent) contains "dotbot") or
+(lower(http.user_agent) contains "embed.ly") or
+(lower(http.user_agent) contains "grapeshotcrawler") or
+(lower(http.user_agent) contains "gulperbot") or
+(lower(http.user_agent) contains "httrack") or
+(lower(http.user_agent) contains "internet-structure-research-project-bot") or
+(lower(http.user_agent) contains "linguee") or
+(lower(http.user_agent) contains "linkfluence") or
+(lower(http.user_agent) contains "magpie-crawler") or
+(lower(http.user_agent) contains "mediatoolkitbot") or
+(lower(http.user_agent) contains "megaindex") or
+(lower(http.user_agent) contains "mj12bot") or
+(lower(http.user_agent) contains "nimbostratus") or
+(lower(http.user_agent) contains "omgili") or
+(lower(http.user_agent) contains "onalyticabot") or
+(lower(http.user_agent) contains "petalbot") or
+(lower(http.user_agent) contains "proximic") or
+(lower(http.user_agent) contains "pubmatic crawler bot") or
+(lower(http.user_agent) contains "riddler") or
+(lower(http.user_agent) contains "rogerbot") or
+(lower(http.user_agent) contains "sbl-bot") or
+(lower(http.user_agent) contains "seekport") or
+(lower(http.user_agent) contains "semantic-visions") or
+(lower(http.user_agent) contains "semanticbot") or
+(lower(http.user_agent) contains "semrushbot") or
+(lower(http.user_agent) contains "serpstatbot") or
+(lower(http.user_agent) contains "sogou") or
+(lower(http.user_agent) contains "sqlmap") or
+(lower(http.user_agent) contains "traackr") or
+(lower(http.user_agent) contains "trendictionbot") or
+(lower(http.user_agent) contains "voluumdsp") or
+(lower(http.user_agent) contains "wc-test-dev-bot") or
+(lower(http.user_agent) contains "webtechbot") or
+(lower(http.user_agent) contains "whatcms")
+```
