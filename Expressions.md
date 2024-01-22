@@ -1,4 +1,4 @@
-### 🌌 Part 1 - Block unnecessary requests
+## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```regexp
 (http.request.uri.path contains ".php") or
@@ -59,7 +59,7 @@
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.2.0")
 ```
 
-### 🗑️ Part 2 - Block deprecated browsers
+## 🗑️ Part 2 - Block deprecated browsers
 > **Action:** Managed Challenge
 ```regexp
 (http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2656.18 Safari/537.36") or
@@ -71,7 +71,7 @@
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36")
 ```
 
-### 🤖 Part 3 - Block unnecessary bots
+## 🤖 Part 3 - Block unnecessary bots
 > **Action:** Block
 ```regexp
 (lower(http.user_agent) contains "adbeat") or
