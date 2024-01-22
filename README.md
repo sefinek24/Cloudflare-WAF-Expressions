@@ -15,5 +15,6 @@ However, they are **highly recommended for Node.js applications** based on frame
 </div>
 
 <div align="center">
-    <h2>⭐ » Star the repo if you found it useful « ⭐</h2>
+    <br><br>
+    <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
