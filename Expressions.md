@@ -1,7 +1,3 @@
-<div align="center">
-    <h1>📥 » Last changes: 22.01.2024 [DD.MM.YYYY]</h1>
-</div>
-
 ### 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```regexp
@@ -131,3 +127,8 @@
 (lower(http.user_agent) contains "webtechbot") or
 (lower(http.user_agent) contains "whatcms")
 ```
+
+<div align="right">
+    <br>
+    <h4>📥 » Last changes: 22.01.2024 [DD.MM.YYYY]</h4>
+</div>
