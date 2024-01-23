@@ -46,6 +46,7 @@
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/website/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/wordpress/wp-includes/wlwmanifest.xml") or
+(http.request.uri.path eq "/?search==%00{.cookie|EuWUov|value%3dCVE-2014-6287.}") or
 (http.request.uri.path eq "/xmlrpc.php") or
 (http.request.uri.path eq "wp-admin") or
 (http.request.uri.path eq "wp-content") or
@@ -74,6 +75,10 @@
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2226.0 Safari/537.36")
 ```
 
@@ -134,7 +139,15 @@
 (lower(http.user_agent) contains "whatcms")
 ```
 
+## 🌍 Part 4 - Block bots, AS Num or IP
+> **Action:** Block
+```regexp
+(ip.geoip.asnum eq 37963) or
+(ip.src eq 47.106.193.183)
+```
+
+    
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 22.01.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 23.01.2024 [DD.MM.YYYY]</h4>
 </div>
