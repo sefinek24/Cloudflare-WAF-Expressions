@@ -10,6 +10,8 @@ This function aims to detect and block automated traffic from bots. However, it 
 It is important to note that these expressions should not be used if you are utilizing WordPress or any similar content management system (CMS).
 However, they are **highly recommended for Node.js applications** based on frameworks like Express, for example.
 
+![brave_3bq3ILedXwKD.png](assets/images/brave_3bq3ILedXwKD.png)
+
 <div align="center">
     <h3><a href="Expressions.md">View Expressions.md</a></h3>
     <br>
