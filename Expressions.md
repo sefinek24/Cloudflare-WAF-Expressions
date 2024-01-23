@@ -62,7 +62,7 @@
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.2.0")
 ```
 
-## 🗑️ Part 2 - Block deprecated browsers
+## 🗑️ Part 2 - Deprecated browsers
 > **Action:** Managed Challenge
 ```regexp
 (http.user_agent eq "") or
@@ -79,6 +79,7 @@
 (http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.43") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2226.0 Safari/537.36")
 ```
 
