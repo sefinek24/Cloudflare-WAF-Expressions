@@ -19,6 +19,8 @@
 (http.request.uri.path contains "/server-status") or
 (http.request.uri.path contains "/side") or
 (http.request.uri.path contains "/sito") or
+(http.request.uri.path contains "/user.action") or
+(http.request.uri.path contains "/webadm/?q=moni_detail.do&action=gragh") or
 (http.request.uri.path contains "/wordpress") or
 (http.request.uri.path contains "/wp") or
 (http.request.uri.path contains "/wp1") or
@@ -27,8 +29,6 @@
 (http.request.uri.path contains "ssh") or
 (http.request.uri.path contains "telescope/requests") or
 (http.request.uri.path contains "v2/_catalog") or
-(http.request.uri.path contains "/user.action") or
-(http.request.uri.path contains "/webadm/?q=moni_detail.do&action=gragh") or
 (http.request.uri.path contains "wordpress") or
 (http.request.uri.path eq ".DS_Store") or
 (http.request.uri.path eq ".env") or
@@ -38,6 +38,7 @@
 (http.request.uri.path eq ".vs") or
 (http.request.uri.path eq "/03/license.txt") or
 (http.request.uri.path eq "/3/license.txt") or
+(http.request.uri.path eq "/?search==%00{.cookie|EuWUov|value%3dCVE-2014-6287.}") or
 (http.request.uri.path eq "/ALFA_DATA/alfacgiapi/perl.alfa") or
 (http.request.uri.path eq "/config.json") or
 (http.request.uri.path eq "/feed") or
@@ -46,7 +47,6 @@
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/website/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/wordpress/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/?search==%00{.cookie|EuWUov|value%3dCVE-2014-6287.}") or
 (http.request.uri.path eq "/xmlrpc.php") or
 (http.request.uri.path eq "wp-admin") or
 (http.request.uri.path eq "wp-content") or
@@ -66,20 +66,20 @@
 > **Action:** Managed Challenge
 ```regexp
 (http.user_agent eq "") or
+(http.user_agent eq "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1") or
 (http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2656.18 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.43") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.19 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36") or
+(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.43") or
 (http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2226.0 Safari/537.36")
 ```
 
@@ -106,6 +106,7 @@
 (lower(http.user_agent) contains "domcopbot") or
 (lower(http.user_agent) contains "dotbot") or
 (lower(http.user_agent) contains "embed.ly") or
+(lower(http.user_agent) contains "friendlycrawler") or
 (lower(http.user_agent) contains "grapeshotcrawler") or
 (lower(http.user_agent) contains "gulperbot") or
 (lower(http.user_agent) contains "httrack") or
@@ -150,5 +151,5 @@
     
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 23.01.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 27.01.2024 [DD.MM.YYYY]</h4>
 </div>
