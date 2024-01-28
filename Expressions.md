@@ -2,6 +2,10 @@
 > **Action:** Block
 ```regexp
 (http.request.uri.path contains ".php") or
+(http.request.uri.path contains "/.env") or
+(http.request.uri.path contains "/.git") or
+(http.request.uri.path contains "/.idea") or
+(http.request.uri.path contains "/.vs") or
 (http.request.uri.path contains "//feed") or
 (http.request.uri.path contains "/2018") or
 (http.request.uri.path contains "/?rest_route=/wp/v2/users") or
@@ -151,5 +155,5 @@
     
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 27.01.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 29.01.2024 [DD.MM.YYYY]</h4>
 </div>
