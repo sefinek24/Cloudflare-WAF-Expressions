@@ -160,6 +160,7 @@
 ## 🌍 Part 4 - Block bots, AS Num or IP
 > **Action:** Block
 ```regexp
+(ip.geoip.asnum eq 212238) or
 (ip.geoip.asnum eq 200651) or
 (ip.geoip.asnum eq 210630) or
 (ip.geoip.asnum eq 37963) or
