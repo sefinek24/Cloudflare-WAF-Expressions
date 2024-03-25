@@ -161,6 +161,7 @@
 > **Action:** Block
 ```regexp
 (ip.geoip.asnum eq 55960) or
+(ip.geoip.asnum eq 205100) or
 (ip.geoip.asnum eq 208323) or
 (ip.geoip.asnum eq 203953) or
 (ip.geoip.asnum eq 212238) or
