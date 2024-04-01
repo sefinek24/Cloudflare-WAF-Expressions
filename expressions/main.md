@@ -61,6 +61,7 @@
 (http.user_agent contains "ipconfig") or
 (http.user_agent contains "wlwmanifest") or
 (http.user_agent contains "wp_is_mobile") or
+(http.user_agent eq "" and http.host ne "blocklist.sefinek.net") or
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.1.0") or
 (http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.2.0")
 ```
@@ -69,7 +70,6 @@
 > **Action:** Managed Challenge
 > *Block old browsers or user agents that are frequently used by bots.*
 ```regexp
-(http.user_agent eq "" and http.host ne "blocklist.sefinek.net") or
 (http.user_agent eq "Autoplius.lt/7.7.0 Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 EmbeddedBrowser DeviceUID:") or
 (http.user_agent eq "BrightSign/8.3.23 (XT1144) Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36") or
 (http.user_agent eq "Go-http-client/1.1" and http.host ne "blocklist.sefinek.net") or

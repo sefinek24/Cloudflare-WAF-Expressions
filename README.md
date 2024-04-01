@@ -14,7 +14,8 @@ However, they are **highly recommended for Node.js applications** based on frame
 
 <div align="center">
     <h3>>> <a href="expressions/main.md">View Expressions.md (for Node.js servers)</a> <<</h3>
-    <h3>>> <a href="expressions/php">View Expressions.md (servers with PHP installed)</a> <<</h3>
     <br>
     <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
+
+[//]: # (<h3>>> <a href="expressions/php">View Expressions.md &#40;servers with PHP installed&#41;</a> <<</h3>)
