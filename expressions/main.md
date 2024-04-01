@@ -165,7 +165,6 @@
 (ip.geoip.asnum eq 205100) or
 (ip.geoip.asnum eq 208323) or
 (ip.geoip.asnum eq 210630) or
-(ip.geoip.asnum eq 212238) or
 (ip.geoip.asnum eq 37963) or
 (ip.geoip.asnum eq 399486) or
 (ip.geoip.asnum eq 53667) or
