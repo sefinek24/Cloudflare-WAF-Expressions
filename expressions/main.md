@@ -18,8 +18,6 @@
 (http.request.uri.path contains "/readme") or
 (http.request.uri.path contains "/readme.html") or
 (http.request.uri.path contains "/readme.md") or
-(http.request.uri.path contains "/s/33e27393e2431313e2838313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties") or
-(http.request.uri.path contains "/server-status") or
 (http.request.uri.path contains "/side") or
 (http.request.uri.path contains "/sito") or
 (http.request.uri.path contains "/user.action") or
@@ -33,6 +31,9 @@
 (http.request.uri.path contains "telescope/requests") or
 (http.request.uri.path contains "v2/_catalog") or
 (http.request.uri.path contains "wordpress") or
+(http.request.uri.path contains "wp-admin") or
+(http.request.uri.path contains "wp-content") or
+(http.request.uri.path contains "wp-includes") or
 (http.request.uri.path eq ".DS_Store") or
 (http.request.uri.path eq ".env") or
 (http.request.uri.path eq ".git") or
@@ -48,54 +49,58 @@
 (http.request.uri.path eq "/test") or
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/website") or
-(http.request.uri.path eq "/website/wp-includes/wlwmanifest.xml") or
-(http.request.uri.path eq "/wordpress/wp-includes/wlwmanifest.xml") or
 (http.request.uri.path eq "/xmlrpc.php") or
-(http.request.uri.path eq "wp-admin") or
-(http.request.uri.path eq "wp-content") or
-(http.request.uri.path eq "wp-includes") or
 (http.user_agent contains "/bsh.servlet.BshServlet") or
 (http.user_agent contains "/s=set&_method=__construct&method=*&filter[]=system") or
 (http.user_agent contains "/seeyon/htmlofficeser") or
 (http.user_agent contains "/seeyon/test123456.jsp") or
+(http.user_agent contains "Apache-HttpClient") or
 (http.user_agent contains "ipconfig") or
+(http.user_agent contains "Knights%20of%20Degen") or
 (http.user_agent contains "wlwmanifest") or
 (http.user_agent contains "wp_is_mobile") or
-(http.user_agent eq "" and http.host ne "blocklist.sefinek.net") or
-(http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.1.0") or
-(http.user_agent eq "Knights%20of%20Degen/4 CFNetwork/1402.0.8 Darwin/22.2.0")
+(http.user_agent eq "" and http.host ne "blocklist.sefinek.net")
 ```
 
 ## 🗑️ Part 2 - Block deprecated browsers
 > **Action:** Managed Challenge
 > *Block old browsers or user agents that are frequently used by bots.*
 ```regexp
+(http.user_agent contains "Chrome/103.0.5060.53") or
+(http.user_agent contains "Chrome/106.0.5249.126") or
+(http.user_agent contains "Chrome/117.0.5938.132") or
+(http.user_agent contains "Chrome/33.0.1750.152") or
+(http.user_agent contains "Chrome/34.0.1847.137") or
+(http.user_agent contains "Chrome/35.0.1916.47") or
+(http.user_agent contains "Chrome/36.0.1985.67") or
+(http.user_agent contains "Chrome/37.0.2049.0") or
+(http.user_agent contains "Chrome/41.0.2226.0") or
+(http.user_agent contains "Chrome/41.0.2227.0") or
+(http.user_agent contains "Chrome/49.0.2623.112") or
+(http.user_agent contains "Chrome/49.0.2656.18") or
+(http.user_agent contains "Chrome/52.0.2762.73") or
+(http.user_agent contains "Chrome/60.0.3112.107") or
+(http.user_agent contains "Chrome/65.0.3325.181") or
+(http.user_agent contains "Chrome/78.0.3904.108") or
+(http.user_agent contains "Chrome/83.0.4103.101") or
+(http.user_agent contains "Chrome/83.0.4103.61") or
+(http.user_agent contains "Chrome/83.0.4103.97") or
+(http.user_agent contains "Chrome/84.0.4147.89") or
+(http.user_agent contains "Chrome/88.0.4240.19") or
+(http.user_agent contains "Chrome/95.0.4638.69") or
+(http.user_agent contains "Chrome/96.0.4664.55") or
+(http.user_agent contains "Edg/96.0.1054.43") or
+(http.user_agent contains "HeadlessChrome") or
+(http.user_agent contains "Windows NT 10.0; WOW64") or
+(http.user_agent contains "Windows NT 5.1") or
+(http.user_agent contains "Windows NT 6.1") or
 (http.user_agent eq "Autoplius.lt/7.7.0 Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 EmbeddedBrowser DeviceUID:") or
 (http.user_agent eq "BrightSign/8.3.23 (XT1144) Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36") or
 (http.user_agent eq "Go-http-client/1.1" and http.host ne "blocklist.sefinek.net") or
 (http.user_agent eq "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; rv:9.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; BOIE9;ENUS)") or
 (http.user_agent eq "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1") or
 (http.user_agent eq "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; HM NOTE 1W Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.5.850 U3/0.8.0 Mobile Safari/534.30") or
-(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15") or
-(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2656.18 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/10.0.018; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.3.0.0.0") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.43") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4240.19 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.67 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2226.0 Safari/537.36") or
-(http.user_agent eq "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/94.0.4606.61 Safari/537.36")
+(http.user_agent eq "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/10.0.018; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.3.0.0.0")
 ```
 
 ## 🤖 Part 3 - Block unnecessary bots
@@ -151,6 +156,7 @@
 (lower(http.user_agent) contains "sqlmap") or
 (lower(http.user_agent) contains "traackr") or
 (lower(http.user_agent) contains "trendictionbot") or
+(lower(http.user_agent) contains "ttd-content") or
 (lower(http.user_agent) contains "voluumdsp") or
 (lower(http.user_agent) contains "wc-test-dev-bot") or
 (lower(http.user_agent) contains "webtechbot") or
