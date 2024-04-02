@@ -63,7 +63,7 @@
 ```
 
 ## 🗑️ Part 2 - Block deprecated browsers
-> **Action:** Managed Challenge
+> **Action:** Managed Challenge \
 > *Block old browsers or user agents that are frequently used by bots.*
 ```regexp
 (http.user_agent contains "Chrome/103.0") or
