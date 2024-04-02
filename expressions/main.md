@@ -66,8 +66,8 @@
 > **Action:** Managed Challenge
 > *Block old browsers or user agents that are frequently used by bots.*
 ```regexp
-(http.user_agent contains "Chrome/103.0.5060.53") or
-(http.user_agent contains "Chrome/106.0.5249.126") or
+(http.user_agent contains "Chrome/103.0") or
+(http.user_agent contains "Chrome/106.0") or
 (http.user_agent contains "Chrome/117.0.5938.132") or
 (http.user_agent contains "Chrome/33.0.1750.152") or
 (http.user_agent contains "Chrome/34.0.1847.137") or
