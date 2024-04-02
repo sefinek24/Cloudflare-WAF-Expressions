@@ -91,6 +91,7 @@
 (http.user_agent contains "Chrome/96.0.4664.55") or
 (http.user_agent contains "Edg/96.0.1054.43") or
 (http.user_agent contains "HeadlessChrome") or
+(http.user_agent contains "Html5Plus") or
 (http.user_agent contains "Windows NT 10.0; WOW64") or
 (http.user_agent contains "Windows NT 6.1") or
 (http.user_agent eq "Autoplius.lt/7.7.0 Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 EmbeddedBrowser DeviceUID:") or
