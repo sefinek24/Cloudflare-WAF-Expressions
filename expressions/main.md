@@ -1,11 +1,12 @@
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```regexp
+(http.request.uri.path contains ".DS_Store") or
+(http.request.uri.path contains ".env") or
+(http.request.uri.path contains ".git") or
+(http.request.uri.path contains ".idea") or
 (http.request.uri.path contains ".php") or
-(http.request.uri.path contains "/.env") or
-(http.request.uri.path contains "/.git") or
-(http.request.uri.path contains "/.idea") or
-(http.request.uri.path contains "/.vs") or
+(http.request.uri.path contains ".vs") or
 (http.request.uri.path contains "//feed") or
 (http.request.uri.path contains "/2018") or
 (http.request.uri.path contains "/?rest_route=/wp/v2/users") or
@@ -26,6 +27,7 @@
 (http.request.uri.path contains "/wp") or
 (http.request.uri.path contains "/wp1") or
 (http.request.uri.path contains "/wp2") or
+(http.request.uri.path contains "config.json") or
 (http.request.uri.path contains "sftp") or
 (http.request.uri.path contains "ssh") or
 (http.request.uri.path contains "telescope/requests") or
@@ -34,17 +36,10 @@
 (http.request.uri.path contains "wp-admin") or
 (http.request.uri.path contains "wp-content") or
 (http.request.uri.path contains "wp-includes") or
-(http.request.uri.path eq ".DS_Store") or
-(http.request.uri.path eq ".env") or
-(http.request.uri.path eq ".git") or
-(http.request.uri.path eq ".idea") or
-(http.request.uri.path eq ".php") or
-(http.request.uri.path eq ".vs") or
 (http.request.uri.path eq "/03/license.txt") or
 (http.request.uri.path eq "/3/license.txt") or
 (http.request.uri.path eq "/?search==%00{.cookie|EuWUov|value%3dCVE-2014-6287.}") or
 (http.request.uri.path eq "/ALFA_DATA/alfacgiapi/perl.alfa") or
-(http.request.uri.path eq "/config.json") or
 (http.request.uri.path eq "/feed") or
 (http.request.uri.path eq "/test") or
 (http.request.uri.path eq "/web") or
@@ -185,5 +180,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 02.04.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 05.04.2024 [DD.MM.YYYY]</h4>
 </div>
