@@ -64,7 +64,6 @@
 (http.user_agent contains "Chrome/100") or
 (http.user_agent contains "Chrome/103") or
 (http.user_agent contains "Chrome/106") or
-(http.user_agent contains "Chrome/117") or
 (http.user_agent contains "Chrome/33") or
 (http.user_agent contains "Chrome/34") or
 (http.user_agent contains "Chrome/35") or
