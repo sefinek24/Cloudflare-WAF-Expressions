@@ -85,6 +85,7 @@
 (http.user_agent contains "Firefox/57.0") or
 (http.user_agent contains "Firefox/76.0") or
 (http.user_agent contains "Firefox/77.0") or
+(http.user_agent contains "Firefox/79.0") or
 (http.user_agent contains "HeadlessChrome") or
 (http.user_agent contains "Html5Plus") or
 (http.user_agent contains "Windows NT 10.0; WOW64") or
