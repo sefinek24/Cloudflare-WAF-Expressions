@@ -112,6 +112,7 @@
 (lower(http.user_agent) contains "buck") or
 (lower(http.user_agent) contains "bvbot") or
 (lower(http.user_agent) contains "bytespider") or
+(lower(http.user_agent) contains "ccbot") or
 (lower(http.user_agent) contains "cincraw") or
 (lower(http.user_agent) contains "clickagy") or
 (lower(http.user_agent) contains "cocolyzebot") or
@@ -154,7 +155,6 @@
 (lower(http.user_agent) contains "voluumdsp") or
 (lower(http.user_agent) contains "wc-test-dev-bot") or
 (lower(http.user_agent) contains "webtechbot") or
-(lower(http.user_agent) contains "ccbot") or
 (lower(http.user_agent) contains "whatcms")
 ```
 
