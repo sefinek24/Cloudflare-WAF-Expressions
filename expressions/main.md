@@ -154,6 +154,7 @@
 (lower(http.user_agent) contains "voluumdsp") or
 (lower(http.user_agent) contains "wc-test-dev-bot") or
 (lower(http.user_agent) contains "webtechbot") or
+(lower(http.user_agent) contains "ccbot") or
 (lower(http.user_agent) contains "whatcms")
 ```
 
@@ -181,5 +182,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 12.04.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 19.04.2024 [DD.MM.YYYY]</h4>
 </div>
