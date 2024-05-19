@@ -1,6 +1,6 @@
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
-```jquery-css
+```
 (http.request.uri.path contains ".DS_Store") or
 (http.request.uri.path contains ".env") or
 (http.request.uri.path contains ".git") or
@@ -60,7 +60,7 @@
 ## 🗑️ Part 2 - Block deprecated browsers
 > **Action:** Managed Challenge \
 > *Block old browsers or user agents that are frequently used by bots.*
-```jquery-css
+```
 (http.user_agent contains "Chrome/33") or
 (http.user_agent contains "Chrome/34") or
 (http.user_agent contains "Chrome/35") or
@@ -99,7 +99,7 @@
 
 ## 🤖 Part 3 - Block unnecessary bots
 > **Action:** Block
-```jquery-css
+```
 (lower(http.user_agent) contains "adbeat") or
 (lower(http.user_agent) contains "admantx") or
 (lower(http.user_agent) contains "ahrefsbot") or
@@ -161,7 +161,7 @@
 
 ## 🌍 Part 4 - Block bots, AS Num or IP
 > **Action:** Block
-```jquery-css
+```
 (ip.geoip.asnum eq 200651) or
 (ip.geoip.asnum eq 2027) or
 (ip.geoip.asnum eq 203953) or
