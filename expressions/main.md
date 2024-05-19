@@ -156,7 +156,8 @@
 (lower(http.user_agent) contains "voluumdsp") or
 (lower(http.user_agent) contains "wc-test-dev-bot") or
 (lower(http.user_agent) contains "webtechbot") or
-(lower(http.user_agent) contains "whatcms")
+(lower(http.user_agent) contains "whatcms") or
+(lower(http.user_agent) contains "zgrab")
 ```
 
 ## 🌍 Part 4 - Block bots, AS Num or IP
