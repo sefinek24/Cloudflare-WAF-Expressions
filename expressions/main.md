@@ -179,6 +179,7 @@
 (ip.geoip.asnum eq 399486) or
 (ip.geoip.asnum eq 53667) or
 (ip.geoip.asnum eq 55960) or
+(ip.src eq 109.202.99.46) or
 (ip.src eq 189.35.11.247) or
 (ip.src eq 213.232.87.230) or
 (ip.src eq 213.232.87.232) or
