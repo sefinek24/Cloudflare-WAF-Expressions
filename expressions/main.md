@@ -29,6 +29,7 @@
 (http.request.uri.path contains "/wp1") or
 (http.request.uri.path contains "/wp2") or
 (http.request.uri.path contains "backup.zip") or
+(http.request.uri.path contains "server.key") or
 (http.request.uri.path contains "sftp") or
 (http.request.uri.path contains "ssh") or
 (http.request.uri.path contains "telescope/requests") or
