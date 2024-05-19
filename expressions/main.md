@@ -48,7 +48,6 @@
 (http.request.uri.path eq "/test") or
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/website") or
-(http.request.uri.path eq "/xmlrpc.php") or
 (http.user_agent contains "/bsh.servlet.BshServlet") or
 (http.user_agent contains "/s=set&_method=__construct&method=*&filter[]=system") or
 (http.user_agent contains "/seeyon/htmlofficeser") or
