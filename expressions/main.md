@@ -5,6 +5,7 @@
 (http.request.uri.path contains ".env") or
 (http.request.uri.path contains ".git") or
 (http.request.uri.path contains ".idea") or
+(http.request.uri.path contains ".kube") or
 (http.request.uri.path contains ".php") or
 (http.request.uri.path contains ".vs") or
 (http.request.uri.path contains "//feed") or
