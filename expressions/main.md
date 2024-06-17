@@ -65,9 +65,11 @@
 > *Block old browsers or user agents that are frequently used by bots.*
 ```
 (http.user_agent contains "Build/") or
+(http.user_agent contains "Chrome/103") or
 (http.user_agent contains "Chrome/108") or
 (http.user_agent contains "Chrome/116") or
 (http.user_agent contains "Chrome/117") or
+(http.user_agent contains "Chrome/120") or
 (http.user_agent contains "Chrome/33") or
 (http.user_agent contains "Chrome/34") or
 (http.user_agent contains "Chrome/35") or
