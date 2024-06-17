@@ -64,6 +64,7 @@
 > **Action:** Managed Challenge \
 > *Block old browsers or user agents that are frequently used by bots.*
 ```
+(http.user_agent contains "Android 6") or
 (http.user_agent contains "Android 7") or
 (http.user_agent contains "Android 8") or
 (http.user_agent contains "Android 9") or
