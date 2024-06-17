@@ -64,6 +64,9 @@
 > **Action:** Managed Challenge \
 > *Block old browsers or user agents that are frequently used by bots.*
 ```
+(http.user_agent contains "Build/") or
+(http.user_agent contains "Chrome/116") or
+(http.user_agent contains "Chrome/117") or
 (http.user_agent contains "Chrome/33") or
 (http.user_agent contains "Chrome/34") or
 (http.user_agent contains "Chrome/35") or
@@ -82,8 +85,7 @@
 (http.user_agent contains "Chrome/94") or
 (http.user_agent contains "Chrome/95") or
 (http.user_agent contains "Chrome/96") or
-(http.user_agent contains "Chrome/116") or
-(http.user_agent contains "Chrome/117") or
+(http.user_agent contains "Dalvik") or
 (http.user_agent contains "Edg/96.0.1054.43") or
 (http.user_agent contains "Firefox/57.0") or
 (http.user_agent contains "Firefox/76.0") or
