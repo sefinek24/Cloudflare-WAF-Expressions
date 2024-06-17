@@ -69,6 +69,8 @@
 (http.user_agent contains "Android 9") or
 (http.user_agent contains "Build/") or
 (http.user_agent contains "Chrome/103") or
+(http.user_agent contains "Chrome/106") or
+(http.user_agent contains "Chrome/107") or
 (http.user_agent contains "Chrome/108") or
 (http.user_agent contains "Chrome/116") or
 (http.user_agent contains "Chrome/117") or
