@@ -26,6 +26,7 @@
 (http.request.uri.path contains "/webadm/?q=moni_detail.do&action=gragh") or
 (http.request.uri.path contains "/wordpress") or
 (http.request.uri.path contains "/wp") or
+(http.request.uri.path contains "/wp-json") or
 (http.request.uri.path contains "/wp1") or
 (http.request.uri.path contains "/wp2") or
 (http.request.uri.path contains "backup.zip") or
