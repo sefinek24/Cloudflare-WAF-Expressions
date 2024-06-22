@@ -86,7 +86,9 @@
 (http.user_agent contains "Chrome/49") or
 (http.user_agent contains "Chrome/52") or
 (http.user_agent contains "Chrome/60") or
+(http.user_agent contains "Chrome/64") or
 (http.user_agent contains "Chrome/65") or
+(http.user_agent contains "Chrome/70") or
 (http.user_agent contains "Chrome/77") or
 (http.user_agent contains "Chrome/78") or
 (http.user_agent contains "Chrome/79") or
@@ -109,6 +111,7 @@
 (http.user_agent contains "Html5Plus") or
 (http.user_agent contains "Windows NT 10.0; WOW64") or
 (http.user_agent contains "Windows NT 6.1") or
+(http.user_agent contains "WOW64") or
 (http.user_agent contains "YaApp_Android") or
 (http.user_agent eq "Autoplius.lt/7.7.0 Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 EmbeddedBrowser DeviceUID:") or
 (http.user_agent eq "BrightSign/8.3.23 (XT1144) Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36") or
@@ -116,6 +119,7 @@
 (http.user_agent eq "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; rv:9.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; BOIE9;ENUS)") or
 (http.user_agent eq "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1") or
 (http.user_agent eq "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; HM NOTE 1W Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.5.850 U3/0.8.0 Mobile Safari/534.30") or
+(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6)") or
 (http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2)") or
 (http.user_agent eq "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/10.0.018; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.3.0.0.0")
 ```
