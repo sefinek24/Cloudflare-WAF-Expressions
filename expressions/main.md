@@ -109,6 +109,8 @@
 (http.user_agent contains "Firefox/83") or
 (http.user_agent contains "HeadlessChrome") or
 (http.user_agent contains "Html5Plus") or
+(http.user_agent contains "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6)") or
+(http.user_agent contains "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2)") or
 (http.user_agent contains "Windows NT 10.0; WOW64") or
 (http.user_agent contains "Windows NT 6.1") or
 (http.user_agent contains "WOW64") or
@@ -119,8 +121,6 @@
 (http.user_agent eq "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; rv:9.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; BOIE9;ENUS)") or
 (http.user_agent eq "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1") or
 (http.user_agent eq "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; HM NOTE 1W Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.5.850 U3/0.8.0 Mobile Safari/534.30") or
-(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6)") or
-(http.user_agent eq "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2)") or
 (http.user_agent eq "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/10.0.018; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.3.0.0.0")
 ```
 
@@ -218,11 +218,13 @@
 (ip.src eq 114.132.202.78) or
 (ip.src eq 115.127.116.242) or
 (ip.src eq 12.127.44.138) or
+(ip.src eq 122.155.165.191) or
 (ip.src eq 132.147.137.52) or
 (ip.src eq 138.121.161.84) or
 (ip.src eq 143.255.80.134) or
 (ip.src eq 148.230.206.229) or
 (ip.src eq 161.49.215.28) or
+(ip.src eq 165.16.88.161) or
 (ip.src eq 168.232.174.43) or
 (ip.src eq 172.183.241.1) or
 (ip.src eq 177.130.104.106) or
@@ -230,6 +232,7 @@
 (ip.src eq 177.70.72.103) or
 (ip.src eq 177.87.144.122) or
 (ip.src eq 179.1.192.5) or
+(ip.src eq 179.49.162.133) or
 (ip.src eq 180.211.183.2) or
 (ip.src eq 184.82.244.173) or
 (ip.src eq 185.255.45.241) or
@@ -242,6 +245,7 @@
 (ip.src eq 190.94.212.198) or
 (ip.src eq 190.94.212.240) or
 (ip.src eq 191.240.153.144) or
+(ip.src eq 191.37.1.155) or
 (ip.src eq 194.126.177.84) or
 (ip.src eq 199.167.236.12) or
 (ip.src eq 200.174.198.136) or
@@ -259,7 +263,10 @@
 (ip.src eq 216.87.69.230) or
 (ip.src eq 217.182.194.108) or
 (ip.src eq 24.172.34.114) or
+(ip.src eq 34.105.123.106) or
 (ip.src eq 34.105.60.137) or
+(ip.src eq 34.83.15.88) or
+(ip.src eq 34.83.51.218) or
 (ip.src eq 34.92.250.88) or
 (ip.src eq 36.255.84.69) or
 (ip.src eq 36.91.135.141) or
@@ -267,6 +274,7 @@
 (ip.src eq 4.227.97.45) or
 (ip.src eq 43.134.1.40) or
 (ip.src eq 43.134.121.40) or
+(ip.src eq 43.153.207.93) or
 (ip.src eq 45.164.174.27) or
 (ip.src eq 45.236.170.234) or
 (ip.src eq 45.70.236.150) or
@@ -275,9 +283,13 @@
 (ip.src eq 51.145.176.250) or
 (ip.src eq 52.169.23.0) or
 (ip.src eq 52.178.159.39) or
+(ip.src eq 59.152.14.109) or
+(ip.src eq 59.152.14.111) or
+(ip.src eq 61.129.2.212) or
 (ip.src eq 62.33.53.248) or
 (ip.src eq 84.51.15.250) or
 (ip.src eq 85.94.24.29) or
+(ip.src eq 88.87.78.95) or
 (ip.src eq 91.215.85.29) or
 (ip.src eq 94.179.141.78)
 ```
@@ -285,5 +297,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 22.06.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 23.06.2024 [DD.MM.YYYY]</h4>
 </div>
