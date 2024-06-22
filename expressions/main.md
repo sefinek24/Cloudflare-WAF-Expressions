@@ -147,6 +147,7 @@
 (lower(http.user_agent) contains "grapeshotcrawler") or
 (lower(http.user_agent) contains "gulperbot") or
 (lower(http.user_agent) contains "httrack") or
+(lower(http.user_agent) contains "ias_crawler") or
 (lower(http.user_agent) contains "internet-structure-research-project-bot") or
 (lower(http.user_agent) contains "linguee") or
 (lower(http.user_agent) contains "linkfluence") or
