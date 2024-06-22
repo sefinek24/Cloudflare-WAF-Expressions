@@ -72,7 +72,6 @@
 (http.user_agent contains "Chrome/106") or
 (http.user_agent contains "Chrome/107") or
 (http.user_agent contains "Chrome/108") or
-(http.user_agent contains "Chrome/116") or
 (http.user_agent contains "Chrome/117") or
 (http.user_agent contains "Chrome/119") or
 (http.user_agent contains "Chrome/120") or
