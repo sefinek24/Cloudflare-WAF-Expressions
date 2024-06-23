@@ -4,5 +4,8 @@
 `Chrome/116`
    - Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/116.0.1938.76 Safari/537.36
 
+`Chrome/108`
+   - Mozilla/5.0 (compatible; YandexBot/3.0; +http://yandex.com/bots) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0
+
 `Build/`
    - AdGuard/4.5.17 (Linux; U; Android 14; SO-52C Build/65.2.B.2.152)

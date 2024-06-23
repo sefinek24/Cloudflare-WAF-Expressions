@@ -71,7 +71,6 @@
 (http.user_agent contains "Chrome/103") or
 (http.user_agent contains "Chrome/106") or
 (http.user_agent contains "Chrome/107") or
-(http.user_agent contains "Chrome/108") or
 (http.user_agent contains "Chrome/117") or
 (http.user_agent contains "Chrome/119") or
 (http.user_agent contains "Chrome/120") or
@@ -87,7 +86,7 @@
 (http.user_agent contains "Chrome/60") or
 (http.user_agent contains "Chrome/64") or
 (http.user_agent contains "Chrome/65") or
-(http.user_agent contains "Chrome/70") or
+(http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
 (http.user_agent contains "Chrome/77") or
 (http.user_agent contains "Chrome/78") or
 (http.user_agent contains "Chrome/79") or
