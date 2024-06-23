@@ -266,6 +266,7 @@
 (ip.src eq 34.83.15.88) or
 (ip.src eq 34.83.51.218) or
 (ip.src eq 34.92.250.88) or
+(ip.src eq 36.182.49.26) or
 (ip.src eq 36.255.84.69) or
 (ip.src eq 36.91.135.141) or
 (ip.src eq 36.95.142.35) or
