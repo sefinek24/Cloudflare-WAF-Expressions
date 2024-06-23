@@ -137,6 +137,7 @@
 (lower(http.user_agent) contains "bvbot") or
 (lower(http.user_agent) contains "bytespider") or
 (lower(http.user_agent) contains "ccbot") or
+(lower(http.user_agent) contains "censysinspect") or
 (lower(http.user_agent) contains "cincraw") or
 (lower(http.user_agent) contains "claudebot") or
 (lower(http.user_agent) contains "clickagy") or
