@@ -9,7 +9,6 @@ This feature is designed to detect and block automated traffic from bots. Howeve
 
 <div align="center">
     <h3>>> <a href="expressions/main.md">View Expressions.md (for Node.js servers)</a> <<</h3>
-    <br>
     <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
 
