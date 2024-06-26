@@ -41,76 +41,77 @@
 (http.request.uri.path eq "/test") or
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/website") or
-(http.user_agent contains "Apache-HttpClient") or
-(http.user_agent contains "ipconfig") or
-(http.user_agent contains "Knights%20of%20Degen") or
-(http.user_agent contains "wlwmanifest") or
-(http.user_agent contains "wp_is_mobile") or
-(http.user_agent eq "" and http.host ne "blocklist.sefinek.net")
+(lower(http.user_agent) contains "Apache-HttpClient") or
+(lower(http.user_agent) contains "ipconfig") or
+(lower(http.user_agent) contains "Knights%20of%20Degen") or
+(lower(http.user_agent) contains "wlwmanifest") or
+(lower(http.user_agent) contains "wp_is_mobile") or
+(lower(http.user_agent) eq "" and http.host ne "blocklist.sefinek.net")
 ```
 
 ## 🗑️ Part 2 - Block deprecated browsers
 > **Action:** Managed Challenge \
 > *Block old browsers or user agents that are frequently used by bots.*
 ```
-(http.user_agent contains "Android 7" and http.user_agent ne "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 (compatible; Google-Read-Aloud; +https://support.google.com/webmasters/answer/1061943)") or
-(http.user_agent contains "Android 8") or
-(http.user_agent contains "Android 9") or
-(http.user_agent contains "Chrome/103") or
-(http.user_agent contains "Chrome/106") or
-(http.user_agent contains "Chrome/107") or
-(http.user_agent contains "Chrome/117") or
-(http.user_agent contains "Chrome/119") or
-(http.user_agent contains "Chrome/17") or
-(http.user_agent contains "Chrome/33") or
-(http.user_agent contains "Chrome/34") or
-(http.user_agent contains "Chrome/35") or
-(http.user_agent contains "Chrome/36") or
-(http.user_agent contains "Chrome/37") or
-(http.user_agent contains "Chrome/41") or
-(http.user_agent contains "Chrome/44") or
-(http.user_agent contains "Chrome/49") or
-(http.user_agent contains "Chrome/52") or
-(http.user_agent contains "Chrome/60") or
-(http.user_agent contains "Chrome/64") or
-(http.user_agent contains "Chrome/65") or
-(http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
-(http.user_agent contains "Chrome/74") or
-(http.user_agent contains "Chrome/77") or
-(http.user_agent contains "Chrome/78") or
-(http.user_agent contains "Chrome/79") or
-(http.user_agent contains "Chrome/83") or
-(http.user_agent contains "Chrome/84") or
-(http.user_agent contains "Chrome/88") or
-(http.user_agent contains "Chrome/87") or
-(http.user_agent contains "Chrome/93") or
-(http.user_agent contains "Chrome/94") or
-(http.user_agent contains "Chrome/95") or
-(http.user_agent contains "Chrome/96") or
-(http.user_agent contains "Chrome/98") or
-(http.user_agent contains "Dalvik") or
-(http.user_agent contains "Edg/101") or
-(http.user_agent contains "Edg/96") or
-(http.user_agent contains "Firefox/52") or
-(http.user_agent contains "Firefox/57") or
-(http.user_agent contains "Firefox/76") or
-(http.user_agent contains "Firefox/77") or
-(http.user_agent contains "Firefox/79") or
-(http.user_agent contains "Firefox/83") or
-(http.user_agent contains "HeadlessChrome") or
-(http.user_agent contains "Html5Plus") or
-(http.user_agent contains "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6)") or
-(http.user_agent contains "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2)") or
-(http.user_agent contains "Windows NT 6.1") or
-(http.user_agent contains "WOW64") or
-(http.user_agent contains "YaApp_Android") or
-(http.user_agent eq "Autoplius.lt/7.7.0 Mozilla/5.0 (iPhone; CPU iPhone OS 17_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 EmbeddedBrowser DeviceUID:") or
-(http.user_agent eq "BrightSign/8.3.23 (XT1144) Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.3 Chrome/69.0.3497.128 Safari/537.36") or
-(http.user_agent eq "Go-http-client/1.1" and http.host ne "blocklist.sefinek.net") or
-(http.user_agent eq "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0; rv:9.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.2; BOIE9;ENUS)") or
-(http.user_agent eq "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) CriOS/56.0.2924.75 Mobile/14E5239e Safari/602.1") or
-(http.user_agent eq "Mozilla/5.0 (Linux; U; Android 4.4.2; en-US; HM NOTE 1W Build/KOT49H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 UCBrowser/11.0.5.850 U3/0.8.0 Mobile Safari/534.30") or
-(http.user_agent eq "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN95/10.0.018; Profile/MIDP-2.0 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413 UP.Link/6.3.0.0.0")
+(lower(http.user_agent) contains "android 7" and http.user_agent ne "mozilla/5.0 (linux; android 7.0; sm-g930v build/nrd90m) applewebkit/537.36 (khtml, like gecko) chrome/59.0.3071.125 mobile safari/537.36 (compatible; google-read-aloud; +https://support.google.com/webmasters/answer/1061943)") or
+(lower(http.user_agent) contains "android 8") or
+(lower(http.user_agent) contains "android 9") or
+(lower(http.user_agent) contains "chrome/103") or
+(lower(http.user_agent) contains "chrome/106") or
+(lower(http.user_agent) contains "chrome/107") or
+(lower(http.user_agent) contains "chrome/117") or
+(lower(http.user_agent) contains "chrome/119") or
+(lower(http.user_agent) contains "chrome/17") or
+(lower(http.user_agent) contains "chrome/33") or
+(lower(http.user_agent) contains "chrome/34") or
+(lower(http.user_agent) contains "chrome/35") or
+(lower(http.user_agent) contains "chrome/36") or
+(lower(http.user_agent) contains "chrome/37") or
+(lower(http.user_agent) contains "chrome/41") or
+(lower(http.user_agent) contains "chrome/44") or
+(lower(http.user_agent) contains "chrome/49") or
+(lower(http.user_agent) contains "chrome/52") or
+(lower(http.user_agent) contains "chrome/60") or
+(lower(http.user_agent) contains "chrome/64") or
+(lower(http.user_agent) contains "chrome/65") or
+(lower(http.user_agent) contains "chrome/70" and http.host ne "blocklist.sefinek.net") or
+(lower(http.user_agent) contains "chrome/74") or
+(lower(http.user_agent) contains "chrome/77") or
+(lower(http.user_agent) contains "chrome/78") or
+(lower(http.user_agent) contains "chrome/79") or
+(lower(http.user_agent) contains "chrome/83") or
+(lower(http.user_agent) contains "chrome/84") or
+(lower(http.user_agent) contains "Chrome/85") or
+(lower(http.user_agent) contains "chrome/87") or
+(lower(http.user_agent) contains "chrome/88") or
+(lower(http.user_agent) contains "chrome/93") or
+(lower(http.user_agent) contains "chrome/94") or
+(lower(http.user_agent) contains "chrome/95") or
+(lower(http.user_agent) contains "chrome/96") or
+(lower(http.user_agent) contains "chrome/98") or
+(lower(http.user_agent) contains "dalvik") or
+(lower(http.user_agent) contains "edg/101") or
+(lower(http.user_agent) contains "edg/96") or
+(lower(http.user_agent) contains "firefox/52") or
+(lower(http.user_agent) contains "firefox/57") or
+(lower(http.user_agent) contains "firefox/76") or
+(lower(http.user_agent) contains "firefox/77") or
+(lower(http.user_agent) contains "firefox/79") or
+(lower(http.user_agent) contains "firefox/83") or
+(lower(http.user_agent) contains "headlesschrome") or
+(lower(http.user_agent) contains "html5plus") or
+(lower(http.user_agent) contains "mozilla/5.0 (macintosh; intel mac os x 10_15_6)") or
+(lower(http.user_agent) contains "mozilla/5.0 (macintosh; intel mac os x 10_9_2)") or
+(lower(http.user_agent) contains "windows nt 6.1") or
+(lower(http.user_agent) contains "wow64") or
+(lower(http.user_agent) contains "yaapp_android") or
+(lower(http.user_agent) eq "autoplius.lt/7.7.0 mozilla/5.0 (iphone; cpu iphone os 17_2_1 like mac os x) applewebkit/605.1.15 (khtml, like gecko) mobile/15e148 embeddedbrowser deviceuid:") or
+(lower(http.user_agent) eq "brightsign/8.3.23 (xt1144) mozilla/5.0 (x11; linux aarch64) applewebkit/537.36 (khtml, like gecko) qtwebengine/5.12.3 chrome/69.0.3497.128 safari/537.36") or
+(lower(http.user_agent) eq "go-http-client/1.1" and http.host ne "blocklist.sefinek.net") or
+(lower(http.user_agent) eq "mozilla/5.0 (compatible; msie 9.0; windows nt 6.1; wow64; trident/5.0; rv:9.0; slcc2; .net clr 2.0.50727; .net clr 3.5.30729; .net clr 3.0.30729; media center pc 6.0; .net4.0c; .net4.0e; infopath.2; boie9;enus)") or
+(lower(http.user_agent) eq "mozilla/5.0 (iphone; cpu iphone os 10_3 like mac os x) applewebkit/602.1.50 (khtml, like gecko) crios/56.0.2924.75 mobile/14e5239e safari/602.1") or
+(lower(http.user_agent) eq "mozilla/5.0 (linux; u; android 4.4.2; en-us; hm note 1w build/kot49h) applewebkit/534.30 (khtml, like gecko) version/4.0 ucbrowser/11.0.5.850 u3/0.8.0 mobile safari/534.30") or
+(lower(http.user_agent) eq "mozilla/5.0 (symbianos/9.2; u; series60/3.1 nokian95/10.0.018; profile/midp-2.0 configuration/cldc-1.1) applewebkit/413 (khtml, like gecko) safari/413 up.link/6.3.0.0.0")
 ```
 
 ## 🤖 Part 3 - Block unnecessary bots
