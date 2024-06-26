@@ -295,5 +295,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 23.06.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 26.06.2024 [DD.MM.YYYY]</h4>
 </div>
