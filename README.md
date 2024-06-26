@@ -8,11 +8,11 @@ Additionally, it is recommended to **disable** the `Bot Fight Mode` feature loca
 This feature is designed to detect and block automated traffic from bots. However, it often blocks safe bots as well, which is not our intention.
 
 <div align="center">
-    <h3>>> <a href="expressions/main.md">View Expressions.md (for Node.js servers)</a> <<</h3>
-    <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
+   <h3>>> <a href="expressions/main.md">View Expressions.md (for Node.js servers)</a> <<</h3>
+   <img src="assets/images/brave_3bq3ILedXwKD.png" alt="Cloudflare WAF"> 
+   <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
 
-![brave_3bq3ILedXwKD.png](assets/images/brave_3bq3ILedXwKD.png)
 
 ## ⚠️ Important
 Please note that these expressions should not be used if you are utilizing WordPress or any similar content management system (CMS).
