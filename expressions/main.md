@@ -50,7 +50,7 @@
 ```
 
 ## 🗑️ Part 2 - Block deprecated browsers
-> **Action:** Managed Challenge \
+> **Action:** Interactive Challenge \
 > *Block old browsers or user agents that are frequently used by bots.*
 ```
 (lower(http.user_agent) contains "android 4") or
