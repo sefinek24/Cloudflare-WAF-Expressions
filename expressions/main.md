@@ -9,7 +9,6 @@
 (http.request.uri.path contains ".kube") or
 (http.request.uri.path contains ".php") or
 (http.request.uri.path contains ".vs") or
-(http.request.uri.path contains "//") or
 (http.request.uri.path contains "/?rest_route=/wp/v2/users") or
 (http.request.uri.path contains "/api/search?folderIds=0") or
 (http.request.uri.path contains "/blog") or
