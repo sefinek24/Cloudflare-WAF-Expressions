@@ -4,7 +4,7 @@
 
 With these expressions, you can effectively block all unnecessary requests to your server, enhancing its security and performance.
 
-Additionally, it is recommended to disable the Bot Fight Mode feature located in the `Security tab`.
+Additionally, it is recommended to **disable** the `Bot Fight Mode` feature located in the `Security tab`.
 This feature is designed to detect and block automated traffic from bots. However, it often blocks safe bots as well, which is not our intention.
 
 ![brave_3bq3ILedXwKD.png](assets/images/brave_3bq3ILedXwKD.png)
