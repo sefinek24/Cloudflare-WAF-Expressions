@@ -46,6 +46,7 @@
 (http.request.uri.path eq "/ALFA_DATA/alfacgiapi/perl.alfa") or
 (http.request.uri.path eq "/config.json") or
 (http.request.uri.path eq "/feed") or
+(http.request.uri.path eq "/git") or
 (http.request.uri.path eq "/ssh") or
 (http.request.uri.path eq "/test") or
 (http.request.uri.path eq "/web") or
