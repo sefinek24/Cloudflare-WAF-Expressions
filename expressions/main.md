@@ -97,6 +97,7 @@
 (http.user_agent contains "Chrome/94") or
 (http.user_agent contains "Chrome/95") or
 (http.user_agent contains "Chrome/96") or
+(http.user_agent contains "Chrome/98") or
 (http.user_agent contains "Dalvik") or
 (http.user_agent contains "Edg/101") or
 (http.user_agent contains "Edg/96") or
