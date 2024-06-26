@@ -78,7 +78,7 @@
 (lower(http.user_agent) contains "chrome/65") or
 (lower(http.user_agent) contains "chrome/69") or
 (lower(http.user_agent) contains "chrome/70" and http.host ne "blocklist.sefinek.net") or
-(lower(http.user_agent) contains "chrome/74") or
+(lower(http.user_agent) contains "chrome/74" and http.user_agent ne "Better Uptime Bot Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36") or
 (lower(http.user_agent) contains "chrome/77") or
 (lower(http.user_agent) contains "chrome/78") or
 (lower(http.user_agent) contains "chrome/79") or
