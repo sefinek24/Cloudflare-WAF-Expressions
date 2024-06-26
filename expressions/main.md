@@ -87,12 +87,14 @@
 (http.user_agent contains "Chrome/64") or
 (http.user_agent contains "Chrome/65") or
 (http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
+(http.user_agent contains "Chrome/74") or
 (http.user_agent contains "Chrome/77") or
 (http.user_agent contains "Chrome/78") or
 (http.user_agent contains "Chrome/79") or
 (http.user_agent contains "Chrome/83") or
 (http.user_agent contains "Chrome/84") or
 (http.user_agent contains "Chrome/88") or
+(http.user_agent contains "Chrome/87") or
 (http.user_agent contains "Chrome/93") or
 (http.user_agent contains "Chrome/94") or
 (http.user_agent contains "Chrome/95") or
