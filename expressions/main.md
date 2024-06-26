@@ -1,6 +1,7 @@
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```
+(http.request.uri.path contains ".aspx") or
 (http.request.uri.path contains ".DS_Store") or
 (http.request.uri.path contains ".env") or
 (http.request.uri.path contains ".git") or
