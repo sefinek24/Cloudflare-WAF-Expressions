@@ -7,8 +7,13 @@ With these expressions (for WAF), you can effectively block all unnecessary requ
 Additionally, it is recommended to **disable** the `Bot Fight Mode` feature located in the `Security tab`.
 This feature is designed to detect and block automated traffic from bots. However, it often blocks safe bots as well, which is not our intention.
 
-![brave_3bq3ILedXwKD.png](assets/images/brave_3bq3ILedXwKD.png)
+<div align="center">
+    <h3>>> <a href="expressions/main.md">View Expressions.md (for Node.js servers)</a> <<</h3>
+    <br>
+    <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
+</div>
 
+![brave_3bq3ILedXwKD.png](assets/images/brave_3bq3ILedXwKD.png)
 
 ## ⚠️ Important
 Please note that these expressions should not be used if you are utilizing WordPress or any similar content management system (CMS).
@@ -38,13 +43,6 @@ This list is meticulously crafted to block a wide variety of unnecessary and pot
    - Blocks traffic from known malicious IP addresses and ASNs, helping prevent attacks from sources flagged as malicious. The list also includes some IP addresses associated with botnets.
 
 By implementing these blocks, you can significantly enhance the security of your Node.js applications while reducing the server load caused by unwanted traffic.
-
-
-<div align="center">
-    <h3>>> <a href="expressions/main.md">View Expressions.md (for Node.js servers)</a> <<</h3>
-    <br>
-    <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
-</div>
 
 
 [//]: # (<h3>>> <a href="expressions/php">View Expressions.md &#40;servers with PHP installed&#41;</a> <<</h3>)
