@@ -101,7 +101,6 @@
 (http.user_agent contains "Html5Plus") or
 (http.user_agent contains "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6)") or
 (http.user_agent contains "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2)") or
-(http.user_agent contains "Windows NT 10.0; WOW64") or
 (http.user_agent contains "Windows NT 6.1") or
 (http.user_agent contains "WOW64") or
 (http.user_agent contains "YaApp_Android") or
