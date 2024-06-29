@@ -289,11 +289,12 @@
 (ip.src eq 85.94.24.29) or
 (ip.src eq 88.87.78.95) or
 (ip.src eq 91.215.85.29) or
+(ip.src eq 193.176.211.244) or
 (ip.src eq 94.179.141.78)
 ```
 
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 26.06.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 29.06.2024 [DD.MM.YYYY]</h4>
 </div>
