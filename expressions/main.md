@@ -57,6 +57,7 @@
 (lower(http.user_agent) contains "android 7" and http.user_agent ne "mozilla/5.0 (linux; android 7.0; sm-g930v build/nrd90m) applewebkit/537.36 (khtml, like gecko) chrome/59.0.3071.125 mobile safari/537.36 (compatible; google-read-aloud; +https://support.google.com/webmasters/answer/1061943)") or
 (lower(http.user_agent) contains "android 8") or
 (lower(http.user_agent) contains "android 9") or
+(lower(http.user_agent) contains "chrome/101") or
 (lower(http.user_agent) contains "chrome/103") or
 (lower(http.user_agent) contains "chrome/106") or
 (lower(http.user_agent) contains "chrome/107") or
@@ -296,5 +297,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 29.06.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 02.07.2024 [DD.MM.YYYY]</h4>
 </div>
