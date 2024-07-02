@@ -242,6 +242,7 @@
 (ip.src eq 190.94.212.240) or
 (ip.src eq 191.240.153.144) or
 (ip.src eq 191.37.1.155) or
+(ip.src eq 193.176.211.244) or
 (ip.src eq 194.126.177.84) or
 (ip.src eq 199.167.236.12) or
 (ip.src eq 200.174.198.136) or
@@ -290,7 +291,6 @@
 (ip.src eq 85.94.24.29) or
 (ip.src eq 88.87.78.95) or
 (ip.src eq 91.215.85.29) or
-(ip.src eq 193.176.211.244) or
 (ip.src eq 94.179.141.78)
 ```
 
