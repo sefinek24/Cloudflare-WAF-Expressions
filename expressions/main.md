@@ -113,6 +113,7 @@
 (lower(http.user_agent) contains "safari/604.1") or
 (lower(http.user_agent) contains "symbianos") or
 (lower(http.user_agent) contains "ucbrowser") or
+(lower(http.user_agent) contains "windows nt 5.1") or
 (lower(http.user_agent) contains "windows nt 6.1") or
 (lower(http.user_agent) contains "wow64") or
 (lower(http.user_agent) contains "yaapp_android") or
