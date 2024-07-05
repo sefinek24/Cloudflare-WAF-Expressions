@@ -291,6 +291,7 @@
 (ip.src eq 59.152.14.111) or
 (ip.src eq 61.129.2.212) or
 (ip.src eq 62.33.53.248) or
+(ip.src eq 68.154.80.181) or
 (ip.src eq 84.51.15.250) or
 (ip.src eq 85.94.24.29) or
 (ip.src eq 88.87.78.95) or
