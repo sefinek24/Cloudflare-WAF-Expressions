@@ -103,7 +103,6 @@
 (lower(http.user_agent) contains "firefox/77") or
 (lower(http.user_agent) contains "firefox/79") or
 (lower(http.user_agent) contains "firefox/83") or
-(lower(http.user_agent) contains "headlesschrome") or
 (lower(http.user_agent) contains "html5plus") or
 (lower(http.user_agent) contains "mozilla/5.0 (macintosh; intel mac os x 10_15_6)") or
 (lower(http.user_agent) contains "mozilla/5.0 (macintosh; intel mac os x 10_9_2)") or
