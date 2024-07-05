@@ -54,7 +54,7 @@
 ```
 (http.request.uri.path contains ".log") or
 (lower(http.user_agent) contains "android 4") or
-(lower(http.user_agent) contains "android 7" and http.user_agent ne "mozilla/5.0 (linux; android 7.0; sm-g930v build/nrd90m) applewebkit/537.36 (khtml, like gecko) chrome/59.0.3071.125 mobile safari/537.36 (compatible; google-read-aloud; +https://support.google.com/webmasters/answer/1061943)") or
+(lower(http.user_agent) contains "android 7" and http.user_agent ne "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 (compatible; Google-Read-Aloud; +https://support.google.com/webmasters/answer/1061943)") or
 (lower(http.user_agent) contains "android 8") or
 (lower(http.user_agent) contains "android 9") or
 (lower(http.user_agent) contains "chrome/100") or
@@ -254,6 +254,7 @@
 (ip.src eq 200.174.198.136) or
 (ip.src eq 200.174.198.222) or
 (ip.src eq 200.174.198.224) or
+(ip.src eq 78.153.140.223) or
 (ip.src eq 200.174.198.92) or
 (ip.src eq 201.131.239.233) or
 (ip.src eq 201.77.128.158) or
