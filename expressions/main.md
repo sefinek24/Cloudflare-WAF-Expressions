@@ -23,6 +23,7 @@
 (http.request.uri.path contains "/wp-json") or
 (http.request.uri.path contains "/wp1") or
 (http.request.uri.path contains "/wp2") or
+(http.request.uri.path contains "authorized_keys") or
 (http.request.uri.path contains "backup.zip") or
 (http.request.uri.path contains "id_rsa") or
 (http.request.uri.path contains "server.key") or
@@ -49,6 +50,7 @@
 ## 🗑️ Part 2 - Block deprecated browsers
 > **Action:** Interactive Challenge
 ```
+(http.request.uri.path contains ".log") or
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 7" and http.user_agent ne "mozilla/5.0 (linux; android 7.0; sm-g930v build/nrd90m) applewebkit/537.36 (khtml, like gecko) chrome/59.0.3071.125 mobile safari/537.36 (compatible; google-read-aloud; +https://support.google.com/webmasters/answer/1061943)") or
 (lower(http.user_agent) contains "android 8") or
