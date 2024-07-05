@@ -28,6 +28,7 @@
 (http.request.uri.path contains "id_rsa") or
 (http.request.uri.path contains "server.key") or
 (http.request.uri.path contains "sftp") or
+(http.request.uri.path contains "web.config") or
 (http.request.uri.path contains "wordpress") or
 (http.request.uri.path contains "wp-admin") or
 (http.request.uri.path contains "wp-content") or
