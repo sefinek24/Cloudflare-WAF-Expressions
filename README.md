@@ -4,8 +4,9 @@
 
 With these expressions (for WAF), you can effectively block all unnecessary requests to your server, enhancing its security and performance.
 
-Additionally, it is recommended to **disable** the `Bot Fight Mode` feature located in the `Security tab`.
-This feature is designed to detect and block automated traffic from bots. However, it often blocks safe bots as well, which is not our intention.
+> [!IMPORTANT]  
+> Additionally, it is recommended to **disable** the `Bot Fight Mode` feature located in the `Security tab`.
+> This feature is designed to detect and block automated traffic from bots. However, it often blocks safe bots as well, which is not our intention.
 
 
 ## ⚠️ Important
