@@ -67,6 +67,18 @@ By implementing these blocks, you can significantly enhance the security of your
 8. Done! The expressions are now active and will start blocking unwanted traffic to your origin server. Make sure to check if your website functions correctly. Visit this repository periodically to use the latest lists.
 
 
+## 🤔 Help
+If you have any questions or need help with the expressions, feel free to open an [Issue](https://github.com/sefinek24/cloudflare-waf-expressions/issues). I will be happy to assist you.
+
+
+## 🤝 Pull requests
+If you have any suggestions or improvements, feel free to open a [Pull request](https://github.com/sefinek24/cloudflare-waf-expressions/pulls). Your contributions are highly appreciated and will help keep this list up-to-date and effective against the latest threats.
+
+
+## ❤️ Star the repo
+If you found this repository useful, please consider giving it a star ⭐. Thank you!
+
+
 ## 🔖 License
 This project is licensed under the [MIT License](LICENSE).
 
