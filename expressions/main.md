@@ -5,6 +5,7 @@
 (http.request.uri.path contains ".DS_Store") or
 (http.request.uri.path contains ".env") or
 (http.request.uri.path contains ".git") or
+(http.request.uri.path contains ".htaccess") or
 (http.request.uri.path contains ".idea") or
 (http.request.uri.path contains ".kube") or
 (http.request.uri.path contains ".php") or
