@@ -11,6 +11,7 @@
 (http.request.uri.path contains ".php") or
 (http.request.uri.path contains ".vs") or
 (http.request.uri.path contains "//") or
+(http.request.uri.path contains "/bkp") or
 (http.request.uri.path contains "/blog") or
 (http.request.uri.path contains "/cms") or
 (http.request.uri.path contains "/login.action") or
