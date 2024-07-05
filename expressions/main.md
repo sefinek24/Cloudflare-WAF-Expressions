@@ -165,6 +165,7 @@
 (lower(http.user_agent) contains "nimbostratus") or
 (lower(http.user_agent) contains "omgili") or
 (lower(http.user_agent) contains "onalyticabot") or
+(lower(http.user_agent) contains "panscient.com") or
 (lower(http.user_agent) contains "petalbot") or
 (lower(http.user_agent) contains "proximic") or
 (lower(http.user_agent) contains "pubmatic crawler bot") or
