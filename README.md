@@ -76,7 +76,7 @@ If you have any suggestions or improvements, feel free to open a [Pull request](
 
 
 ## ❤️ Star the repo
-If you found this repository useful, please consider giving it a star ⭐. Thank you!
+If you found this repository useful, please consider giving it a **star** ⭐. Thank you!
 
 
 ## 🔖 License
