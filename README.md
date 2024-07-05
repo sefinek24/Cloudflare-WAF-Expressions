@@ -55,4 +55,15 @@ By implementing these blocks, you can significantly enhance the security of your
 7. Requests for standard web files such as robots.txt, `ads.txt`, `sitemap.xml`, `humans.txt`, and similar, which are essential for proper web indexing and advertising management.
 
 
+## 📝 How to use these expressions?
+1. Log in to your [Cloudflare](https://dash.cloudflare.com) account.
+2. Select the domain where you want to add the expressions.
+3. Click on the `Security` tab and choose `WAF` from the dropdown list.
+4. In the `Custom rules` tab, click the `Create rule` button.
+5. Copy the expressions from the [expressions/main.md](expressions/main.md) file.
+6. Click `Edit expression` and paste the copied expressions.
+7. Click the `Deploy` button to save the changes. Repeat the same process for the remaining parts of the expressions. Remember to select the appropriate Action from the file (Block or Interactive Challenge).
+8. Done! The expressions are now active and will start blocking unwanted traffic to your origin server. Make sure to check if your website functions correctly. Visit this repository periodically to use the latest lists.
+
+
 [//]: # (<h3>>> <a href="expressions/php">View Expressions.md &#40;servers with PHP installed&#41;</a> <<</h3>)

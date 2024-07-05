@@ -47,8 +47,7 @@
 ```
 
 ## 🗑️ Part 2 - Block deprecated browsers
-> **Action:** Interactive Challenge \
-> *Block old browsers or user agents that are frequently used by bots.*
+> **Action:** Interactive Challenge
 ```
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 7" and http.user_agent ne "mozilla/5.0 (linux; android 7.0; sm-g930v build/nrd90m) applewebkit/537.36 (khtml, like gecko) chrome/59.0.3071.125 mobile safari/537.36 (compatible; google-read-aloud; +https://support.google.com/webmasters/answer/1061943)") or
