@@ -67,4 +67,8 @@ By implementing these blocks, you can significantly enhance the security of your
 8. Done! The expressions are now active and will start blocking unwanted traffic to your origin server. Make sure to check if your website functions correctly. Visit this repository periodically to use the latest lists.
 
 
+## 🔖 License
+This project is licensed under the [MIT License](LICENSE).
+
+
 [//]: # (<h3>>> <a href="expressions/php">View Expressions.md &#40;servers with PHP installed&#41;</a> <<</h3>)
