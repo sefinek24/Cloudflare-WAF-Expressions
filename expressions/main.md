@@ -154,6 +154,7 @@
 (lower(http.user_agent) contains "httrack") or
 (lower(http.user_agent) contains "ias_crawler") or
 (lower(http.user_agent) contains "internet-structure-research-project-bot") or
+(lower(http.user_agent) contains "ioncrawl") or
 (lower(http.user_agent) contains "keys-so-bot") or
 (lower(http.user_agent) contains "linguee") or
 (lower(http.user_agent) contains "linkfluence") or
@@ -305,5 +306,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 05.07.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 07.07.2024 [DD.MM.YYYY]</h4>
 </div>
