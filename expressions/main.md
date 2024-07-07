@@ -109,7 +109,6 @@
 (lower(http.user_agent) contains "html5plus") or
 (lower(http.user_agent) contains "mozilla/5.0 (macintosh; intel mac os x 10_15_6)") or
 (lower(http.user_agent) contains "mozilla/5.0 (macintosh; intel mac os x 10_9_2)") or
-(lower(http.user_agent) contains "safari/604.1") or
 (lower(http.user_agent) contains "symbianos") or
 (lower(http.user_agent) contains "ucbrowser") or
 (lower(http.user_agent) contains "windows nt 5.1") or
