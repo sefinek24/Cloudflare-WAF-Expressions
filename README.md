@@ -16,7 +16,7 @@ They are **highly recommended for Node.js applications** built on frameworks lik
 Make sure to check back here periodically. These lists are updated quite frequently to ensure they stay current and effective against the latest threats.
 
 <div align="center">
-   <h3>>> <a href="expressions/main.md">View Expressions.md (for Node.js servers)</a> <<</h3>
+   <h3>>> <a href="expressions/main.md">View Expressions.md</a> <<</h3>
    <img src="assets/images/brave_3bq3ILedXwKD.png" alt="Cloudflare WAF"> 
    <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
