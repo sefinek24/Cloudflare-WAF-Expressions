@@ -9,7 +9,7 @@ With these expressions (for WAF), you can effectively block all unnecessary requ
 > This feature is designed to detect and block automated traffic from bots. However, it often blocks safe bots as well, which is not our intention.
 
 
-## ⚠️ Important
+## ⚠️ Warning
 Please note that these expressions should not be used if you are utilizing WordPress or any similar content management system (CMS), as they may interfere with its normal functioning.
 They are **highly recommended for Node.js applications** built on frameworks like Express, for example.
 
