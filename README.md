@@ -17,7 +17,7 @@ Make sure to check back here periodically. These lists are updated quite frequen
 
 <div align="center">
    <h3>>> <a href="expressions/main.md">View Expressions.md (for Node.js servers)</a> <<</h3>
-   <img src="assets/images/brave_3bq3ILedXwKD.png" alt="Cloudflare WAF"> 
+   <img src="assets/images/brave_7V0Mb1E81rC0.png" alt="Cloudflare Web Application Firewall (WAF)"> 
    <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
 
