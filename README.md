@@ -1,5 +1,5 @@
 <div align="center">
-    <h1>☁️ Cloudflare Web Application Expressions</h1>
+    <h1>☁️ Cloudflare Web Application Firewall</h1>
 </div>
 
 With these expressions (for WAF), you can effectively block all unnecessary requests to your server, enhancing its security and performance.
