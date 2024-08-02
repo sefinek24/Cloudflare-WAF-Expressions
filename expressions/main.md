@@ -41,27 +41,35 @@
 (http.request.uri.path eq "/test") or
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/website") or
-(lower(http.user_agent) contains "Apache-HttpClient") or
+(http.user_agent eq "" and http.host ne "blocklist.sefinek.net") or
+(lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "ipconfig") or
-(lower(http.user_agent) contains "Knights%20of%20Degen") or
+(lower(http.user_agent) contains "knights%20of%20degen") or
 (lower(http.user_agent) contains "wlwmanifest") or
-(lower(http.user_agent) contains "wp_is_mobile") or
-(lower(http.user_agent) eq "" and http.host ne "blocklist.sefinek.net")
+(lower(http.user_agent) contains "wp_is_mobile")
 ```
 
 ## 🗑️ Part 2 - Block deprecated browsers
 > **Action:** Interactive Challenge
 ```
+(http.referer eq "https://sefinek.net/") or
+(http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;") or
+(http.user_agent contains "chrome/108.0.0.0 mobile") or
+(http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
+(http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot") or
 (lower(http.user_agent) contains "android 4") or
-(lower(http.user_agent) contains "android 7" and http.user_agent ne "Mozilla/5.0 (Linux; Android 7.0; SM-G930V Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.125 Mobile Safari/537.36 (compatible; Google-Read-Aloud; +https://support.google.com/webmasters/answer/1061943)") or
 (lower(http.user_agent) contains "android 8") or
 (lower(http.user_agent) contains "android 9") or
 (lower(http.user_agent) contains "chrome/100") or
 (lower(http.user_agent) contains "chrome/101") or
 (lower(http.user_agent) contains "chrome/103") or
+(lower(http.user_agent) contains "chrome/104") or
+(lower(http.user_agent) contains "chrome/105") or
 (lower(http.user_agent) contains "chrome/106") or
 (lower(http.user_agent) contains "chrome/107") or
+(lower(http.user_agent) contains "chrome/109") or
 (lower(http.user_agent) contains "chrome/110") or
+(lower(http.user_agent) contains "chrome/111") or
 (lower(http.user_agent) contains "chrome/117") or
 (lower(http.user_agent) contains "chrome/119") or
 (lower(http.user_agent) contains "chrome/17") or
@@ -80,26 +88,29 @@
 (lower(http.user_agent) contains "chrome/64") or
 (lower(http.user_agent) contains "chrome/65") or
 (lower(http.user_agent) contains "chrome/69") or
-(lower(http.user_agent) contains "chrome/70" and http.host ne "blocklist.sefinek.net") or
-(lower(http.user_agent) contains "chrome/74" and http.user_agent ne "Better Uptime Bot Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36") or
 (lower(http.user_agent) contains "chrome/77") or
 (lower(http.user_agent) contains "chrome/78") or
 (lower(http.user_agent) contains "chrome/79") or
 (lower(http.user_agent) contains "chrome/80") or
+(lower(http.user_agent) contains "chrome/81") or
 (lower(http.user_agent) contains "chrome/83") or
 (lower(http.user_agent) contains "chrome/84") or
 (lower(http.user_agent) contains "chrome/85") or
 (lower(http.user_agent) contains "chrome/87") or
 (lower(http.user_agent) contains "chrome/88") or
+(lower(http.user_agent) contains "chrome/89") or
+(lower(http.user_agent) contains "chrome/91") or
 (lower(http.user_agent) contains "chrome/93") or
 (lower(http.user_agent) contains "chrome/94") or
 (lower(http.user_agent) contains "chrome/95") or
 (lower(http.user_agent) contains "chrome/96") or
 (lower(http.user_agent) contains "chrome/98") or
+(lower(http.user_agent) contains "crios/121") or
 (lower(http.user_agent) contains "dalvik") or
 (lower(http.user_agent) contains "edg/101") or
 (lower(http.user_agent) contains "edg/96") or
 (lower(http.user_agent) contains "embeddedbrowser") or
+(lower(http.user_agent) contains "firefox/114") or
 (lower(http.user_agent) contains "firefox/52") or
 (lower(http.user_agent) contains "firefox/57") or
 (lower(http.user_agent) contains "firefox/76") or
@@ -107,15 +118,18 @@
 (lower(http.user_agent) contains "firefox/79") or
 (lower(http.user_agent) contains "firefox/83") or
 (lower(http.user_agent) contains "html5plus") or
-(lower(http.user_agent) contains "mozilla/5.0 (macintosh; intel mac os x 10_15_6)") or
-(lower(http.user_agent) contains "mozilla/5.0 (macintosh; intel mac os x 10_9_2)") or
+(lower(http.user_agent) contains "mac os x 10_15_6") or
+(lower(http.user_agent) contains "mac os x 10_9_2") or
+(lower(http.user_agent) contains "netfront") or
 (lower(http.user_agent) contains "symbianos") or
 (lower(http.user_agent) contains "ucbrowser") or
 (lower(http.user_agent) contains "windows nt 5.1") or
 (lower(http.user_agent) contains "windows nt 6.1") or
+(lower(http.user_agent) contains "windows nt 6.3") or
 (lower(http.user_agent) contains "wow64") or
 (lower(http.user_agent) contains "yaapp_android") or
-(lower(http.user_agent) eq "go-http-client/1.1" and http.host ne "blocklist.sefinek.net")
+(lower(http.user_agent) contains "yabrowser") or
+(http.user_agent eq "Go-http-client/1.1" and http.host ne "blocklist.sefinek.net") 
 ```
 
 ## 🤖 Part 3 - Block unnecessary bots
@@ -201,40 +215,61 @@
 (ip.geoip.asnum eq 53667) or
 (ip.geoip.asnum eq 55960) or
 (ip.src eq 102.22.20.58) or
+(ip.src eq 102.68.128.195) or
+(ip.src eq 103.106.114.106) or
 (ip.src eq 103.151.30.155) or
 (ip.src eq 103.153.134.22) or
+(ip.src eq 103.156.70.38) or
+(ip.src eq 103.165.155.254) or
+(ip.src eq 103.169.129.4) or
+(ip.src eq 103.169.254.9) or
 (ip.src eq 103.171.156.218) or
 (ip.src eq 103.177.9.104) or
 (ip.src eq 103.188.252.66) or
+(ip.src eq 103.208.27.214) or
+(ip.src eq 103.24.213.118) or
+(ip.src eq 103.242.104.182) or
 (ip.src eq 103.250.130.104) or
 (ip.src eq 103.46.4.7) or
+(ip.src eq 103.6.177.174) or
 (ip.src eq 103.68.214.97) or
 (ip.src eq 104.196.252.127) or
 (ip.src eq 109.202.99.46) or
+(ip.src eq 113.164.94.137) or
 (ip.src eq 114.129.2.82) or
 (ip.src eq 114.132.202.246) or
 (ip.src eq 114.132.202.78) or
 (ip.src eq 115.127.116.242) or
+(ip.src eq 118.101.56.156) or
 (ip.src eq 12.127.44.138) or
+(ip.src eq 120.28.217.209) or
 (ip.src eq 122.155.165.191) or
+(ip.src eq 122.185.198.242) or
+(ip.src eq 124.158.182.34) or
+(ip.src eq 125.25.56.164) or
 (ip.src eq 132.147.137.52) or
 (ip.src eq 138.121.161.84) or
+(ip.src eq 139.99.8.91) or
 (ip.src eq 143.255.80.134) or
 (ip.src eq 148.230.206.229) or
 (ip.src eq 152.32.213.18) or
 (ip.src eq 161.49.215.28) or
 (ip.src eq 165.16.88.161) or
+(ip.src eq 167.99.55.197) or
 (ip.src eq 168.232.174.43) or
 (ip.src eq 172.183.241.1) or
+(ip.src eq 175.100.91.212) or
 (ip.src eq 175.22.148.13) or
 (ip.src eq 177.130.104.106) or
 (ip.src eq 177.234.240.123) or
+(ip.src eq 177.54.226.50) or
 (ip.src eq 177.70.72.103) or
 (ip.src eq 177.87.144.122) or
 (ip.src eq 179.1.192.5) or
 (ip.src eq 179.43.188.122) or
 (ip.src eq 179.49.162.133) or
 (ip.src eq 180.211.183.2) or
+(ip.src eq 180.31.234.71) or
 (ip.src eq 184.82.244.173) or
 (ip.src eq 185.255.45.241) or
 (ip.src eq 187.188.101.205) or
@@ -242,30 +277,41 @@
 (ip.src eq 188.136.154.43) or
 (ip.src eq 189.35.11.247) or
 (ip.src eq 189.48.88.204) or
+(ip.src eq 190.102.139.146) or
 (ip.src eq 190.83.12.220) or
 (ip.src eq 190.94.212.198) or
 (ip.src eq 190.94.212.240) or
+(ip.src eq 191.179.216.84) or
 (ip.src eq 191.240.153.144) or
 (ip.src eq 191.37.1.155) or
 (ip.src eq 193.176.211.244) or
 (ip.src eq 194.126.177.84) or
+(ip.src eq 194.163.149.123) or
 (ip.src eq 199.167.236.12) or
 (ip.src eq 200.174.198.136) or
+(ip.src eq 200.174.198.144) or
 (ip.src eq 200.174.198.222) or
 (ip.src eq 200.174.198.224) or
 (ip.src eq 200.174.198.92) or
+(ip.src eq 2001:bc8:182c:1005::1) or
 (ip.src eq 201.131.239.233) or
 (ip.src eq 201.77.128.158) or
+(ip.src eq 201.77.96.149) or
 (ip.src eq 202.47.181.150) or
+(ip.src eq 202.47.88.2) or
 (ip.src eq 202.62.84.210) or
+(ip.src eq 205.185.125.235) or
 (ip.src eq 209.209.28.22) or
 (ip.src eq 212.174.79.169) or
 (ip.src eq 213.232.87.230) or
 (ip.src eq 213.232.87.232) or
 (ip.src eq 213.232.87.234) or
 (ip.src eq 216.87.69.230) or
+(ip.src eq 216.9.224.141) or
 (ip.src eq 217.182.194.108) or
 (ip.src eq 24.172.34.114) or
+(ip.src eq 2400:e920:0:8:250:56ff:fe94:474e) or
+(ip.src eq 2a01:239:2d0:bc00::1) or
 (ip.src eq 34.105.123.106) or
 (ip.src eq 34.105.60.137) or
 (ip.src eq 34.83.15.88) or
@@ -275,28 +321,23 @@
 (ip.src eq 36.255.84.69) or
 (ip.src eq 36.91.135.141) or
 (ip.src eq 36.95.142.35) or
+(ip.src eq 37.120.192.154) or
 (ip.src eq 4.227.97.45) or
 (ip.src eq 43.134.1.40) or
 (ip.src eq 43.134.121.40) or
 (ip.src eq 43.153.207.93) or
 (ip.src eq 45.164.174.27) or
+(ip.src eq 45.227.195.121) or
+(ip.src eq 45.231.223.252) or
 (ip.src eq 45.236.170.234) or
 (ip.src eq 45.70.236.150) or
 (ip.src eq 46.161.196.222) or
 (ip.src eq 46.2.5.84) or
 (ip.src eq 47.106.193.183) or
+(ip.src eq 47.51.30.226) or
 (ip.src eq 51.145.176.250) or
 (ip.src eq 52.169.23.0) or
 (ip.src eq 52.178.159.39) or
-(ip.src eq 59.152.14.109) or
-(ip.src eq 59.152.14.111) or
-(ip.src eq 61.129.2.212) or
-(ip.src eq 62.33.53.248) or
-(ip.src eq 68.154.80.181) or
-(ip.src eq 78.153.140.223) or
-(ip.src eq 84.51.15.250) or
-(ip.src eq 85.94.24.29) or
-(ip.src eq 88.87.78.95) or
 (ip.src eq 91.215.85.29) or
 (ip.src eq 94.179.141.78)
 ```
@@ -304,5 +345,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 07.07.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 02.08.2024 [DD.MM.YYYY]</h4>
 </div>
