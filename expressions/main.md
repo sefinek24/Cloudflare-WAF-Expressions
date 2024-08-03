@@ -52,7 +52,6 @@
 ## 🗑️ Part 2 - Block deprecated browsers
 > **Action:** Interactive Challenge
 ```
-(http.referer eq "https://sefinek.net/") or
 (http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;") or
 (http.user_agent contains "chrome/108.0.0.0 mobile") or
 (http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
@@ -345,5 +344,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 02.08.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 04.08.2024 [DD.MM.YYYY]</h4>
 </div>
