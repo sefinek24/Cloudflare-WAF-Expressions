@@ -204,7 +204,6 @@
 > **Action:** Block
 ```
 (ip.geoip.asnum eq 200651) or
-(ip.geoip.asnum eq 2027) or
 (ip.geoip.asnum eq 205100) or
 (ip.geoip.asnum eq 208323) or
 (ip.geoip.asnum eq 210630) or
