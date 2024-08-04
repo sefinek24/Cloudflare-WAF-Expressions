@@ -56,6 +56,7 @@
 (http.user_agent contains "chrome/108.0.0.0 mobile") or
 (http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot") or
+(http.user_agent eq "Go-http-client/1.1" and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 8") or
 (lower(http.user_agent) contains "android 9") or
@@ -99,6 +100,7 @@
 (lower(http.user_agent) contains "chrome/88") or
 (lower(http.user_agent) contains "chrome/89") or
 (lower(http.user_agent) contains "chrome/91") or
+(lower(http.user_agent) contains "chrome/92") or
 (lower(http.user_agent) contains "chrome/93") or
 (lower(http.user_agent) contains "chrome/94") or
 (lower(http.user_agent) contains "chrome/95") or
@@ -127,8 +129,7 @@
 (lower(http.user_agent) contains "windows nt 6.3") or
 (lower(http.user_agent) contains "wow64") or
 (lower(http.user_agent) contains "yaapp_android") or
-(lower(http.user_agent) contains "yabrowser") or
-(http.user_agent eq "Go-http-client/1.1" and http.host ne "blocklist.sefinek.net") 
+(lower(http.user_agent) contains "yabrowser")
 ```
 
 ## 🤖 Part 3 - Block unnecessary bots
