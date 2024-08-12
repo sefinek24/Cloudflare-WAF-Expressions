@@ -56,7 +56,6 @@
 (http.user_agent contains "chrome/108.0.0.0 mobile") or
 (http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot") or
-(http.user_agent eq "Go-http-client/1.1" and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 8") or
 (lower(http.user_agent) contains "android 9") or
