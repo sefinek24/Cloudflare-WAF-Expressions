@@ -267,6 +267,7 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` w
 (ip.src eq 179.49.162.133) or
 (ip.src eq 180.211.183.2) or
 (ip.src eq 180.31.234.71) or
+(ip.src eq 184.72.145.180) or
 (ip.src eq 184.82.244.173) or
 (ip.src eq 185.255.45.241) or
 (ip.src eq 187.188.101.205) or
