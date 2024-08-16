@@ -57,18 +57,6 @@
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 8") or
 (lower(http.user_agent) contains "android 9") or
-(lower(http.user_agent) contains "chrome/100") or
-(lower(http.user_agent) contains "chrome/101") or
-(lower(http.user_agent) contains "chrome/103") or
-(lower(http.user_agent) contains "chrome/104") or
-(lower(http.user_agent) contains "chrome/105") or
-(lower(http.user_agent) contains "chrome/106") or
-(lower(http.user_agent) contains "chrome/107") or
-(lower(http.user_agent) contains "chrome/109") or
-(lower(http.user_agent) contains "chrome/110") or
-(lower(http.user_agent) contains "chrome/111") or
-(lower(http.user_agent) contains "chrome/117") or
-(lower(http.user_agent) contains "chrome/119") or
 (lower(http.user_agent) contains "chrome/17") or
 (lower(http.user_agent) contains "chrome/33") or
 (lower(http.user_agent) contains "chrome/34") or
@@ -108,7 +96,6 @@
 (lower(http.user_agent) contains "edg/101") or
 (lower(http.user_agent) contains "edg/96") or
 (lower(http.user_agent) contains "embeddedbrowser") or
-(lower(http.user_agent) contains "firefox/114") or
 (lower(http.user_agent) contains "firefox/52") or
 (lower(http.user_agent) contains "firefox/57") or
 (lower(http.user_agent) contains "firefox/76") or
