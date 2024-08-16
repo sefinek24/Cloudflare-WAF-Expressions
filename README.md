@@ -53,8 +53,7 @@ By implementing these blocks, you can significantly enhance the security of your
 3. Outgoing requests from tools like `curl`, `wget`, `Postman`, `httpie`, `Insomnia`, and similar.
 4. Legitimate traffic from commonly used APIs and services that are essential for the proper functioning of your application.
 5. Webhooks and callbacks from trusted third-party services, ensuring seamless integration and communication.
-6. Requests from popular cloud service providers like `AWS`, `Google Cloud`, `Azure`, and similar, which are often used in modern application architectures.
-7. Requests for standard web files such as robots.txt, `ads.txt`, `sitemap.xml`, `humans.txt`, and similar, which are essential for proper web indexing and advertising management.
+6. Requests for standard web files such as `robots.txt`, `ads.txt`, `sitemap.xml`, `humans.txt`, and similar, which are essential for proper web indexing and advertising management.
 
 
 ## 📝 How to use these expressions?
