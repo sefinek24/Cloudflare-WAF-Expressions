@@ -129,9 +129,7 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` w
 (lower(http.user_agent) contains "windows nt 5.1") or
 (lower(http.user_agent) contains "windows nt 6.1") or
 (lower(http.user_agent) contains "windows nt 6.3") or
-(lower(http.user_agent) contains "wow64") or
-(lower(http.user_agent) contains "yaapp_android") or
-(lower(http.user_agent) contains "yabrowser")
+(lower(http.user_agent) contains "wow64")
 ```
 
 ## 🤖 Part 3 - Block unnecessary bots
