@@ -49,7 +49,7 @@
 (lower(http.user_agent) contains "wp_is_mobile")
 ```
 
-## 🗑️ Part 2 - Block deprecated browsers
+## 🗑️ Part 2 - Challenge for deprecated browsers
 > **Action:** Interactive Challenge
 ```
 (http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;") or
