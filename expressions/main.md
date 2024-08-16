@@ -126,7 +126,7 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` w
 (lower(http.user_agent) contains "netfront") or
 (lower(http.user_agent) contains "symbianos") or
 (lower(http.user_agent) contains "ucbrowser") or
-(lower(http.user_agent) contains "windows nt 5.1") or
+(lower(http.user_agent) contains "windows nt 5.1" and not http.user_agent contains "mozilla/5.0 (windows nt 5.1; rv:11.0) gecko firefox/11.0 (via ggpht.com googleimageproxy)") or
 (lower(http.user_agent) contains "windows nt 6.1") or
 (lower(http.user_agent) contains "windows nt 6.3") or
 (lower(http.user_agent) contains "wow64")
