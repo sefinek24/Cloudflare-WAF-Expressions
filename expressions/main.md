@@ -203,6 +203,7 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` w
 ## 🌍 Part 4 - Block bots, AS Num or IP
 > **Action:** Block
 ```
+(ip.geoip.asnum eq 1101) or
 (ip.geoip.asnum eq 200651) or
 (ip.geoip.asnum eq 205100) or
 (ip.geoip.asnum eq 208323) or
