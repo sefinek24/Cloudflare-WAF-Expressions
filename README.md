@@ -68,6 +68,15 @@ By implementing these blocks, you can significantly enhance the security of your
 8. Done! The expressions are now active and will start blocking unwanted traffic to your origin server. Make sure to check if your website functions correctly. Visit this repository periodically to use the latest lists.
 
 
+## 😥 DDoS Mitigation (highly recommended)
+It is also recommended to enable DDoS protection in the `Security` tab. Then, navigate to `DDoS` and click the `Deploy a DDoS override` button.
+
+### DDoS Mitigation Configuration
+1. **Override name:** DDoS L7 ruleset
+2. **Ruleset action:** Block
+3. **Ruleset sensitivity:** Default
+
+
 ## 🤔 Help
 If you have any questions or need help with the expressions, feel free to open an [Issue](https://github.com/sefinek24/cloudflare-waf-expressions/issues). I will be happy to assist you.
 
