@@ -1,3 +1,6 @@
+## ⚠️ Important
+If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` with your own (e.g., `cdn.yourdomain.com`).
+
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```
