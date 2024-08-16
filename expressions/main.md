@@ -210,6 +210,7 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` w
 (ip.geoip.asnum eq 37963) or
 (ip.geoip.asnum eq 399486) or
 (ip.geoip.asnum eq 55960) or
+(ip.geoip.asnum eq 60729) or
 (ip.src eq 102.22.20.58) or
 (ip.src eq 102.68.128.195) or
 (ip.src eq 103.106.114.106) or
