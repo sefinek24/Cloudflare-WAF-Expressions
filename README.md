@@ -71,7 +71,7 @@ By implementing these blocks, you can significantly enhance the security of your
 ## 😥 DDoS Mitigation (highly recommended)
 It is also recommended to enable DDoS protection in the `Security` tab. Then, navigate to `DDoS` and click the `Deploy a DDoS override` button.
 
-### DDoS Mitigation Configuration
+### Configuration
 1. **Override name:** DDoS L7 ruleset
 2. **Ruleset action:** Block
 3. **Ruleset sensitivity:** Default
