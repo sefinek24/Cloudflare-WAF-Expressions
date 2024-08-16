@@ -186,7 +186,6 @@
 (lower(http.user_agent) contains "seekport") or
 (lower(http.user_agent) contains "semantic-visions") or
 (lower(http.user_agent) contains "semanticbot") or
-(lower(http.user_agent) contains "semrushbot" and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "serpstatbot") or
 (lower(http.user_agent) contains "sogou") or
 (lower(http.user_agent) contains "sqlmap") or
