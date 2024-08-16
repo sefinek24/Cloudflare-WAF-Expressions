@@ -78,11 +78,11 @@ It is also recommended to enable DDoS protection in the `Security` tab. Then, na
 
 
 ## 🤔 Help
-If you have any questions or need help with the expressions, feel free to open an [Issue](https://github.com/sefinek24/cloudflare-waf-expressions/issues). I will be happy to assist you.
+If you have any questions or need help with the expressions, feel free to open an [Issue](https://github.com/sefinek24/Cloudflare-WAF-Expressions/issues). I will be happy to assist you.
 
 
 ## 🤝 Pull requests
-If you have any suggestions or improvements, feel free to open a [Pull request](https://github.com/sefinek24/cloudflare-waf-expressions/pulls). Your contributions are highly appreciated and will help keep this list up-to-date and effective against the latest threats.
+If you have any suggestions or improvements, feel free to open a [Pull request](https://github.com/sefinek24/Cloudflare-WAF-Expressions/pulls). Your contributions are highly appreciated and will help keep this list up-to-date and effective against the latest threats.
 
 
 ## ❤️ Star the repo
