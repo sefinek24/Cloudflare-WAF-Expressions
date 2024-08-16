@@ -344,5 +344,5 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` w
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 12.08.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 16.08.2024 [DD.MM.YYYY]</h4>
 </div>
