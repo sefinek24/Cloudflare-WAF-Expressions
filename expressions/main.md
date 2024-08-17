@@ -1,5 +1,5 @@
 ## ⚠️ Important
-If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` with your own (e.g., `cdn.yourdomain.com`).
+If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` and `api.sefinek.net` with your own (e.g., `cdn.yourdomain.com`).
 
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
@@ -73,8 +73,8 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` w
 (http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot") or
 (lower(http.user_agent) contains "android 4") or
-(lower(http.user_agent) contains "android 8") or
-(lower(http.user_agent) contains "android 9") or
+(lower(http.user_agent) contains "android 8" and http.host ne "api.sefinek.net") or
+(lower(http.user_agent) contains "android 9" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "chrome/17") or
 (lower(http.user_agent) contains "chrome/33") or
 (lower(http.user_agent) contains "chrome/34") or
@@ -99,10 +99,10 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` w
 (lower(http.user_agent) contains "chrome/83") or
 (lower(http.user_agent) contains "chrome/84") or
 (lower(http.user_agent) contains "chrome/85") or
-(lower(http.user_agent) contains "chrome/87") or
+(lower(http.user_agent) contains "chrome/87" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "chrome/88") or
 (lower(http.user_agent) contains "chrome/89") or
-(lower(http.user_agent) contains "chrome/91") or
+(lower(http.user_agent) contains "chrome/91" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "chrome/92") or
 (lower(http.user_agent) contains "chrome/93") or
 (lower(http.user_agent) contains "chrome/94") or
