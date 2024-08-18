@@ -1,5 +1,5 @@
 ## ⚠️ Important
-If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` and `api.sefinek.net` with your own (e.g., `cdn.yourdomain.com`).
+If any of your subdomains provide a public API, you should replace `api.sefinek.net` with your own (e.g., `api.yourdomain.com`).
 
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
@@ -57,7 +57,7 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` a
 (http.request.uri.path eq "/www-sql") or
 (http.request.uri.path eq "/~ftp") or
 (http.request.uri.path eq "/~tmp") or
-(http.user_agent eq "" and http.host ne "blocklist.sefinek.net") or
+(http.user_agent eq "" and http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
@@ -103,7 +103,7 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` a
 (lower(http.user_agent) contains "chrome/88") or
 (lower(http.user_agent) contains "chrome/89") or
 (lower(http.user_agent) contains "chrome/91" and http.host ne "api.sefinek.net") or
-(lower(http.user_agent) contains "chrome/92") or
+(lower(http.user_agent) contains "chrome/92" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "chrome/93") or
 (lower(http.user_agent) contains "chrome/94") or
 (lower(http.user_agent) contains "chrome/95") or
@@ -113,14 +113,14 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` a
 (lower(http.user_agent) contains "dalvik") or
 (lower(http.user_agent) contains "edg/101") or
 (lower(http.user_agent) contains "edg/96") or
-(lower(http.user_agent) contains "embeddedbrowser") or
+(lower(http.user_agent) contains "embeddedbrowser" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "firefox/52") or
 (lower(http.user_agent) contains "firefox/57") or
 (lower(http.user_agent) contains "firefox/76") or
 (lower(http.user_agent) contains "firefox/77") or
 (lower(http.user_agent) contains "firefox/79") or
 (lower(http.user_agent) contains "firefox/83") or
-(lower(http.user_agent) contains "html5plus") or
+(lower(http.user_agent) contains "html5plus" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "mac os x 10_15_6") or
 (lower(http.user_agent) contains "mac os x 10_9_2") or
 (lower(http.user_agent) contains "netfront") or
@@ -344,5 +344,5 @@ If any of your subdomains is a CDN, be sure to replace `blocklist.sefinek.net` a
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 17.08.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 18.08.2024 [DD.MM.YYYY]</h4>
 </div>
