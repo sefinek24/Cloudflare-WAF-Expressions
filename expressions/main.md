@@ -207,7 +207,6 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (ip.geoip.asnum eq 205100) or
 (ip.geoip.asnum eq 208323) or
 (ip.geoip.asnum eq 210630) or
-(ip.geoip.asnum eq ) or
 (ip.geoip.asnum eq 399486) or
 (ip.geoip.asnum eq 55960) or
 (ip.geoip.asnum eq 60729) or
