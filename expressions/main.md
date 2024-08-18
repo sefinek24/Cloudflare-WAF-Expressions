@@ -57,7 +57,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (http.request.uri.path eq "/www-sql") or
 (http.request.uri.path eq "/~ftp") or
 (http.request.uri.path eq "/~tmp") or
-(http.user_agent eq "" and http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net") or
+(http.user_agent eq "" and (http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net" and http.host ne "api.nekosia.cat")) or
 (lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
@@ -70,7 +70,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 ```
 (http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;") or
 (http.user_agent contains "chrome/108.0.0.0 mobile") or
-(http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net") or
+(http.user_agent contains "Chrome/70" and (http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net" and http.host ne "api.nekosia.cat")) or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot") or
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 8" and http.host ne "api.sefinek.net") or
@@ -126,9 +126,8 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "netfront") or
 (lower(http.user_agent) contains "symbianos") or
 (lower(http.user_agent) contains "ucbrowser") or
-(lower(http.user_agent) contains "windows nt 5.1" and not http.user_agent contains "mozilla/5.0 (windows nt 5.1; rv:11.0) gecko firefox/11.0 (via ggpht.com googleimageproxy)") or
-(lower(http.user_agent) contains "windows nt 6.1") or
-(lower(http.user_agent) contains "windows nt 6.3") or
+(lower(http.user_agent) contains "windows nt 5" and not http.user_agent contains "(via ggpht.com googleimageproxy)") or
+(lower(http.user_agent) contains "windows nt 6") or
 (lower(http.user_agent) contains "wow64")
 ```
 
