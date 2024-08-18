@@ -70,7 +70,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 ```
 (http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;") or
 (http.user_agent contains "chrome/108.0.0.0 mobile") or
-(http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net") or
+(http.user_agent contains "Chrome/70" and http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net") or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot") or
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 8" and http.host ne "api.sefinek.net") or
