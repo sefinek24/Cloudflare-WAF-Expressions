@@ -91,6 +91,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "chrome/64") or
 (lower(http.user_agent) contains "chrome/65") or
 (lower(http.user_agent) contains "chrome/69") or
+(lower(http.user_agent) contains "chrome/71") or
 (lower(http.user_agent) contains "chrome/77") or
 (lower(http.user_agent) contains "chrome/78") or
 (lower(http.user_agent) contains "chrome/79") or
