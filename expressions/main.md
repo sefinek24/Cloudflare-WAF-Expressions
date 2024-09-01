@@ -343,5 +343,5 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 18.08.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 01.09.2024 [DD.MM.YYYY]</h4>
 </div>
