@@ -177,7 +177,6 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "riddler") or
 (lower(http.user_agent) contains "rogerbot") or
 (lower(http.user_agent) contains "sbl-bot") or
-(lower(http.user_agent) contains "seekport") or
 (lower(http.user_agent) contains "semantic-visions") or
 (lower(http.user_agent) contains "semanticbot") or
 (lower(http.user_agent) contains "serpstatbot") or
