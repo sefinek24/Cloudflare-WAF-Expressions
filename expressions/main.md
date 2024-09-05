@@ -16,6 +16,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (http.request.uri.path contains ".kube") or
 (http.request.uri.path contains ".mysql_history") or
 (http.request.uri.path contains ".php") or
+(http.request.uri.path contains ".sql") or
 (http.request.uri.path contains ".ssh") or
 (http.request.uri.path contains ".vs") or
 (http.request.uri.path contains "//") or
