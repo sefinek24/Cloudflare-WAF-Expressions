@@ -247,6 +247,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (ip.src eq 180.31.234.71) or
 (ip.src eq 184.72.145.180) or
 (ip.src eq 184.82.244.173) or
+(ip.src eq 185.220.101.37) or
 (ip.src eq 185.255.45.241) or
 (ip.src eq 187.188.101.205) or
 (ip.src eq 187.204.18.213) or
