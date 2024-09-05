@@ -111,7 +111,6 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "chrome/96") or
 (lower(http.user_agent) contains "chrome/98") or
 (lower(http.user_agent) contains "crios/121") or
-(lower(http.user_agent) contains "dalvik") or
 (lower(http.user_agent) contains "edg/101") or
 (lower(http.user_agent) contains "edg/96") or
 (lower(http.user_agent) contains "embeddedbrowser" and http.host ne "api.sefinek.net") or
