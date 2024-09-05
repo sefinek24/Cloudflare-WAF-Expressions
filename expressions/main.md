@@ -135,7 +135,6 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 ## 🤖 Part 3 - Block unnecessary bots
 > **Action:** Block
 ```
-(lower(http.user_agent) contains "admantx") or
 (lower(http.user_agent) contains "barkrowler") or
 (lower(http.user_agent) contains "blexbot") or
 (lower(http.user_agent) contains "bomborabot") or
