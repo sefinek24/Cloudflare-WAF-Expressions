@@ -185,12 +185,8 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 ## 🌍 Part 4 - Block bots, AS Num or IP
 > **Action:** Block
 ```
-(ip.geoip.asnum eq 1101) or
-(ip.geoip.asnum eq 200651) or
-(ip.geoip.asnum eq 205100) or
 (ip.geoip.asnum eq 208323) or
 (ip.geoip.asnum eq 210630) or
-(ip.geoip.asnum eq 399486) or
 (ip.geoip.asnum eq 55960) or
 (ip.geoip.asnum eq 60729) or
 (ip.src eq 102.22.20.58) or
