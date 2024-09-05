@@ -73,6 +73,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (http.user_agent contains "chrome/108.0.0.0 mobile") or
 (http.user_agent contains "Chrome/70" and (http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net" and http.host ne "api.nekosia.cat")) or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot") or
+(http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)") or
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 8" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "android 9" and http.host ne "api.sefinek.net") or
@@ -127,7 +128,6 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "netfront") or
 (lower(http.user_agent) contains "symbianos") or
 (lower(http.user_agent) contains "ucbrowser") or
-(lower(http.user_agent) contains "windows nt 5" and not http.user_agent contains "(via ggpht.com googleimageproxy)") or
 (lower(http.user_agent) contains "windows nt 6") or
 (lower(http.user_agent) contains "wow64")
 ```
