@@ -307,6 +307,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (ip.src eq 45.227.195.121) or
 (ip.src eq 45.231.223.252) or
 (ip.src eq 45.236.170.234) or
+(ip.src eq 45.66.35.22) or
 (ip.src eq 45.70.236.150) or
 (ip.src eq 46.161.196.222) or
 (ip.src eq 46.2.5.84) or
