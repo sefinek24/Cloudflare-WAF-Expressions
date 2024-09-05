@@ -184,7 +184,6 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "semantic-visions") or
 (lower(http.user_agent) contains "semanticbot") or
 (lower(http.user_agent) contains "serpstatbot") or
-(lower(http.user_agent) contains "sogou") or
 (lower(http.user_agent) contains "sqlmap") or
 (lower(http.user_agent) contains "traackr") or
 (lower(http.user_agent) contains "trendictionbot") or
