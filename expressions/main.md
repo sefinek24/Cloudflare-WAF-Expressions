@@ -158,7 +158,6 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "internet-structure") or
 (lower(http.user_agent) contains "ioncrawl") or
 (lower(http.user_agent) contains "keys-so-bot") or
-(lower(http.user_agent) contains "linkfluence") or
 (lower(http.user_agent) contains "magpie-crawler") or
 (lower(http.user_agent) contains "megaindex") or
 (lower(http.user_agent) contains "mj12bot") or
