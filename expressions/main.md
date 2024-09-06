@@ -126,8 +126,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "mac os x 10_9_2") or
 (lower(http.user_agent) contains "netfront") or
 (lower(http.user_agent) contains "symbianos") or
-(lower(http.user_agent) contains "ucbrowser") or
-(lower(http.user_agent) contains "wow64")
+(lower(http.user_agent) contains "ucbrowser")
 ```
 
 ## 🤖 Part 3 - Block unnecessary bots
