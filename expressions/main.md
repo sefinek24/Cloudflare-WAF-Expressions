@@ -69,7 +69,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 ## 🗑️ Part 2 - Deprecated browsers
 > **Action:** Interactive Challenge
 ```
-(http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;" and not contains "(compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)") or
+(http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;" and not http.user_agent contains "(compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)") or
 (http.user_agent contains "Chrome/70" and (http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net" and http.host ne "api.nekosia.cat")) or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and http.host ne "api.sefinek.net") or
 (http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)") or
