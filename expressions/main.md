@@ -69,7 +69,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 ## 🗑️ Part 2 - Deprecated browsers
 > **Action:** Interactive Challenge
 ```
-(http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;") or
+(http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;" and not contains "(compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)") or
 (http.user_agent contains "Chrome/70" and (http.host ne "blocklist.sefinek.net" and http.host ne "api.sefinek.net" and http.host ne "api.nekosia.cat")) or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and http.host ne "api.sefinek.net") or
 (http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)") or
@@ -107,9 +107,9 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (lower(http.user_agent) contains "chrome/91" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "chrome/92" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "chrome/93") or
-(lower(http.user_agent) contains "chrome/94") or
-(lower(http.user_agent) contains "chrome/95") or
-(lower(http.user_agent) contains "chrome/96") or
+(lower(http.user_agent) contains "chrome/94" and http.host ne "api.sefinek.net") or
+(lower(http.user_agent) contains "chrome/95" and http.host ne "api.sefinek.net") or
+(lower(http.user_agent) contains "chrome/96" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "chrome/98") or
 (lower(http.user_agent) contains "crios/121") or
 (lower(http.user_agent) contains "edg/101") or
@@ -321,5 +321,5 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 06.09.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 07.09.2024 [DD.MM.YYYY]</h4>
 </div>
