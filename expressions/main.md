@@ -75,7 +75,6 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)") or
 (lower(http.user_agent) contains "android 4") or
 (lower(http.user_agent) contains "android 8" and http.host ne "api.sefinek.net") or
-(lower(http.user_agent) contains "android 9" and http.host ne "api.sefinek.net") or
 (lower(http.user_agent) contains "chrome/17") or
 (lower(http.user_agent) contains "chrome/33") or
 (lower(http.user_agent) contains "chrome/34") or
