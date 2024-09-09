@@ -50,7 +50,6 @@
 (http.request.uri.path eq "/admin") or
 (http.request.uri.path eq "/config.json") or
 (http.request.uri.path eq "/dbadmin") or
-(http.request.uri.path eq "/feed") or
 (http.request.uri.path eq "/git") or
 (http.request.uri.path eq "/ssh") or
 (http.request.uri.path eq "/test") or
