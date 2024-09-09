@@ -1,5 +1,5 @@
 ## ⚠️ Important
-If any of your subdomains provide a public API, you should replace `api.sefinek.net` with your own (e.g., `api.yourdomain.com`).
+~~If any of your subdomains provide a public API, you should replace `api.sefinek.net` with your own (e.g., `api.yourdomain.com`).~~
 
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
@@ -58,7 +58,7 @@ If any of your subdomains provide a public API, you should replace `api.sefinek.
 (http.request.uri.path eq "/www-sql") or
 (http.request.uri.path eq "/~ftp") or
 (http.request.uri.path eq "/~tmp") or
-(http.user_agent eq "" and not http.host contains "cdn." and not http.host contains "api.") or
+(http.user_agent eq "" and not http.host contains "cdn." and not http.host contains "api." and http.host ne "cdn.sefinek.net") or
 (lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
