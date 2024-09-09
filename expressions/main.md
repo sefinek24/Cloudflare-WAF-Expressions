@@ -57,8 +57,8 @@
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/www-sql") or
-(http.request.uri.path eq "/~ftp") or
-(http.request.uri.path eq "/~tmp") or
+(http.request.uri.path contains "~ftp") or
+(http.request.uri.path contains "~tmp") or
 (http.user_agent eq "" and not http.host contains "cdn." and not http.host contains "api." and http.host ne "cdn.sefinek.net") or
 (lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "ipconfig") or
