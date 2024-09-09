@@ -47,6 +47,7 @@
 (http.request.uri.path contains "wp-content") or
 (http.request.uri.path contains "wp-includes") or
 (http.request.uri.path eq "/.cache") or
+(http.request.uri.path eq "/admin") or
 (http.request.uri.path eq "/config.json") or
 (http.request.uri.path eq "/dbadmin") or
 (http.request.uri.path eq "/feed") or
