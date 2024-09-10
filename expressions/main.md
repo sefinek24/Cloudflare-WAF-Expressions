@@ -1,6 +1,3 @@
-## ⚠️ Important
-~~If any of your subdomains provide a public API, you should replace `api.sefinek.net` with your own (e.g., `api.yourdomain.com`).~~
-
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```
@@ -72,10 +69,10 @@
 > **Action:** Interactive Challenge
 ```
 (http.user_agent contains "Android 7" and not http.host contains "api." and not http.user_agent contains "Google-Read-Aloud;" and not http.user_agent contains "(compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)") or
-(http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and not http.host contains "cdn." and not http.host contains "api.") or
-(http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)" and not http.host contains "cdn." and not http.host contains "api.") or
+(http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and not http.host contains "api.") or
+(http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)" and not http.host contains "api.") or
 (lower(http.user_agent) contains "android 4") or
-(lower(http.user_agent) contains "android 8" and not http.host contains "cdn." and not http.host contains "api.") or
+(lower(http.user_agent) contains "android 8" and not http.host contains "api.") or
 (lower(http.user_agent) contains "chrome/17") or
 (lower(http.user_agent) contains "chrome/33") or
 (lower(http.user_agent) contains "chrome/34") or
@@ -101,27 +98,27 @@
 (lower(http.user_agent) contains "chrome/83") or
 (lower(http.user_agent) contains "chrome/84") or
 (lower(http.user_agent) contains "chrome/85") or
-(lower(http.user_agent) contains "chrome/87" and not http.host contains "cdn." and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/87" and not http.host contains "api.") or
 (lower(http.user_agent) contains "chrome/88") or
-(lower(http.user_agent) contains "chrome/89") or
-(lower(http.user_agent) contains "chrome/91" and not http.host contains "cdn." and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/92" and not http.host contains "cdn." and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/89" and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/91" and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/92" and not http.host contains "api.") or
 (lower(http.user_agent) contains "chrome/93") or
-(lower(http.user_agent) contains "chrome/94" and not http.host contains "cdn." and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/95" and not http.host contains "cdn." and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/96" and not http.host contains "cdn." and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/94" and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/95" and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/96" and not http.host contains "api.") or
 (lower(http.user_agent) contains "chrome/98") or
 (lower(http.user_agent) contains "crios/121") or
 (lower(http.user_agent) contains "edg/101") or
 (lower(http.user_agent) contains "edg/96") or
-(lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "cdn." and not http.host contains "api.") or
+(lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.") or
 (lower(http.user_agent) contains "firefox/52") or
 (lower(http.user_agent) contains "firefox/57") or
 (lower(http.user_agent) contains "firefox/76") or
 (lower(http.user_agent) contains "firefox/77") or
 (lower(http.user_agent) contains "firefox/79") or
 (lower(http.user_agent) contains "firefox/83") or
-(lower(http.user_agent) contains "html5plus" and not http.host contains "cdn." and not http.host contains "api.") or
+(lower(http.user_agent) contains "html5plus" and not http.host contains "api.") or
 (lower(http.user_agent) contains "mac os x 10_15_6") or
 (lower(http.user_agent) contains "mac os x 10_9_2") or
 (lower(http.user_agent) contains "netfront") or
@@ -322,5 +319,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 09.09.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 10.09.2024 [DD.MM.YYYY]</h4>
 </div>
