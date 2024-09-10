@@ -59,7 +59,8 @@
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/www-sql") or
-(http.user_agent eq "" and not (http.host contains "cdn." or http.host eq "cdn.sefinek.net")) or (http.user_agent eq "" and http.host eq "cdn.sefinek.net") or
+(http.user_agent eq "" and http.host contains "cdn." and not (http.host eq "blocklist.sefinek.net")) or
+(http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or 
 (lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
@@ -70,7 +71,7 @@
 ## 🗑️ Part 2 - Deprecated browsers
 > **Action:** Interactive Challenge
 ```
-(http.user_agent contains "Android 7" and not http.user_agent contains "Google-Read-Aloud;" and not http.user_agent contains "(compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)") or
+(http.user_agent contains "Android 7" and not http.host contains "api." and not http.user_agent contains "Google-Read-Aloud;" and not http.user_agent contains "(compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)") or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and not http.host contains "cdn." and not http.host contains "api.") or
 (http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)" and not http.host contains "cdn." and not http.host contains "api.") or
 (lower(http.user_agent) contains "android 4") or
