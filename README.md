@@ -67,7 +67,7 @@ By implementing these blocks, you can significantly enhance the security of your
 8. Done! The expressions are now active and will start blocking unwanted traffic to your origin server. Make sure to check if your website functions correctly. Visit this repository periodically to use the latest lists.
 
 
-## 😥 DDoS Mitigation (highly recommended)
+## 🔥 DDoS Mitigation (highly recommended)
 It is also recommended to enable DDoS protection in the `Security` tab. Then, navigate to `DDoS` and click the `Deploy a DDoS override` button.
 
 ### Configuration
