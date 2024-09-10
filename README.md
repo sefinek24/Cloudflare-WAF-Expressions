@@ -14,7 +14,7 @@ Please note that these expressions should not be used if you are utilizing [Word
 They are **highly recommended for Node.js applications** built on frameworks like [Express.js](https://expressjs.com) (for example).
 
 > [!TIP]  
-> Make sure to check back here periodically. These lists are updated quite frequently to ensure they stay current and effective against the latest threats.
+> Remember to come back here from time to time. To make sure they remain up to date and effective against the most recent threats, these lists are updated often.
 
 <div align="center">
    <h3>>> <a href="expressions/main.md">View Expressions.md</a> <<</h3>
@@ -24,7 +24,7 @@ They are **highly recommended for Node.js applications** built on frameworks lik
 
 
 ## 🛡️ What can this list block?
-This list is carefully designed to block a wide range of unnecessary and potentially harmful requests to your origin server, enhancing its security. Here’s an overview of what it can block:
+This list has been carefully crafted to improve the security of your origin server by blocking a wide range of pointless and potentially malicious requests. The following is a summary of what it can block:
 
 1. **Sensitive files and directories:**
    - Prevents access to critical files and directories, such as `.git`, `.env`, `.htaccess`, which often contain sensitive information that should never be publicly accessible. It also blocks access to other commonly used configuration files and keys, such as SSH keys and similar items.
@@ -44,7 +44,7 @@ This list is carefully designed to block a wide range of unnecessary and potenti
 6. **Specific IP addresses and ASNs:**
    - Blocks traffic from known malicious IP addresses and ASNs, helping to prevent attacks from sources flagged as malicious. The list also includes some IP addresses associated with botnets.
 
-By implementing these blocks, you can significantly enhance the security of your Node.js applications while reducing the server load caused by unwanted traffic.
+By using this collection, you may significantly increase the security of your website and reduce the quantity of unwanted traffic on your server.
 
 
 ## ❌ What will this list never block?
