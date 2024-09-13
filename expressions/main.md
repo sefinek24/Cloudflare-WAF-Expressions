@@ -56,8 +56,10 @@
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/www-sql") or
-(http.user_agent eq "" and http.host contains "cdn." and not (http.host eq "blocklist.sefinek.net")) or
-(http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or 
+(http.user_agent contains "   " and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
+(http.user_agent contains "   " and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
+(http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
+(http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
 (lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
