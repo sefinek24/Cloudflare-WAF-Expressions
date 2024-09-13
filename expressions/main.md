@@ -115,7 +115,7 @@
 (lower(http.user_agent) contains "chrome/79") or
 (lower(http.user_agent) contains "chrome/80") or
 (lower(http.user_agent) contains "chrome/81") or
-(lower(http.user_agent) contains "chrome/83") or
+(lower(http.user_agent) contains "chrome/83" and not http.host contains "api.") or
 (lower(http.user_agent) contains "chrome/84") or
 (lower(http.user_agent) contains "chrome/85") or
 (lower(http.user_agent) contains "chrome/87" and not http.host contains "api.") or
