@@ -36,7 +36,6 @@
 (http.request.uri.path contains "/sito") or
 (http.request.uri.path contains "/temp") or
 (http.request.uri.path contains "/tmp") or
-(http.request.uri.path contains "/update") or
 (http.request.uri.path contains "/user.action") or
 (http.request.uri.path contains "/webdav") or
 (http.request.uri.path contains "/wp") or
