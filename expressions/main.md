@@ -338,5 +338,5 @@
 
 <div align="right">
     <br>
-    <h4>📥 » Last changes: 13.09.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last changes: 14.09.2024 [DD.MM.YYYY]</h4>
 </div>
