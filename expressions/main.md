@@ -85,7 +85,7 @@
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
 (lower(http.user_agent) contains "wlwmanifest") or
-(lower(http.user_agent) contains "wp_is_mobile") or
+(lower(http.user_agent) contains "wp_is_mobile")
 ```
 
 ## 🗑️ Part 2 - Deprecated browsers
