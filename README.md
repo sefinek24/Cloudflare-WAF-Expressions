@@ -14,7 +14,7 @@ Please note that these expressions should not be used if you are utilizing [Word
 They are **highly recommended for Node.js applications** built on frameworks like [Express.js](https://expressjs.com) (for example).
 
 > [!TIP]  
-> Remember to come back here from time to time. To make sure they remain up to date and effective against the most recent threats, these lists are updated often.
+> Remember to check back here from time to time. These lists are frequently updated to stay effective against the latest threats.
 
 <div align="center">
    <h3>>> <a href="expressions/main.md">View expressions/main.md</a> <<</h3>
