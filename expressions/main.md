@@ -81,7 +81,7 @@
 (http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
 (http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
 (lower(http.user_agent) contains "apache-httpclient") or
-(lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.")
+(lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
 (lower(http.user_agent) contains "wlwmanifest") or
