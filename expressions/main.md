@@ -15,7 +15,6 @@
 (http.request.uri.path contains ".env") or
 (http.request.uri.path contains ".git") or
 (http.request.uri.path contains ".htaccess") or
-(http.request.uri.path contains ".htaccess.bak") or
 (http.request.uri.path contains ".htpasswd") or
 (http.request.uri.path contains ".idea") or
 (http.request.uri.path contains ".kube") or
