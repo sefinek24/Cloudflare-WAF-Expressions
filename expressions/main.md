@@ -1,6 +1,7 @@
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```
+(http.request.uri contains "/wp") or
 (http.request.uri.path contains ".aspx") or
 (http.request.uri.path contains ".bashrc") or
 (http.request.uri.path contains ".bash_history") or
@@ -38,7 +39,6 @@
 (http.request.uri.path contains "/tmp") or
 (http.request.uri.path contains "/user.action") or
 (http.request.uri.path contains "/webdav") or
-(http.request.uri.path contains "/wp") or
 (http.request.uri.path contains "/wp-json") or
 (http.request.uri.path contains "/wp1") or
 (http.request.uri.path contains "/wp2") or
