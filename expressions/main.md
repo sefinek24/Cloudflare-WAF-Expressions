@@ -81,10 +81,11 @@
 (http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
 (http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
 (lower(http.user_agent) contains "apache-httpclient") or
+(lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.")
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
 (lower(http.user_agent) contains "wlwmanifest") or
-(lower(http.user_agent) contains "wp_is_mobile")
+(lower(http.user_agent) contains "wp_is_mobile") or
 ```
 
 ## 🗑️ Part 2 - Deprecated browsers
@@ -133,7 +134,6 @@
 (lower(http.user_agent) contains "crios/121") or
 (lower(http.user_agent) contains "edg/101") or
 (lower(http.user_agent) contains "edg/96") or
-(lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.") or
 (lower(http.user_agent) contains "firefox/52") or
 (lower(http.user_agent) contains "firefox/57") or
 (lower(http.user_agent) contains "firefox/76") or
@@ -144,8 +144,7 @@
 (lower(http.user_agent) contains "mac os x 10_15_6") or
 (lower(http.user_agent) contains "mac os x 10_9_2") or
 (lower(http.user_agent) contains "netfront") or
-(lower(http.user_agent) contains "symbianos") or
-(lower(http.user_agent) contains "ucbrowser")
+(lower(http.user_agent) contains "symbianos")
 ```
 
 ## 🤖 Part 3 - Block unnecessary bots
