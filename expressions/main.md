@@ -49,11 +49,9 @@
 (http.request.uri.path contains "/~sysadm") or
 (http.request.uri.path contains "/~webmaster") or
 (http.request.uri.path contains "authorized_keys") or
-(http.request.uri.path contains "backup.rar") or
-(http.request.uri.path contains "backup.sql") or
-(http.request.uri.path contains "backup.tar") or
-(http.request.uri.path contains "backup.zip") or
+(http.request.uri.path contains "backup.") or
 (http.request.uri.path contains "db.sql") or
+(http.request.uri.path contains "dump.") or
 (http.request.uri.path contains "dump.sql") or
 (http.request.uri.path contains "id_rsa") or
 (http.request.uri.path contains "phpinfo") or
@@ -78,7 +76,7 @@
 (http.request.uri.path eq "/www-sql") or
 (http.user_agent contains "   " and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
 (http.user_agent contains "   " and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
-(http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
+(http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
 (http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
 (lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.") or
