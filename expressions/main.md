@@ -1,3 +1,8 @@
+<div align="right">
+    <br>
+    <h4>📥 » Last changes: 14.09.2024 [DD.MM.YYYY]</h4>
+</div>
+
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```
@@ -334,9 +339,3 @@
 (ip.src eq 91.215.85.29) or
 (ip.src eq 94.179.141.78)
 ```
-
-
-<div align="right">
-    <br>
-    <h4>📥 » Last changes: 14.09.2024 [DD.MM.YYYY]</h4>
-</div>
