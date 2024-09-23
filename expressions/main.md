@@ -235,6 +235,7 @@
 (ip.src eq 124.158.182.34) or
 (ip.src eq 125.25.56.164) or
 (ip.src eq 132.147.137.52) or
+(ip.src eq 134.122.135.138) or
 (ip.src eq 138.121.161.84) or
 (ip.src eq 139.99.8.91) or
 (ip.src eq 143.255.80.134) or
