@@ -306,6 +306,7 @@
 (ip.src eq 2a01:239:2d0:bc00::1) or
 (ip.src eq 34.105.123.106) or
 (ip.src eq 34.105.60.137) or
+(ip.src eq 34.22.221.19) or
 (ip.src eq 34.83.15.88) or
 (ip.src eq 34.83.51.218) or
 (ip.src eq 34.92.250.88) or
