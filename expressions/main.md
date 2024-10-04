@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 14.09.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 04.10.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🌌 Part 1 - Block unnecessary requests
@@ -30,6 +30,7 @@
 (http.request.uri.path contains "/bkp") or
 (http.request.uri.path contains "/cms") or
 (http.request.uri.path contains "/config") or
+(http.request.uri.path contains "/env") or
 (http.request.uri.path contains "/install") or
 (http.request.uri.path contains "/license") or
 (http.request.uri.path contains "/login.action") or
