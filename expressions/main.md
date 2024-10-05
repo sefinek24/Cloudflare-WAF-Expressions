@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 04.10.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 05.10.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🌌 Part 1 - Block unnecessary requests
@@ -37,7 +37,6 @@
 (http.request.uri.path contains "/old") or
 (http.request.uri.path contains "/phpmyadmin") or
 (http.request.uri.path contains "/readme") or
-(http.request.uri.path contains "/setup") or
 (http.request.uri.path contains "/sito") or
 (http.request.uri.path contains "/temp") or
 (http.request.uri.path contains "/tmp") or
