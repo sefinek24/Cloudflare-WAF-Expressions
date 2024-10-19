@@ -62,6 +62,7 @@
 (http.request.uri.path contains "wp-admin") or
 (http.request.uri.path contains "wp-content") or
 (http.request.uri.path contains "wp-includes") or
+(http.request.uri.path contains "\" and not http.host contains "api.") or
 (http.request.uri.path contains "~ftp") or
 (http.request.uri.path contains "~tmp") or
 (http.request.uri.path eq "/.cache") or
