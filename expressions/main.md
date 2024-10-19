@@ -52,7 +52,6 @@
 (http.request.uri.path contains "backup.") or
 (http.request.uri.path contains "db.sql") or
 (http.request.uri.path contains "dump.") or
-(http.request.uri.path contains "dump.sql") or
 (http.request.uri.path contains "id_rsa") or
 (http.request.uri.path contains "phpinfo") or
 (http.request.uri.path contains "server.key") or
