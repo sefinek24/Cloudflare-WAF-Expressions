@@ -329,5 +329,6 @@
 (ip.src eq 52.169.23.0) or
 (ip.src eq 52.178.159.39) or
 (ip.src eq 91.215.85.29) or
+(ip.src eq 82.80.249.249) or
 (ip.src eq 94.179.141.78)
 ```
