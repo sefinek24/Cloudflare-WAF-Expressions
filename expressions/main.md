@@ -87,7 +87,7 @@
 ```
 
 ## 🗑️ Part 2 - Deprecated browsers
-> **Action:** Interactive Challenge
+> **Action:** Managed Challenge
 ```
 (http.user_agent contains "/114.0" and not http.host contains "api.") or
 (http.user_agent contains "/118.0" and not http.host contains "api.") or
