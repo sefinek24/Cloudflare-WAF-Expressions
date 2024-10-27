@@ -7,8 +7,7 @@
 ```
 (http.request.uri contains "/wp") or
 (http.request.uri.path contains ".aspx") or
-(http.request.uri.path contains ".bashrc") or
-(http.request.uri.path contains ".bash_history") or
+(http.request.uri.path contains ".bash") or
 (http.request.uri.path contains ".docker") or
 (http.request.uri.path contains ".DS_Store") or
 (http.request.uri.path contains ".env") or
@@ -76,6 +75,7 @@
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/www-sql") or
 (http.request.uri.path eq "/_all_dbs") or
+(http.request.uri.path eq "wlwmanifest") or
 (http.user_agent contains "   " and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
 (http.user_agent contains "   " and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
 (http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
@@ -84,7 +84,6 @@
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
-(lower(http.user_agent) contains "wlwmanifest") or
 (lower(http.user_agent) contains "wp_is_mobile")
 ```
 
