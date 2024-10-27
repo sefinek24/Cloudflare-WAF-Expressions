@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 20.10.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 27.10.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🌌 Part 1 - Block unnecessary requests
@@ -146,7 +146,8 @@
 (lower(http.user_agent) contains "mac os x 10_15_6") or
 (lower(http.user_agent) contains "mac os x 10_9_2") or
 (lower(http.user_agent) contains "netfront") or
-(lower(http.user_agent) contains "symbianos")
+(lower(http.user_agent) contains "symbianos") or
+(lower(http.user_agent) contains "version/15.4")
 ```
 
 ## 🤖 Part 3 - Block unnecessary bots
