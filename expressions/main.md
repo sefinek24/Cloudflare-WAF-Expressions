@@ -30,6 +30,7 @@
 (http.request.uri.path contains "/bkp") or
 (http.request.uri.path contains "/cms") or
 (http.request.uri.path contains "/config") or
+(http.request.uri.path contains "/debug") or
 (http.request.uri.path contains "/env") or
 (http.request.uri.path contains "/install") or
 (http.request.uri.path contains "/license") or
@@ -74,6 +75,7 @@
 (http.request.uri.path eq "/web") or
 (http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/www-sql") or
+(http.request.uri.path eq "/_all_dbs") or
 (http.user_agent contains "   " and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
 (http.user_agent contains "   " and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
 (http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
@@ -241,12 +243,14 @@
 (ip.src eq 132.147.137.52) or
 (ip.src eq 134.122.135.138) or
 (ip.src eq 138.121.161.84) or
+(ip.src eq 138.68.86.32) or
 (ip.src eq 139.99.8.91) or
 (ip.src eq 143.255.80.134) or
 (ip.src eq 148.230.206.229) or
 (ip.src eq 152.32.213.18) or
 (ip.src eq 156.146.33.76) or
 (ip.src eq 161.49.215.28) or
+(ip.src eq 164.92.244.132) or
 (ip.src eq 165.16.88.161) or
 (ip.src eq 167.99.55.197) or
 (ip.src eq 168.232.174.43) or
@@ -330,7 +334,7 @@
 (ip.src eq 51.145.176.250) or
 (ip.src eq 52.169.23.0) or
 (ip.src eq 52.178.159.39) or
-(ip.src eq 91.215.85.29) or
 (ip.src eq 82.80.249.249) or
+(ip.src eq 91.215.85.29) or
 (ip.src eq 94.179.141.78)
 ```
