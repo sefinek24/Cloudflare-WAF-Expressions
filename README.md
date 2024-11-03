@@ -17,7 +17,8 @@ They are **highly recommended for Node.js applications** built on frameworks lik
 > Remember to check back here from time to time. These lists are frequently updated to stay effective against the latest threats.
 
 <div align="center">
-   <h3>>> <a href="expressions/main.md">View expressions/main.md</a> <<</h3>
+   <h3>>> <a href="expressions/main.md">View Main Expressions</a> <<</h3>
+   <h3><a href="expressions/cache.md">>> View Expressions for Caching <<</a></h3>
    <img src="assets/images/brave_7V0Mb1E81rC0.png" alt="Cloudflare Web Application Firewall (WAF)"> 
    <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
