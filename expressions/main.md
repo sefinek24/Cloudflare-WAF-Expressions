@@ -115,6 +115,7 @@
 (lower(http.user_agent) contains "chrome/64") or
 (lower(http.user_agent) contains "chrome/65") or
 (lower(http.user_agent) contains "chrome/67") or
+(lower(http.user_agent) contains "chrome/68") or
 (lower(http.user_agent) contains "chrome/69") or
 (lower(http.user_agent) contains "chrome/71") or
 (lower(http.user_agent) contains "chrome/77") or
