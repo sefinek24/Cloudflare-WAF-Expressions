@@ -3,6 +3,7 @@
 </div>
 
 With these expressions (for WAF), you can effectively block all unnecessary requests to your server, enhancing its security and performance.
+If you found this repository useful, please consider giving it a star ⭐. Thank you!
 
 > [!IMPORTANT]  
 > Additionally, it is recommended to **disable** the `Bot Fight Mode` function found in the `Security` tab.
@@ -83,10 +84,6 @@ If you have any questions or need help with the expressions, feel free to open a
 
 ## 🤝 Pull requests
 If you have any suggestions or improvements, feel free to open a [Pull request](https://github.com/sefinek/Cloudflare-WAF-Expressions/pulls). Your contributions are highly appreciated and will help keep this list up-to-date and effective against the latest threats.
-
-
-## ❤️ Star the repo
-If you found this repository useful, please consider giving it a **star** ⭐. Thank you!
 
 
 ## 🔖 License
