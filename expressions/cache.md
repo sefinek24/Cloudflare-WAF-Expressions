@@ -5,9 +5,9 @@
 
 - Eligible for cache
 - Edge TTL
-  - Ignore cache-control header and use this TTL
+    - Ignore cache-control header and use this TTL
 - Browser TTL
-  - Respect origin TTL
+    - Respect origin TTL
 
 
 # Cache default file extensions
