@@ -36,7 +36,7 @@
 (http.request.uri.path contains "/phpmyadmin") or
 (http.request.uri.path contains "/readme") or
 (http.request.uri.path contains "/sito") or
-(http.request.uri.path contains "/temp") or
+(http.request.uri.path contains "/temp" and not http.host contains "cdn.") or
 (http.request.uri.path contains "/tmp") or
 (http.request.uri.path contains "/user.action") or
 (http.request.uri.path contains "/webdav") or
