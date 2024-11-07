@@ -88,14 +88,14 @@
 ## 🗑️ Part 2 - Deprecated browsers
 > **Action:** Managed Challenge
 ```
+(http.user_agent contains "/113.0") or
+(http.user_agent contains "/114.0") or
+(http.user_agent contains "/118.0") or
 (http.user_agent contains "Android 7" and not http.host contains "api." and not http.user_agent contains "Google-Read-Aloud;" and not http.user_agent contains "(compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)") or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and not http.host contains "api.") or
 (http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)" and not http.host contains "api.") or
 (lower(http.user_agent) contains "android 8" and not http.host contains "api.") or
 (lower(http.user_agent) contains "chrome/100" and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/113") or
-(lower(http.user_agent) contains "chrome/114") or
-(lower(http.user_agent) contains "chrome/118") or
 (lower(http.user_agent) contains "chrome/17") or
 (lower(http.user_agent) contains "chrome/30") or
 (lower(http.user_agent) contains "chrome/31") or
