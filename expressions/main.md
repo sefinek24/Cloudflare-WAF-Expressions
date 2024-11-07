@@ -88,6 +88,7 @@
 ## 🗑️ Part 2 - Deprecated browsers
 > **Action:** Managed Challenge
 ```
+(http.user_agent contains "/112.0") or
 (http.user_agent contains "/113.0") or
 (http.user_agent contains "/114.0") or
 (http.user_agent contains "/118.0") or
