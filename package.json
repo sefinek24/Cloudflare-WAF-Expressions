@@ -1,0 +1,27 @@
+{
+  "name": "cloudflare-waf-expressions",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sefinek/Cloudflare-WAF-Expressions#readme",
+  "bugs": {
+    "url": "https://github.com/sefinek/Cloudflare-WAF-Expressions/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sefinek/Cloudflare-WAF-Expressions.git"
+  },
+  "license": "MIT",
+  "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "globals": "^15.12.0"
+  }
+}
