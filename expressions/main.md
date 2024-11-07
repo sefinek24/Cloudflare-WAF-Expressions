@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 04.11.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 07.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🌌 Part 1 - Block unnecessary requests
