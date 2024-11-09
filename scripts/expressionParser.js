@@ -15,7 +15,7 @@ module.exports = async () => {
 	log(0, 'Parsing expressions from the markdown file...');
 
 	try {
-		const data = await fs.readFile('expressions/main.md', 'utf8');
+		const data = await fs.readFile('markdown/main.md', 'utf8');
 		const codeBlocks = expressionParser(data);
 		if (!codeBlocks.length) {
 			console.log('Failed! No code blocks found.');
