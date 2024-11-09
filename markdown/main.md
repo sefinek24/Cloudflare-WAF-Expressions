@@ -100,8 +100,8 @@
 (lower(http.user_agent) contains "chrome/100" and not http.host contains "api.") or
 (lower(http.user_agent) contains "chrome/17") or
 (lower(http.user_agent) contains "chrome/30") or
-(lower(http.user_agent) contains "chrome/32") or
 (lower(http.user_agent) contains "chrome/31") or
+(lower(http.user_agent) contains "chrome/32") or
 (lower(http.user_agent) contains "chrome/33") or
 (lower(http.user_agent) contains "chrome/34") or
 (lower(http.user_agent) contains "chrome/35") or
