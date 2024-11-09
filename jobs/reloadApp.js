@@ -1,9 +1,18 @@
 const { exec } = require('node:child_process');
 
-module.exports = () => {
-	exec('pm2 restart app', (err, stdout, stderr) => {
-		if (err) return console.error(err);
-		if (stderr) return console.error(stderr);
-		console.log(stdout);
+const executeCommand = cmd =>
+	new Promise((resolve, reject) => {
+		exec(cmd, (err, stdout, stderr) => {
+			if (err || stderr) reject(err || stderr);
+			else resolve(stdout);
+		});
 	});
+
+module.exports = async () => {
+	try {
+		console.log(await executeCommand('npm install'));
+		console.log(await executeCommand('pm2 restart app'));
+	} catch (err) {
+		console.error(err);
+	}
 };
