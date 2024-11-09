@@ -20,7 +20,8 @@
   "dependencies": {
     "axios": "^1.7.7",
     "cron": "^3.1.9",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "simple-git": "^3.27.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",

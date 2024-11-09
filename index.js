@@ -1,8 +1,23 @@
 require('dotenv').config();
 const { CronJob } = require('cron');
+const simpleGit = require('simple-git');
+const gitClient = simpleGit();
 
-const updateWAFRules = require('./jobs/updateWAFRules.js');
-new CronJob('0 10,15,20 * * *', updateWAFRules, null, true, 'UTC');
+const executeWAFRuleUpdate = require('./jobs/updateWAFRules.js');
 
-const reloadApp = require('./jobs/reloadApp.js');
-new CronJob('5 10,15,20 * * *', reloadApp, null, true, 'UTC');
+const pullAndUpdateWAFRules = async () => {
+	try {
+		const { summary } = await gitClient.pull();
+		console.log(summary);
+
+		await executeWAFRuleUpdate();
+	} catch (error) {
+		console.error(`Git pull failed: ${error.message}`);
+	}
+};
+
+new CronJob('0 10,15,20 * * *', pullAndUpdateWAFRules, null, true, 'UTC');
+(async () => pullAndUpdateWAFRules())();
+
+const restartApp = require('./jobs/reloadApp.js');
+new CronJob('5 10,15,20 * * *', restartApp, null, true, 'UTC');
