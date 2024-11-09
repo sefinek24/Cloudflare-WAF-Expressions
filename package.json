@@ -1,7 +1,7 @@
 {
   "name": "cf-waf-expressions",
   "version": "1.0.0",
-  "description": "",
+  "description": "A script that automatically updates Cloudflare WAF Expression rules across all zones in an administrator account.",
   "homepage": "https://github.com/sefinek/Cloudflare-WAF-Expressions#readme",
   "bugs": {
     "url": "https://github.com/sefinek/Cloudflare-WAF-Expressions/issues"
