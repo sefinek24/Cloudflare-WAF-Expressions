@@ -143,6 +143,7 @@
 (lower(http.user_agent) contains "crios/121") or
 (lower(http.user_agent) contains "edg/101") or
 (lower(http.user_agent) contains "edg/96") or
+(lower(http.user_agent) contains "firefox/45") or
 (lower(http.user_agent) contains "firefox/52") or
 (lower(http.user_agent) contains "firefox/57") or
 (lower(http.user_agent) contains "firefox/76") or
