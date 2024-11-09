@@ -1,14 +1,14 @@
 module.exports = {
 	apps: [{
-		name: 'www',
+		name: 'waf',
 		script: './index.js',
 
 		// Logging configuration
 		log_date_format: 'HH:mm:ss.SSS DD.MM.YYYY',
 		merge_logs: true,
-		log_file: '/home/sefinek/logs/www/sefinek.net/combined.log',
-		out_file: '/home/sefinek/logs/www/sefinek.net/out.log',
-		error_file: '/home/sefinek/logs/www/sefinek.net/error.log',
+		log_file: '/home/sefinek/other/www/waf/combined.log',
+		out_file: '/home/sefinek/other/www/waf/out.log',
+		error_file: '/home/sefinek/other/www/waf/error.log',
 
 		// Application restart policy settings
 		wait_ready: true,
