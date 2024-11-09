@@ -18,8 +18,8 @@ They are **highly recommended for Node.js applications** built on frameworks lik
 > Remember to check back here from time to time. These lists are frequently updated to stay effective against the latest threats.
 
 <div align="center">
-   <h3>>> <a href="expressions/main.md">View Main Expressions</a> <<</h3>
-   <h3><a href="expressions/cache.md">>> View Expressions for Caching <<</a></h3>
+   <h3>>> <a href="markdown/main.md">View Main Expressions</a> <<</h3>
+   <h3><a href="markdown/cache.md">>> View Expressions for Caching <<</a></h3>
    <img src="assets/images/brave_7V0Mb1E81rC0.png" alt="Cloudflare Web Application Firewall (WAF)"> 
    <h3>⭐ » Star the repo if you found it useful « ⭐</h3>
 </div>
@@ -63,7 +63,7 @@ By using this collection, you may significantly increase the security of your we
 2. Select the domain where you want to add the expressions.
 3. Click on the `Security` tab and choose `WAF` from the dropdown list.
 4. In the `Custom rules` tab, click the `Create rule` button.
-5. Copy the expressions from the [expressions/main.md](expressions/main.md) file.
+5. Copy the expressions from the [markdown/main.md](markdown/main.md) file.
 6. Click `Edit expression` and paste the copied expressions.
 7. Click the `Deploy` button to save the changes. Repeat the same process for the remaining parts of the expressions. Remember to select the appropriate Action from the file (Block or Interactive Challenge).
 8. Done! The expressions are now active and will start blocking unwanted traffic to your origin server. Make sure to check if your website functions correctly. Visit this repository periodically to use the latest lists.
@@ -88,6 +88,3 @@ If you have any suggestions or improvements, feel free to open a [Pull request](
 
 ## 🔖 License
 This project is licensed under the [MIT License](LICENSE).
-
-
-[//]: # (<h3>>> <a href="expressions/php">View Expressions.md &#40;servers with PHP installed&#41;</a> <<</h3>)
