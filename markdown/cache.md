@@ -18,9 +18,9 @@
 - Eligible for cache
 
 
-# Bypass cache for blocklist.sefinek.net
-```js
-(http.host eq "blocklist.sefinek.net" and http.request.uri.path.extension in {"txt" "conf"})
-```
-
-- Bypass cache
+[//]: # (# Bypass cache for blocklist.sefinek.net)
+[//]: # (```js)
+[//]: # (&#40;http.host eq "blocklist.sefinek.net" and http.request.uri.path.extension in {"txt" "conf"}&#41;)
+[//]: # (```)
+[//]: # ()
+[//]: # (- Bypass cache)
