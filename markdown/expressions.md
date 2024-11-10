@@ -138,6 +138,7 @@
 (lower(http.user_agent) contains "firefox/45") or
 (lower(http.user_agent) contains "firefox/52") or
 (lower(http.user_agent) contains "firefox/57") or
+(lower(http.user_agent) contains "firefox/62") or
 (lower(http.user_agent) contains "firefox/76") or
 (lower(http.user_agent) contains "firefox/77") or
 (lower(http.user_agent) contains "firefox/79") or
