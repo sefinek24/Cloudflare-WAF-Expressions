@@ -19,6 +19,7 @@
 (http.request.uri.path contains ".mysql_history") or
 (http.request.uri.path contains ".npmrc") or
 (http.request.uri.path contains ".php") or
+(http.request.uri.path contains ".smbcredentials") or
 (http.request.uri.path contains ".sql") or
 (http.request.uri.path contains ".ssh") or
 (http.request.uri.path contains ".vs") or
