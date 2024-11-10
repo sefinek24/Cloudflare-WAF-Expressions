@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 07.11.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 10.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🌌 Part 1 - Block unnecessary requests
@@ -25,7 +25,7 @@
 (http.request.uri.path contains ".vs") or
 (http.request.uri.path contains "//") or
 (http.request.uri.path contains "/actuator") or
-(http.request.uri.path contains "/administrator") or
+(http.request.uri.path contains "/admin") or
 (http.request.uri.path contains "/backup") or
 (http.request.uri.path contains "/bkp") or
 (http.request.uri.path contains "/cms") or
@@ -49,7 +49,7 @@
 (http.request.uri.path contains "/~webmaster") or
 (http.request.uri.path contains "authorized_keys") or
 (http.request.uri.path contains "backup.") or
-(http.request.uri.path contains "db.sql") or
+(http.request.uri.path contains ".sql") or
 (http.request.uri.path contains "dump.") or
 (http.request.uri.path contains "file_put_contents") or
 (http.request.uri.path contains "id_rsa") or
@@ -66,14 +66,10 @@
 (http.request.uri.path contains "~ftp") or
 (http.request.uri.path contains "~tmp") or
 (http.request.uri.path eq "/.cache") or
-(http.request.uri.path eq "/admin") or
 (http.request.uri.path eq "/config.json") or
 (http.request.uri.path eq "/dbadmin") or
 (http.request.uri.path eq "/git") or
 (http.request.uri.path eq "/ssh") or
-(http.request.uri.path eq "/test") or
-(http.request.uri.path eq "/web") or
-(http.request.uri.path eq "/website") or
 (http.request.uri.path eq "/www-sql") or
 (http.request.uri.path eq "/_all_dbs") or
 (http.request.uri.path eq "wlwmanifest") or
@@ -81,8 +77,8 @@
 (http.user_agent contains "   " and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
 (http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
 (http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
-(lower(http.user_agent) contains "apache-httpclient") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.") or
+(lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
 (lower(http.user_agent) contains "wp_is_mobile")
