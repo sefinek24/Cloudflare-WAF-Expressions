@@ -5,6 +5,7 @@
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```
+(http.referer eq "n666888.com") or
 (http.request.uri.path contains ".aspx") or
 (http.request.uri.path contains ".bash") or
 (http.request.uri.path contains ".docker") or
