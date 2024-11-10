@@ -42,7 +42,6 @@
 (http.request.uri.path contains "/tmp" and not http.host contains "cdn.") or
 (http.request.uri.path contains "/user.action") or
 (http.request.uri.path contains "/webdav") or
-(http.request.uri.path contains "/wp") or
 (http.request.uri.path contains "/~adm") or
 (http.request.uri.path contains "/~sysadm") or
 (http.request.uri.path contains "/~webmaster") or
@@ -57,10 +56,6 @@
 (http.request.uri.path contains "server.key") or
 (http.request.uri.path contains "sftp") or
 (http.request.uri.path contains "web.config") or
-(http.request.uri.path contains "wordpress") or
-(http.request.uri.path contains "wp-admin") or
-(http.request.uri.path contains "wp-content") or
-(http.request.uri.path contains "wp-includes") or
 (http.request.uri.path contains "\\" and not http.host contains "api.") or
 (http.request.uri.path contains "~ftp") or
 (http.request.uri.path contains "~tmp") or

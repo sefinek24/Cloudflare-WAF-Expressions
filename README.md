@@ -9,11 +9,6 @@ If you found this repository useful, please consider giving it a star ⭐. Thank
 > Additionally, it is recommended to **disable** the `Bot Fight Mode` function found in the `Security` tab.
 > The purpose of this feature is to detect and stop automated traffic from bots. However, it often blocks safe and legitimate bots, which is not our intention.
 
-
-## ⚠️ Warning
-Please note that these expressions should not be used if you are utilizing [WordPress](https://wordpress.org) or any similar content management system ([CMS](https://en.wikipedia.org/wiki/Content_management_system)), as they may interfere with its normal functioning.
-They are **highly recommended for Node.js applications** built on frameworks like [Express.js](https://expressjs.com) (for example).
-
 > [!TIP]  
 > Remember to check back here from time to time. These lists are frequently updated to stay effective against the latest threats.
 
