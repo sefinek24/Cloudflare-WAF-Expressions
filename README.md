@@ -44,7 +44,8 @@ This list has been carefully crafted to enhance the security of your origin serv
 
 ## 📝 How to Use These Expressions
 ### Automatic (Recommended)
-You can use the JavaScript script from this repository to automatically update rules throughout the day. The script will never update rules at night.
+You can use the JavaScript script from this repository to automatically update rules throughout the day.
+There's no need to add the rules manually; the script will add them automatically.
 
 #### Requirements
 1. [Node.js](https://nodejs.org/en)
