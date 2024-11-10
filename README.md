@@ -57,7 +57,7 @@ There’s no need to add them manually - the script takes care of everything.
    ```bash
    git clone https://github.com/sefinek/Cloudflare-WAF-Expressions.git
    ```
-2. Install required dependencies.
+2. Install the necessary dependencies.
    ```bash
    npm install
    ```
