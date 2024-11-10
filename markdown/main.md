@@ -18,7 +18,6 @@
 (http.request.uri.path contains ".kube") or
 (http.request.uri.path contains ".mysql_history") or
 (http.request.uri.path contains ".npmrc") or
-(http.request.uri.path contains ".php") or
 (http.request.uri.path contains ".smbcredentials") or
 (http.request.uri.path contains ".sql") or
 (http.request.uri.path contains ".ssh") or
@@ -40,7 +39,7 @@
 (http.request.uri.path contains "/readme") or
 (http.request.uri.path contains "/sito") or
 (http.request.uri.path contains "/temp" and not http.host contains "cdn.") or
-(http.request.uri.path contains "/tmp") or
+(http.request.uri.path contains "/tmp" and not http.host contains "cdn.") or
 (http.request.uri.path contains "/user.action") or
 (http.request.uri.path contains "/webdav") or
 (http.request.uri.path contains "/wp") or
@@ -77,7 +76,7 @@
 (http.user_agent contains "   " and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
 (http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
 (http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
-(lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api.") or
+(lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
