@@ -42,15 +42,6 @@ This list has been carefully crafted to enhance the security of your origin serv
    - Blocks traffic from known malicious IP addresses and ASNs to prevent attacks from flagged sources. The list also includes IP addresses associated with botnets.
 
 
-## ❌ What This List Will Never Block
-1. Known and safe search engine bots, such as `Google`, `Bing`, `DuckDuckGo`, `Yandex`, `Yahoo!`, and others.
-2. Outgoing requests from [Node.js](https://nodejs.org) applications using libraries like `node-fetch`, `axios`, `superagent`, `request`, and similar.
-3. Outgoing requests from tools like `curl`, `wget`, `Postman`, `httpie`, `Insomnia`, and similar.
-4. Legitimate traffic from widely used APIs and services essential to your application's functionality.
-5. Webhooks and callbacks from trusted third-party services.
-6. Requests for standard web files, such as `robots.txt`, `ads.txt`, `sitemap.xml`, `humans.txt`, and similar, which are important for proper indexing and ad management.
-
-
 ## 📝 How to Use These Expressions
 ### Automatic (Recommended)
 You can use the JavaScript script from this repository to automatically update rules throughout the day. The script will never update rules at night.
@@ -80,7 +71,7 @@ You can use the JavaScript script from this repository to automatically update r
    pm2 start && pm2 save
    ```
 
-### Manualnie
+### Manually
 1. Log in to your [Cloudflare](https://dash.cloudflare.com) account.
 2. Select the domain where you want to add the expressions.
 3. Click on the `Security` tab, then choose `WAF` from the dropdown menu.
