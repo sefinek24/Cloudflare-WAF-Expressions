@@ -12,10 +12,10 @@ If you find this repository helpful, please consider giving it a star ⭐. Thank
 > Although this feature helps detect and block automated bot traffic, it can inadvertently block safe, legitimate bots as well, which is not our intention.
 
 > [!TIP]  
-> Remember to check back here from time to time. These lists are frequently updated to stay effective against the latest threats.
+> Use a dedicated script to automatically update rules for each zone.
 
 <div align="center">
-   <h3>>> <a href="markdown/main.md">View Main Expressions</a> <<</h3>
+   <h3>>> <a href="markdown/expressions.md">View Main Expressions</a> <<</h3>
    <h3>>> <a href="markdown/cache.md">View Expressions for Caching</a> <<</h3>
 </div>
 
@@ -52,11 +52,40 @@ This list has been carefully crafted to enhance the security of your origin serv
 
 
 ## 📝 How to Use These Expressions
+### Automatic (Recommended)
+You can use the JavaScript script from this repository to automatically update rules throughout the day. The script will never update rules at night.
+
+#### Requirements
+1. [Node.js](https://nodejs.org/en)
+2. [PM2](https://www.npmjs.com/package/pm2)
+3. [Git](https://git-scm.com/downloads)
+
+#### How to Use It
+1. Clone this repository.
+   ```bash
+   git clone https://github.com/sefinek/Cloudflare-WAF-Expressions.git
+   ```
+2. Install required dependencies.
+   ```bash
+   npm install
+   ```
+3. Copy the `.env.default` file and rename it to `.env`.
+   ```bash
+   cp .env.default .env
+   ```
+4. Open the `.env` file and ensure `NODE_ENV` is set to `production`. Paste your Cloudflare token in place of `CF_API_TOKEN`.
+   ![brave_JDyTDLnUFonD.png](assets/images/brave_JDyTDLnUFonD.png)
+5. Run the script 24/7 using PM2.
+   ```bash
+   pm2 start && pm2 save
+   ```
+
+### Manualnie
 1. Log in to your [Cloudflare](https://dash.cloudflare.com) account.
 2. Select the domain where you want to add the expressions.
 3. Click on the `Security` tab, then choose `WAF` from the dropdown menu.
 4. In the `Custom rules` tab, click the `Create rule` button.
-5. Copy the expressions from the [markdown/main.md](markdown/main.md) file.
+5. Copy the expressions from the [markdown/expressions.md](markdown/expressions) file.
 6. Click `Edit expression` and paste the copied expressions.
 7. Click `Deploy` to save the changes. Repeat this process for the remaining parts of the expressions, ensuring you select the appropriate action (Block or Managed Challenge) as specified in the file.
 8. Done! The expressions are now active and will start blocking unwanted traffic to your origin server. Check that your website functions correctly, and visit this repository periodically for the latest updates.
