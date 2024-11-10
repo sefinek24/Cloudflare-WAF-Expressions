@@ -73,7 +73,7 @@ You can use the JavaScript script from this repository to automatically update r
    ```bash
    cp .env.default .env
    ```
-4. Open the `.env` file and ensure `NODE_ENV` is set to `production`. Paste your Cloudflare token in place of `CF_API_TOKEN`.
+4. Open the `.env` file and ensure `NODE_ENV` is set to `production`. Paste your Cloudflare token in place of `CF_API_TOKEN`.<br><br>
    ![brave_JDyTDLnUFonD.png](assets/images/brave_JDyTDLnUFonD.png)
 5. Run the script 24/7 using PM2.
    ```bash
