@@ -1,10 +1,12 @@
 <div align="right">
-    <h4>📥 » Last update: 10.11.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 11.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🌌 Part 1 - Block unnecessary requests
 > **Action:** Block
 ```
+(not ssl) or
+(cf.waf.credential_check.password_leaked) or
 (http.referer eq "http://n666888.com") or
 (http.request.uri.path contains ".aspx") or
 (http.request.uri.path contains ".bash") or
@@ -55,7 +57,7 @@
 (http.request.uri.path contains "server.key") or
 (http.request.uri.path contains "sftp") or
 (http.request.uri.path contains "web.config") or
-(http.request.uri.path contains "\\" and not http.host contains "api.") or
+(http.request.uri.path contains "\\") or
 (http.request.uri.path contains "~ftp") or
 (http.request.uri.path contains "~tmp") or
 (http.request.uri.path eq "/.cache") or
@@ -66,10 +68,8 @@
 (http.request.uri.path eq "/www-sql") or
 (http.request.uri.path eq "/_all_dbs") or
 (http.request.uri.path eq "wlwmanifest") or
-(http.user_agent contains "   " and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net") or
-(http.user_agent contains "   " and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
-(http.user_agent eq "" and http.host contains "cdn." and not http.host eq "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
-(http.user_agent eq "" and not (http.host contains "api." or http.host contains "cdn." or http.host eq "blocklist.sefinek.net")) or
+(http.user_agent contains "   ") or
+(http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "ipconfig") or
@@ -338,5 +338,6 @@
 (ip.src eq 91.215.85.29) or
 (ip.src eq 188.134.80.97) or
 (ip.src eq 93.91.196.190) or
+(ip.src eq 5.75.225.67) or
 (ip.src eq 94.179.141.78)
 ```

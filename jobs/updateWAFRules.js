@@ -38,7 +38,7 @@ const updateFilter = async (zoneId, filterId, expression, oldExpression) => {
 	try {
 		if (oldExpression === expression) return log(0, 'No update needed. Rule is already up-to-date.');
 
-		log(0, 'Discrepancy detected, updating rule...');
+		log(0, 'Discrepancy detected, updating the rule...');
 		const res = await axios.put(`/zones/${zoneId}/filters/${filterId}`, { id: filterId, expression });
 		if (!res.data.success) throw new Error(`Update failed. Details: ${res.data?.errors}`);
 
