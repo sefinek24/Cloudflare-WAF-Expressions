@@ -2,7 +2,7 @@
     <h4>📥 » Last update: 11.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
-## 🌌 Part 1 - Block unnecessary requests
+## 🔥 Part 1 - Main firewall
 > **Action:** Block
 ```
 (not ssl) or
@@ -200,7 +200,7 @@
 (lower(http.user_agent) contains "zgrab")
 ```
 
-## 🌍 Part 4 - Block bots, AS Num or IP
+## 🌍 Part 4 - Block bots, ASNs and IPs
 > **Action:** Block
 ```
 (ip.geoip.asnum eq 208323) or
