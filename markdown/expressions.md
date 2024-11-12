@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 11.11.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 12.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🔥 Part 1 - Main firewall
@@ -82,7 +82,7 @@
 ```
 (http.user_agent contains "/112.0") or
 (http.user_agent contains "/113.0") or
-(http.user_agent contains "/114.0") or
+(http.user_agent contains "/114.0" and not http.user_agent contains "OPR/114.0") or
 (http.user_agent contains "/118.0") or
 (http.user_agent contains "Android 7" and not http.host contains "api." and not http.user_agent contains "Google-Read-Aloud;" and not http.user_agent contains "(compatible; PetalBot;+https://webmaster.petalsearch.com/site/petalbot)") or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and not http.host contains "api.") or
@@ -119,18 +119,18 @@
 (lower(http.user_agent) contains "chrome/79") or
 (lower(http.user_agent) contains "chrome/80") or
 (lower(http.user_agent) contains "chrome/81") or
-(lower(http.user_agent) contains "chrome/83" and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/83") or
 (lower(http.user_agent) contains "chrome/84") or
 (lower(http.user_agent) contains "chrome/85") or
-(lower(http.user_agent) contains "chrome/87" and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/87") or
 (lower(http.user_agent) contains "chrome/88") or
-(lower(http.user_agent) contains "chrome/89" and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/91" and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/92" and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/89") or
+(lower(http.user_agent) contains "chrome/91") or
+(lower(http.user_agent) contains "chrome/92") or
 (lower(http.user_agent) contains "chrome/93") or
-(lower(http.user_agent) contains "chrome/94" and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/95" and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/96" and not http.host contains "api.") or
+(lower(http.user_agent) contains "chrome/94") or
+(lower(http.user_agent) contains "chrome/95") or
+(lower(http.user_agent) contains "chrome/96") or
 (lower(http.user_agent) contains "chrome/98") or
 (lower(http.user_agent) contains "crios/121") or
 (lower(http.user_agent) contains "edg/101") or
@@ -339,6 +339,5 @@
 (ip.src eq 188.134.80.97) or
 (ip.src eq 93.91.196.190) or
 (ip.src eq 5.75.225.67) or
-(ip.src eq 94.182.63.113) or
 (ip.src eq 94.179.141.78)
 ```
