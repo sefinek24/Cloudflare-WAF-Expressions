@@ -67,7 +67,7 @@
 (http.request.uri.path eq "/_all_dbs") or
 (http.request.uri.path eq "wlwmanifest") or
 (http.user_agent contains "   ") or
-(http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
+(http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "go-http-client" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
