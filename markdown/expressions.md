@@ -5,7 +5,6 @@
 ## 🔥 Part 1 - Main firewall
 > **Action:** Block
 ```
-(not ssl) or
 (cf.waf.credential_check.password_leaked) or
 (http.referer eq "http://n666888.com") or
 (http.request.uri.path contains ".aspx") or
@@ -48,7 +47,6 @@
 (http.request.uri.path contains "/~webmaster") or
 (http.request.uri.path contains "authorized_keys") or
 (http.request.uri.path contains "backup.") or
-(http.request.uri.path contains ".sql") or
 (http.request.uri.path contains "dump.") or
 (http.request.uri.path contains "file_put_contents") or
 (http.request.uri.path contains "id_rsa") or
@@ -70,11 +68,13 @@
 (http.request.uri.path eq "wlwmanifest") or
 (http.user_agent contains "   ") or
 (http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net" and not http.request.uri.path contains "/resources") or
+(lower(http.request.uri.path) contains "Go-http-client" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
-(lower(http.user_agent) contains "wp_is_mobile")
+(lower(http.user_agent) contains "wp_is_mobile") or
+(not ssl)
 ```
 
 ## 🗑️ Part 2 - Deprecated browsers
