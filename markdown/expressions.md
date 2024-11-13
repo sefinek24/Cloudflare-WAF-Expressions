@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 12.11.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 13.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🔥 Part 1 - Main firewall
@@ -67,6 +67,7 @@
 (http.request.uri.path eq "/_all_dbs") or
 (http.request.uri.path eq "wlwmanifest") or
 (http.user_agent contains "   ") or
+(http.request.full_uri eq "https://api.sefinek.net/api/v2/random/animal/cat" and ip.geoip.asnum eq 8075 and http.user_agent eq "python-requests/2.31.0") or
 (http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "go-http-client" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
@@ -338,6 +339,5 @@
 (ip.src eq 188.134.80.97) or
 (ip.src eq 93.91.196.190) or
 (ip.src eq 5.75.225.67) or
-(ip.src eq 20.191.210.159) or
 (ip.src eq 94.179.141.78)
 ```
