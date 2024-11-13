@@ -7,7 +7,9 @@
 ```
 (cf.waf.credential_check.password_leaked) or
 (http.referer eq "http://n666888.com") or
+(http.request.full_uri eq "https://api.sefinek.net/api/v2/random/animal/cat" and ip.geoip.asnum eq 8075 and http.user_agent eq "python-requests/2.31.0") or
 (http.request.uri.path contains ".aspx") or
+(http.request.uri.path contains ".aws") or
 (http.request.uri.path contains ".bash") or
 (http.request.uri.path contains ".docker") or
 (http.request.uri.path contains ".DS_Store") or
@@ -29,6 +31,7 @@
 (http.request.uri.path contains "/bkp") or
 (http.request.uri.path contains "/cms") or
 (http.request.uri.path contains "/config") or
+(http.request.uri.path contains "/credentials") or
 (http.request.uri.path contains "/debug") or
 (http.request.uri.path contains "/env") or
 (http.request.uri.path contains "/install") or
@@ -47,9 +50,11 @@
 (http.request.uri.path contains "/~webmaster") or
 (http.request.uri.path contains "authorized_keys") or
 (http.request.uri.path contains "backup.") or
+(http.request.uri.path contains "Dockerfile") or
 (http.request.uri.path contains "dump.") or
 (http.request.uri.path contains "file_put_contents") or
 (http.request.uri.path contains "id_rsa") or
+(http.request.uri.path contains "keys.json") or
 (http.request.uri.path contains "pboot:if") or
 (http.request.uri.path contains "phpinfo") or
 (http.request.uri.path contains "server.key") or
@@ -67,14 +72,12 @@
 (http.request.uri.path eq "/_all_dbs") or
 (http.request.uri.path eq "wlwmanifest") or
 (http.user_agent contains "   ") or
-(http.request.full_uri eq "https://api.sefinek.net/api/v2/random/animal/cat" and ip.geoip.asnum eq 8075 and http.user_agent eq "python-requests/2.31.0") or
 (http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "go-http-client" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
-(lower(http.user_agent) contains "ipconfig") or
-(lower(http.user_agent) contains "knights%20of%20degen") or
-(lower(http.user_agent) contains "wp_is_mobile")
+(lower(http.user_agent) contains "private_keys.txt") or
+(lower(http.user_agent) contains "secrets.json")
 ```
 
 ## 🗑️ Part 2 - Deprecated browsers
