@@ -73,8 +73,7 @@
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
-(lower(http.user_agent) contains "wp_is_mobile") or
-(not ssl)
+(lower(http.user_agent) contains "wp_is_mobile")
 ```
 
 ## 🗑️ Part 2 - Deprecated browsers
