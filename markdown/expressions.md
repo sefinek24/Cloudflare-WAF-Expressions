@@ -69,7 +69,7 @@
 (http.user_agent contains "   ") or
 (http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
-(lower(http.user_agent) contains "go-http-client" and not http.host contains "api." and not http.host contains "cdn.") or
+(lower(http.user_agent) contains "go-http-client" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "ipconfig") or
 (lower(http.user_agent) contains "knights%20of%20degen") or
