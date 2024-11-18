@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 13.11.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 18.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🔥 Part 1 - Main firewall
@@ -14,7 +14,7 @@
 (http.request.uri.path contains ".docker") or
 (http.request.uri.path contains ".DS_Store") or
 (http.request.uri.path contains ".env") or
-(http.request.uri.path contains ".git") or
+(http.request.uri.path contains ".git" and not http.request.uri.path contains "commons-pages.groups.new-pages.import.gitlab") or
 (http.request.uri.path contains ".htaccess") or
 (http.request.uri.path contains ".htpasswd") or
 (http.request.uri.path contains ".idea") or
