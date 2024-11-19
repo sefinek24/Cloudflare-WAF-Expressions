@@ -23,22 +23,22 @@ If you find this repository helpful, please consider giving it a star ⭐. Thank
 ## 🛡️ What Can This List Block?
 This list has been carefully crafted to enhance the security of your origin server by blocking a wide range of unnecessary and potentially malicious requests. Here is a summary of what it can block:
 
-1. **Sensitive Files and Directories:**
+- **Sensitive Files and Directories:**
 Blocks access to critical files and directories like `.git`, `.env`, and `.htaccess`, which often contain sensitive information that should remain private. It also prevents access to other commonly used configuration files and sensitive keys, such as SSH keys.
 
-2. **Common Attack Vectors:**
+- **Common Attack Vectors:**
 Blocks URLs with patterns commonly used in attacks, helping to prevent attempts to exploit known application vulnerabilities.
 
-3. **Backup Files:**
+- **Backup Files:**
 Blocks requests for backup files that could contain sensitive data.
 
-4. **Outdated Browsers:**
+- **Outdated Browsers:**
 Blocks outdated browser versions often used by bots for automated attacks or unnecessary web crawling. It can also block DDoS attacks from botnets, which frequently use outdated user agents.
 
-5. **Unwanted Bots:**
+- **Unwanted Bots:**
 Blocks various unwanted, unnecessary web crawlers and known malicious bots. This helps reduce unwanted bot traffic and alleviate server resource strain.
 
-6. **Specific IP Addresses and ASNs:**
+- **Specific IP Addresses and ASNs:**
 Blocks traffic from known malicious IP addresses and ASNs to prevent attacks from flagged sources. The list also includes IP addresses associated with botnets.
 
 
