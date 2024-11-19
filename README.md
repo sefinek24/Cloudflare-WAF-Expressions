@@ -19,22 +19,22 @@ If you find this repository helpful, please consider giving it a star ⭐. Thank
 This list has been carefully crafted to enhance the security of your origin server by blocking a wide range of unnecessary and potentially malicious requests. Here is a summary of what it can block:
 
 - **Sensitive Files and Directories:**
-Blocks access to critical files and directories like `.git`, `.env`, and `.htaccess`, which often contain sensitive information that should remain private. It also prevents access to other commonly used configuration files and sensitive keys, such as SSH keys.
+  Blocks access to critical files and directories like `.git`, `.env`, and `.htaccess`, which often contain sensitive information that should remain private. It also prevents access to other commonly used configuration files and sensitive keys, such as SSH keys.
 
 - **Common Attack Vectors:**
-Blocks URLs with patterns commonly used in attacks, helping to prevent attempts to exploit known application vulnerabilities.
+  Blocks URLs with patterns commonly used in attacks, helping to prevent attempts to exploit known application vulnerabilities.
 
 - **Backup Files:**
-Blocks requests for backup files that could contain sensitive data.
+  Blocks requests for backup files that could contain sensitive data.
 
 - **Outdated Browsers:**
-Blocks outdated browser versions often used by bots for automated attacks or unnecessary web crawling. It can also block DDoS attacks from botnets, which frequently use outdated user agents.
+  Blocks outdated browser versions often used by bots for automated attacks or unnecessary web crawling. It can also block DDoS attacks from botnets, which frequently use outdated user agents.
 
 - **Unwanted Bots:**
-Blocks various unwanted, unnecessary web crawlers and known malicious bots. This helps reduce unwanted bot traffic and alleviate server resource strain.
+  Blocks various unwanted, unnecessary web crawlers and known malicious bots. This helps reduce unwanted bot traffic and alleviate server resource strain.
 
 - **Specific IP Addresses and ASNs:**
-Blocks traffic from known malicious IP addresses and ASNs to prevent attacks from flagged sources. The list also includes IP addresses associated with botnets.
+  Blocks traffic from known malicious IP addresses and ASNs to prevent attacks from flagged sources. The list also includes IP addresses associated with botnets.
 
 <div align="center">
    <h3>>> <a href="markdown/expressions.md">View Main Expressions</a> <<</h3>
