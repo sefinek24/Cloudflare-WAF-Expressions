@@ -1,8 +1,8 @@
 <div align="center">
-    <h1>☁️ Cloudflare Web Application Firewall Expressions</h1>
+    <h1>☁️ Cloudflare Web Application Firewall Rules</h1>
 </div>
 
-With these rules for WAF, you can effectively block all unnecessary requests to your server, enhancing its security.
+With these expressions for WAF, you can effectively block all unnecessary requests to your server, enhancing its security.
 If you find this repository helpful, please consider giving it a star ⭐. Thank you!
 
 <img src="assets/images/brave_7V0Mb1E81rC0.png" alt="Cloudflare Web Application Firewall (WAF)"> 
