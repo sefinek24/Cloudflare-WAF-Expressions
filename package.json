@@ -1,6 +1,6 @@
 {
   "name": "cf-waf-expressions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A script that automatically updates Cloudflare WAF Expression rules across all zones in an administrator account.",
   "homepage": "https://github.com/sefinek/Cloudflare-WAF-Expressions#readme",
   "bugs": {
@@ -19,12 +19,12 @@
   },
   "dependencies": {
     "axios": "^1.7.7",
-    "cron": "^3.1.9",
+    "cron": "^3.2.1",
     "dotenv": "^16.4.5",
     "simple-git": "^3.27.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.14.0",
+    "@eslint/js": "^9.15.0",
     "globals": "^15.12.0"
   }
 }

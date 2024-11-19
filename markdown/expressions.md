@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 18.11.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 19.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🔥 Part 1 - Main firewall
@@ -11,6 +11,7 @@
 (http.request.uri.path contains ".aspx") or
 (http.request.uri.path contains ".aws") or
 (http.request.uri.path contains ".bash") or
+(http.request.uri.path contains ".credentials") or
 (http.request.uri.path contains ".docker") or
 (http.request.uri.path contains ".DS_Store") or
 (http.request.uri.path contains ".env") or
@@ -76,7 +77,7 @@
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "go-http-client" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
-(lower(http.user_agent) contains "private_keys.txt") or
+(lower(http.user_agent) contains "private_keys") or
 (lower(http.user_agent) contains "secrets.json")
 ```
 
@@ -206,141 +207,52 @@
 ## 🌍 Part 4 - Block bots, ASNs and IPs
 > **Action:** Block
 ```
-(ip.geoip.asnum eq 208323) or
-(ip.geoip.asnum eq 210630) or
-(ip.geoip.asnum eq 55960) or
-(ip.geoip.asnum eq 60729) or
-(ip.src eq 102.22.20.58) or
-(ip.src eq 102.68.128.195) or
-(ip.src eq 103.106.114.106) or
-(ip.src eq 103.151.30.155) or
-(ip.src eq 103.153.134.22) or
-(ip.src eq 103.156.70.38) or
-(ip.src eq 103.165.155.254) or
-(ip.src eq 103.169.129.4) or
-(ip.src eq 103.169.254.9) or
-(ip.src eq 103.171.156.218) or
-(ip.src eq 103.177.9.104) or
-(ip.src eq 103.188.252.66) or
-(ip.src eq 103.208.27.214) or
-(ip.src eq 103.24.213.118) or
-(ip.src eq 103.242.104.182) or
-(ip.src eq 103.250.130.104) or
-(ip.src eq 103.46.4.7) or
-(ip.src eq 103.6.177.174) or
-(ip.src eq 103.68.214.97) or
-(ip.src eq 109.202.99.46) or
-(ip.src eq 113.164.94.137) or
-(ip.src eq 114.129.2.82) or
-(ip.src eq 114.132.202.246) or
-(ip.src eq 114.132.202.78) or
-(ip.src eq 115.127.116.242) or
-(ip.src eq 118.101.56.156) or
-(ip.src eq 12.127.44.138) or
-(ip.src eq 120.28.217.209) or
-(ip.src eq 122.155.165.191) or
-(ip.src eq 122.185.198.242) or
-(ip.src eq 124.158.182.34) or
-(ip.src eq 125.25.56.164) or
-(ip.src eq 132.147.137.52) or
-(ip.src eq 134.122.135.138) or
-(ip.src eq 138.121.161.84) or
-(ip.src eq 138.68.86.32) or
-(ip.src eq 139.99.8.91) or
-(ip.src eq 143.255.80.134) or
-(ip.src eq 148.230.206.229) or
-(ip.src eq 152.32.213.18) or
-(ip.src eq 156.146.33.76) or
-(ip.src eq 161.49.215.28) or
-(ip.src eq 164.92.244.132) or
-(ip.src eq 165.16.88.161) or
-(ip.src eq 167.99.55.197) or
-(ip.src eq 168.232.174.43) or
-(ip.src eq 172.183.241.1) or
-(ip.src eq 175.100.91.212) or
-(ip.src eq 175.22.148.13) or
-(ip.src eq 177.130.104.106) or
-(ip.src eq 177.234.240.123) or
-(ip.src eq 177.54.226.50) or
-(ip.src eq 177.70.72.103) or
-(ip.src eq 177.87.144.122) or
-(ip.src eq 179.1.192.5) or
-(ip.src eq 179.43.188.122) or
-(ip.src eq 179.49.162.133) or
-(ip.src eq 180.211.183.2) or
-(ip.src eq 180.31.234.71) or
-(ip.src eq 184.72.145.180) or
-(ip.src eq 184.82.244.173) or
-(ip.src eq 185.130.44.86) or
-(ip.src eq 185.220.101.37) or
-(ip.src eq 185.255.45.241) or
-(ip.src eq 187.188.101.205) or
-(ip.src eq 187.204.18.213) or
-(ip.src eq 188.136.154.43) or
-(ip.src eq 189.35.11.247) or
-(ip.src eq 189.48.88.204) or
-(ip.src eq 190.102.139.146) or
-(ip.src eq 190.83.12.220) or
-(ip.src eq 190.94.212.198) or
-(ip.src eq 190.94.212.240) or
-(ip.src eq 191.179.216.84) or
-(ip.src eq 191.240.153.144) or
-(ip.src eq 191.37.1.155) or
-(ip.src eq 193.176.211.244) or
-(ip.src eq 194.126.177.84) or
-(ip.src eq 194.163.149.123) or
-(ip.src eq 199.167.236.12) or
-(ip.src eq 200.174.198.136) or
-(ip.src eq 200.174.198.144) or
-(ip.src eq 200.174.198.222) or
-(ip.src eq 200.174.198.224) or
-(ip.src eq 200.174.198.92) or
-(ip.src eq 2001:bc8:182c:1005::1) or
-(ip.src eq 201.131.239.233) or
-(ip.src eq 201.77.128.158) or
-(ip.src eq 201.77.96.149) or
-(ip.src eq 202.47.181.150) or
-(ip.src eq 202.47.88.2) or
-(ip.src eq 202.62.84.210) or
-(ip.src eq 205.185.125.235) or
-(ip.src eq 209.209.28.22) or
-(ip.src eq 212.174.79.169) or
-(ip.src eq 213.232.87.230) or
-(ip.src eq 213.232.87.232) or
-(ip.src eq 213.232.87.234) or
-(ip.src eq 216.87.69.230) or
-(ip.src eq 216.9.224.141) or
-(ip.src eq 217.182.194.108) or
-(ip.src eq 24.172.34.114) or
-(ip.src eq 2400:e920:0:8:250:56ff:fe94:474e) or
-(ip.src eq 2a01:239:2d0:bc00::1) or
-(ip.src eq 36.182.49.26) or
-(ip.src eq 36.255.84.69) or
-(ip.src eq 36.91.135.141) or
-(ip.src eq 36.95.142.35) or
-(ip.src eq 37.120.192.154) or
-(ip.src eq 4.227.97.45) or
-(ip.src eq 43.134.1.40) or
-(ip.src eq 43.134.121.40) or
-(ip.src eq 43.153.207.93) or
-(ip.src eq 45.164.174.27) or
-(ip.src eq 45.227.195.121) or
-(ip.src eq 45.231.223.252) or
-(ip.src eq 45.236.170.234) or
-(ip.src eq 45.66.35.22) or
-(ip.src eq 45.70.236.150) or
-(ip.src eq 46.161.196.222) or
-(ip.src eq 46.2.5.84) or
-(ip.src eq 47.106.193.183) or
-(ip.src eq 47.51.30.226) or
-(ip.src eq 51.145.176.250) or
-(ip.src eq 52.169.23.0) or
-(ip.src eq 52.178.159.39) or
-(ip.src eq 77.238.225.41) or
-(ip.src eq 82.80.249.249) or
-(ip.src eq 91.215.85.29) or
-(ip.src eq 188.134.80.97) or
-(ip.src eq 93.91.196.190) or
-(ip.src eq 5.75.225.67) or
-(ip.src eq 94.179.141.78)
+(ip.geoip.asnum in {208323 210630 55960 60729}) or
+(ip.src in {
+    102.22.20.58          102.68.128.195        103.106.114.106
+    103.151.30.155        103.153.134.22        103.156.70.38
+    103.165.155.254       103.169.129.4         103.169.254.9
+    103.171.156.218       103.177.9.104         103.188.252.66
+    103.208.27.214        103.24.213.118        103.242.104.182
+    103.250.130.104       103.46.4.7            103.6.177.174
+    103.68.214.97         109.202.99.46         113.164.94.137
+    114.129.2.82          114.132.202.246       114.132.202.78
+    115.127.116.242       118.101.56.156        12.127.44.138
+    120.28.217.209        122.155.165.191       122.185.198.242
+    124.158.182.34        125.25.56.164         132.147.137.52
+    134.122.135.138       138.121.161.84        138.68.86.32
+    139.99.8.91           143.255.80.134        148.230.206.229
+    152.32.213.18         156.146.33.76         161.49.215.28
+    164.92.244.132        165.16.88.161         167.99.55.197
+    168.232.174.43        172.183.241.1         175.100.91.212
+    175.22.148.13         177.130.104.106       177.234.240.123
+    177.54.226.50         177.70.72.103         177.87.144.122
+    179.1.192.5           179.43.188.122        179.49.162.133
+    180.211.183.2         180.31.234.71         184.72.145.180
+    184.82.244.173        185.130.44.86         185.220.101.37
+    185.255.45.241        187.188.101.205       187.204.18.213
+    188.134.80.97         188.136.154.43        189.35.11.247
+    189.48.88.204         190.102.139.146       190.83.12.220
+    190.94.212.198        190.94.212.240        191.179.216.84
+    191.240.153.144       191.37.1.155          193.176.211.244
+    194.126.177.84        194.163.149.123       199.167.236.12
+    20.191.210.159        200.174.198.136       200.174.198.144
+    200.174.198.222       200.174.198.224       200.174.198.92
+    2001:bc8:182c:1005::1 201.131.239.233       201.77.128.158
+    201.77.96.149         202.47.181.150        202.47.88.2
+    202.62.84.210         205.185.125.235       209.209.28.22
+    212.174.79.169        213.232.87.230        213.232.87.232
+    213.232.87.234        216.87.69.230         216.9.224.141
+    217.182.194.108       24.172.34.114         2400:e920:0:8:250:56ff:fe94:474e
+    2a01:239:2d0:bc00::1  36.182.49.26          36.255.84.69
+    36.91.135.141         36.95.142.35          37.120.192.154
+    4.227.97.45           43.134.1.40           43.134.121.40
+    43.153.207.93         45.164.174.27         45.227.195.121
+    45.231.223.252        45.236.170.234        45.66.35.22
+    45.70.236.150         46.161.196.222        46.2.5.84
+    47.106.193.183        47.51.30.226          5.75.225.67
+    51.145.176.250        52.169.23.0           52.178.159.39
+    77.238.225.41         82.80.249.249         91.215.85.29
+    93.91.196.190         94.179.141.78
+}) 
 ```
