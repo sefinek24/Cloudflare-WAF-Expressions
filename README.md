@@ -53,21 +53,21 @@ There's no need to add them manually - the script takes care of everything.
 3. [Git](https://git-scm.com/downloads)
 
 #### How to Use It
-1. Clone this repository.
+1. Clone this repository:
    ```bash
    git clone https://github.com/sefinek/Cloudflare-WAF-Expressions.git
    ```
-2. Install the necessary dependencies.
+2. Install the necessary dependencies:
    ```bash
    npm install
    ```
-3. Copy the `.env.default` file and rename it to `.env`.
+3. Copy the `.env.default` file and rename it to `.env`:
    ```bash
    cp .env.default .env
    ```
 4. Open the `.env` file and ensure `NODE_ENV` is set to `production`. Paste your Cloudflare token in place of `CF_API_TOKEN`.<br><br>
    ![brave_JDyTDLnUFonD.png](assets/images/brave_JDyTDLnUFonD.png)
-5. Run the script 24/7 using PM2.
+5. Run the script 24/7 using PM2:
    ```bash
    pm2 start && pm2 save
    ```
