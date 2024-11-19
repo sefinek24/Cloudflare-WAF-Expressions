@@ -207,7 +207,7 @@
 ## 🌍 Part 4 - Block bots, ASNs and IPs
 > **Action:** Block
 ```
-(ip.geoip.asnum in {208323 210630 55960 60729}) or
+(ip.geoip.country eq "T1") or
 (ip.src in {
     102.22.20.58          102.68.128.195        103.106.114.106
     103.151.30.155        103.153.134.22        103.156.70.38
