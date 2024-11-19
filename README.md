@@ -24,31 +24,31 @@ If you find this repository helpful, please consider giving it a star ⭐. Thank
 This list has been carefully crafted to enhance the security of your origin server by blocking a wide range of unnecessary and potentially malicious requests. Here is a summary of what it can block:
 
 1. **Sensitive Files and Directories:**
-   - Blocks access to critical files and directories like `.git`, `.env`, and `.htaccess`, which often contain sensitive information that should remain private. It also prevents access to other commonly used configuration files and sensitive keys, such as SSH keys.
+Blocks access to critical files and directories like `.git`, `.env`, and `.htaccess`, which often contain sensitive information that should remain private. It also prevents access to other commonly used configuration files and sensitive keys, such as SSH keys.
 
 2. **Common Attack Vectors:**
-   - Blocks URLs with patterns commonly used in attacks, helping to prevent attempts to exploit known application vulnerabilities.
+Blocks URLs with patterns commonly used in attacks, helping to prevent attempts to exploit known application vulnerabilities.
 
 3. **Backup Files:**
-   - Blocks requests for backup files that could contain sensitive data.
+Blocks requests for backup files that could contain sensitive data.
 
 4. **Outdated Browsers:**
-   - Identifies and blocks outdated browser versions often used by bots for automated attacks or unnecessary web crawling. It can also block DDoS attacks from botnets, which frequently use outdated user agents.
+Blocks outdated browser versions often used by bots for automated attacks or unnecessary web crawling. It can also block DDoS attacks from botnets, which frequently use outdated user agents.
 
-5. **Unwanted bots:**
-   - Blocks various unwanted, unnecessary web crawlers and known malicious bots. This helps reduce unwanted bot traffic and alleviate server resource strain.
+5. **Unwanted Bots:**
+Blocks various unwanted, unnecessary web crawlers and known malicious bots. This helps reduce unwanted bot traffic and alleviate server resource strain.
 
 6. **Specific IP Addresses and ASNs:**
-   - Blocks traffic from known malicious IP addresses and ASNs to prevent attacks from flagged sources. The list also includes IP addresses associated with botnets.
+Blocks traffic from known malicious IP addresses and ASNs to prevent attacks from flagged sources. The list also includes IP addresses associated with botnets.
 
 
 ## 📝 How to Use These Expressions
 ### Automatic (Recommended)
-You can use the JavaScript script from this repository to automatically update the rules throughout the day.
-There’s no need to add them manually - the script takes care of everything.
+You can use the JavaScript code from this repository to automatically update the rules throughout the day.
+There's no need to add them manually - the script takes care of everything.
 
 #### Requirements
-1. [Node.js](https://nodejs.org/en)
+1. [Node.js + npm](https://nodejs.org/en)
 2. [PM2](https://www.npmjs.com/package/pm2)
 3. [Git](https://git-scm.com/downloads)
 
