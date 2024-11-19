@@ -12,7 +12,7 @@ If you find this repository helpful, please consider giving it a star ⭐. Thank
 > Although this feature helps detect and block automated bot traffic, it can inadvertently block safe, legitimate bots as well, which is not our intention.
 
 > [!TIP]  
-> Use a dedicated script to automatically update rules for each zone.
+> Use a [dedicated script](#automatic-installation) to automatically update rules for each zone.
 
 
 ## 🛡️ What Can This List Block?
@@ -43,7 +43,7 @@ Blocks traffic from known malicious IP addresses and ASNs to prevent attacks fro
 
 
 ## 📝 How to Use These Expressions
-### Automatic (Recommended)
+### Automatic (Recommended)<div id="automatic-installation"></div>
 You can use the JavaScript code from this repository to automatically update the rules throughout the day.
 There's no need to add them manually - the script takes care of everything.
 
