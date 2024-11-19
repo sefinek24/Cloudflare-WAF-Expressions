@@ -59,7 +59,7 @@ There's no need to add them manually - the script takes care of everything.
    ```
 2. Install the necessary dependencies:
    ```bash
-   npm install
+   cd Cloudflare-WAF-Expressions && npm i
    ```
 3. Copy the `.env.default` file and rename it to `.env`:
    ```bash
