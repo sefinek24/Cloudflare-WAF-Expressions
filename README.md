@@ -2,7 +2,7 @@
     <h1>☁️ Cloudflare Web Application Firewall Expressions</h1>
 </div>
 
-With these expressions for WAF, you can effectively block all unnecessary requests to your server, enhancing its security.
+With these rules for WAF, you can effectively block all unnecessary requests to your server, enhancing its security.
 If you find this repository helpful, please consider giving it a star ⭐. Thank you!
 
 <img src="assets/images/brave_7V0Mb1E81rC0.png" alt="Cloudflare Web Application Firewall (WAF)"> 
@@ -13,11 +13,6 @@ If you find this repository helpful, please consider giving it a star ⭐. Thank
 
 > [!TIP]  
 > Use a dedicated script to automatically update rules for each zone.
-
-<div align="center">
-   <h3>>> <a href="markdown/expressions.md">View Main Expressions</a> <<</h3>
-   <h3>>> <a href="markdown/cache.md">View Expressions for Caching</a> <<</h3>
-</div>
 
 
 ## 🛡️ What Can This List Block?
@@ -40,6 +35,11 @@ Blocks various unwanted, unnecessary web crawlers and known malicious bots. This
 
 - **Specific IP Addresses and ASNs:**
 Blocks traffic from known malicious IP addresses and ASNs to prevent attacks from flagged sources. The list also includes IP addresses associated with botnets.
+
+<div align="center">
+   <h3>>> <a href="markdown/expressions.md">View Main Expressions</a> <<</h3>
+   <h3>>> <a href="markdown/cache.md">View Expressions for Caching</a> <<</h3>
+</div>
 
 
 ## 📝 How to Use These Expressions
