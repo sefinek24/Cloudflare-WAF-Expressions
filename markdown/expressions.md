@@ -51,7 +51,8 @@
 (http.request.uri.path contains "/~webmaster") or
 (http.request.uri.path contains "authorized_keys") or
 (http.request.uri.path contains "backup.") or
-(http.request.uri.path contains "Dockerfile") or
+(http.request.uri.path contains "config.txt") or
+(http.request.uri.path contains "config.yml") or
 (http.request.uri.path contains "dump.") or
 (http.request.uri.path contains "file_put_contents") or
 (http.request.uri.path contains "id_rsa") or
@@ -74,6 +75,7 @@
 (http.request.uri.path eq "wlwmanifest") or
 (http.user_agent contains "   ") or
 (http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
+(lower(http.request.uri.path) contains "dockerfile") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "go-http-client" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
