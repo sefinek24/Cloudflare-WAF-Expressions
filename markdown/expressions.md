@@ -15,7 +15,7 @@
 (http.request.uri.path contains ".docker") or
 (http.request.uri.path contains ".DS_Store") or
 (http.request.uri.path contains ".env") or
-(http.request.uri.path contains ".git" and not http.host contains "git." and not http.host contains "gitlab." and not http.host contains "gitlab-test.") or
+(http.request.uri.path contains ".git") or
 (http.request.uri.path contains ".htaccess") or
 (http.request.uri.path contains ".htpasswd") or
 (http.request.uri.path contains ".idea") or
