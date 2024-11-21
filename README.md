@@ -5,7 +5,7 @@
 With these expressions for WAF, you can effectively block all unnecessary requests to your server, enhancing its security.
 If you find this repository helpful, please consider giving it a star ⭐. Thank you!
 
-<img src="assets/images/brave_7V0Mb1E81rC0.png" alt="Cloudflare Web Application Firewall (WAF)"> 
+<img src="assets/images/brave_R58mnP7Igqp6.png" alt="Cloudflare Web Application Firewall (WAF)"> 
 
 > [!IMPORTANT]  
 > It is also recommended to **disable** the `Bot Fight Mode` feature in the `Security` tab.  
