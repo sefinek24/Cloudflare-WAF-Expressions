@@ -5,7 +5,7 @@
 By using these WAF expressions, you can effectively block all unnecessary and potentially malicious requests targeting your origin server, thereby enhancing its security.
 If you find this repository useful, I would greatly appreciate it if you could give it a **star** ⭐. Thank you!
 
-<img src="assets/images/brave_R58mnP7Igqp6.png" alt="Cloudflare Web Application Firewall (WAF)"> 
+<img src="assets/images/brave_zIW170CTdne5.png" alt="Cloudflare Web Application Firewall (WAF)"> 
 
 > [!IMPORTANT]  
 > It is also recommended to **disable** the `Bot Fight Mode` feature in the `Security` tab.  
