@@ -5,14 +5,10 @@
 By using these WAF expressions, you can effectively block all unnecessary and potentially malicious requests targeting your origin server, thereby enhancing its security.
 If you find this repository useful, I would greatly appreciate it if you could give it a **star** ⭐. Thank you!
 
-<img src="assets/images/brave_zIW170CTdne5.png" alt="Cloudflare Web Application Firewall (WAF)"> 
-
-> [!IMPORTANT]  
-> It is also recommended to **disable** the `Bot Fight Mode` feature in the `Security` tab.  
-> Although this feature helps detect and block automated bot traffic, it can inadvertently block safe, legitimate bots as well, which is not our intention.
-
 > [!TIP]  
 > Use a [dedicated script](#automatic-installation) to automatically update rules for each zone.
+
+<img src="assets/images/brave_zIW170CTdne5.png" alt="Cloudflare Web Application Firewall (WAF)"> 
 
 
 ## 🛡️ What Can This List Block?
@@ -25,6 +21,9 @@ If you find this repository useful, I would greatly appreciate it if you could g
 | **Useless Bots**                | Various unwanted and unnecessary web crawlers as well as known malicious bots. Blocking them can reduce server load.                                                                                                      |
 | **Specific IP Addresses & ASN** | Traffic from known malicious IP addresses and ASNs. The list also includes IP addresses associated with botnets.                                                                                                          |
 
+> [!IMPORTANT]  
+> It is also recommended to **disable** the `Bot Fight Mode` feature in the `Security` tab.  
+> Although this feature helps detect and block automated bot traffic, it can inadvertently block safe, legitimate bots as well, which is not our intention.
 
 <div align="center">
    <h3>>> <a href="markdown/expressions.md">View Main Expressions</a> <<</h3>
