@@ -23,3 +23,5 @@ if (process.env.NODE_ENV === 'production') {
 	const restartApp = require('./jobs/reloadApp.js');
 	new CronJob(process.env.APP_RESTART_SCHEDULE || '0 15 * * *', restartApp, null, true, 'UTC'); // At 15:00.
 }
+
+// https://crontab.guru
