@@ -1,15 +1,18 @@
-const { create } = require('axios');
+const axios = require('axios');
+const { version, homepage } = require('../package.json');
 
-module.exports = create({
-	baseURL: 'https://api.cloudflare.com/client/v4',
-	headers: {
-		'Authorization': `Bearer ${process.env.CF_API_TOKEN}`,
-		'Accept': 'application/json',
-		'Content-Type': 'application/json',
-		'Accept-Encoding': 'gzip, deflate, br',
-		'Accept-Language': 'pl;q=0.9',
-		'Cache-Control': 'no-cache',
-		'Connection': 'keep-alive',
-	},
-	timeout: 40000,
-});
+axios.defaults.baseURL = 'https://api.cloudflare.com/client/v4';
+axios.defaults.headers.common = {
+	'User-Agent': `Mozilla/5.0 (compatible; Cloudflare-WAF-Expressions/${version}; +${homepage})`,
+	'Authorization': `Bearer ${process.env.CF_API_TOKEN}`,
+	'Accept': 'application/json',
+	'Content-Type': 'application/json',
+	'Accept-Encoding': 'gzip, deflate, br',
+	'Accept-Language': 'en;q=0.9',
+	'Cache-Control': 'no-cache',
+	'Connection': 'keep-alive',
+};
+
+axios.defaults.timeout = 40000;
+
+module.exports = axios;
