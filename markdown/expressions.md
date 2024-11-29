@@ -64,7 +64,7 @@
 (http.request.uri.path contains "~ftp") or
 (http.request.uri.path contains "~tmp") or
 (http.request.uri.path contains ".cache") or
-(http.request.uri.path contains "config.json") or
+(http.request.uri.path contains "config.json" and not http.host contains "cdn.") or
 (http.request.uri.path eq "/dbadmin") or
 (http.request.uri.path eq "/git") or
 (http.request.uri.path eq "/ssh") or
