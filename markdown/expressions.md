@@ -31,7 +31,7 @@
 (http.request.uri.path contains "/backup") or
 (http.request.uri.path contains "/bkp") or
 (http.request.uri.path contains "/cms") or
-(http.request.uri.path contains "/config") or
+(http.request.uri.path contains "/config" and not http.host contains "cdn.") or
 (http.request.uri.path contains "/credentials") or
 (http.request.uri.path contains "/debug") or
 (http.request.uri.path contains "/env") or
@@ -49,8 +49,6 @@
 (http.request.uri.path contains "/~webmaster") or
 (http.request.uri.path contains "authorized_keys") or
 (http.request.uri.path contains "backup.") or
-(http.request.uri.path contains "config.txt") or
-(http.request.uri.path contains "config.yml") or
 (http.request.uri.path contains "dump.") or
 (http.request.uri.path contains "file_put_contents") or
 (http.request.uri.path contains "id_rsa") or
@@ -64,7 +62,6 @@
 (http.request.uri.path contains "~ftp") or
 (http.request.uri.path contains "~tmp") or
 (http.request.uri.path contains ".cache") or
-(http.request.uri.path contains "config.json" and not http.host contains "cdn.") or
 (http.request.uri.path eq "/dbadmin") or
 (http.request.uri.path eq "/git") or
 (http.request.uri.path eq "/ssh") or
