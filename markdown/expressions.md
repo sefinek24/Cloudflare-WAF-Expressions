@@ -166,8 +166,7 @@
 (lower(http.user_agent) contains "mac os x 10_9") or
 (lower(http.user_agent) contains "msie 9.0") or
 (lower(http.user_agent) contains "netfront") or
-(lower(http.user_agent) contains "symbianos") or
-(lower(http.user_agent) contains "version/15.4")
+(lower(http.user_agent) contains "symbianos")
 ```
 
 ## 🤖 Part 4 - Block unnecessary bots
