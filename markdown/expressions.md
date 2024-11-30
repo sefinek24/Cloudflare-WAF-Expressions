@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 29.11.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 30.11.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🔥 Part 1 - Main firewall
@@ -11,6 +11,7 @@
 (http.request.uri.path contains ".aspx") or
 (http.request.uri.path contains ".aws") or
 (http.request.uri.path contains ".bash") or
+(http.request.uri.path contains ".cache") or
 (http.request.uri.path contains ".credentials") or
 (http.request.uri.path contains ".docker") or
 (http.request.uri.path contains ".DS_Store") or
@@ -47,8 +48,10 @@
 (http.request.uri.path contains "/~adm") or
 (http.request.uri.path contains "/~sysadm") or
 (http.request.uri.path contains "/~webmaster") or
+(http.request.uri.path contains "appsettings") or
 (http.request.uri.path contains "authorized_keys") or
 (http.request.uri.path contains "backup.") or
+(http.request.uri.path contains "docker-compose") or
 (http.request.uri.path contains "dump.") or
 (http.request.uri.path contains "file_put_contents") or
 (http.request.uri.path contains "id_rsa") or
@@ -58,22 +61,21 @@
 (http.request.uri.path contains "server.key") or
 (http.request.uri.path contains "sftp") or
 (http.request.uri.path contains "web.config") or
+(http.request.uri.path contains "wlwmanifest") or
+(http.request.uri.path contains "www-sql") or
 (http.request.uri.path contains "\\") or
+(http.request.uri.path contains "_all_dbs") or
+(http.request.uri.path contains "_debugbar") or
 (http.request.uri.path contains "~ftp") or
 (http.request.uri.path contains "~tmp") or
-(http.request.uri.path contains ".cache") or
 (http.request.uri.path eq "/dbadmin") or
 (http.request.uri.path eq "/git") or
 (http.request.uri.path eq "/ssh") or
-(http.request.uri.path contains "www-sql") or
-(http.request.uri.path contains "_all_dbs") or
-(http.request.uri.path contains "wlwmanifest") or
-(http.request.uri.path contains "docker-compose") or
-(http.request.uri.path contains "appsettings") or
-(http.request.uri.path contains "_debugbar") or
 (http.user_agent contains "   ") or
 (http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.request.uri.path) contains "dockerfile") or
+(lower(http.request.uri.path) contains "etc/passwd") or
+(lower(http.request.uri.query) contains "etc/passwd") or
 (lower(http.user_agent) contains "embeddedbrowser" and not http.host contains "api." and not http.host contains "cdn.") or
 (lower(http.user_agent) contains "go-http-client" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (lower(http.user_agent) contains "headless" and not http.host contains "api." and not http.host contains "cdn.") or
@@ -81,9 +83,19 @@
 (lower(http.user_agent) contains "secrets.json")
 ```
 
-## 🗑️ Part 2 - Deprecated browsers
+## 🔥 Part 2 - Main firewall
+> **Action:** Block
+```
+(http.request.uri.query contains "%00") or
+(http.request.uri.query contains "%2e%2e") or
+(http.request.uri.query contains "..%5c")
+```
+
+## 🗑️ Part 3 - Deprecated browsers, etc.
 > **Action:** Managed Challenge
 ```
+(http.request.uri eq "https://sefinek.net/milosna-grota/verification/upload") or
+(http.request.uri.path contains ".php") or
 (http.user_agent contains "/112.0") or
 (http.user_agent contains "/113.0") or
 (http.user_agent contains "/114.0" and not http.user_agent contains "OPR/114.0") or
@@ -92,8 +104,8 @@
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and not http.host contains "api.") or
 (http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)" and not http.host contains "api.") or
 (lower(http.user_agent) contains "android 8" and not http.host contains "api.") or
-(lower(http.user_agent) contains "chrome/103") or
 (lower(http.user_agent) contains "chrome/100") or
+(lower(http.user_agent) contains "chrome/103") or
 (lower(http.user_agent) contains "chrome/17") or
 (lower(http.user_agent) contains "chrome/30") or
 (lower(http.user_agent) contains "chrome/31") or
@@ -148,6 +160,7 @@
 (lower(http.user_agent) contains "firefox/77") or
 (lower(http.user_agent) contains "firefox/79") or
 (lower(http.user_agent) contains "firefox/83") or
+(lower(http.user_agent) contains "firefox/84") or
 (lower(http.user_agent) contains "html5plus" and not http.host contains "api.") or
 (lower(http.user_agent) contains "mac os x 10_15") or
 (lower(http.user_agent) contains "mac os x 10_9") or
@@ -157,7 +170,7 @@
 (lower(http.user_agent) contains "version/15.4")
 ```
 
-## 🤖 Part 3 - Block unnecessary bots
+## 🤖 Part 4 - Block unnecessary bots
 > **Action:** Block
 ```
 (lower(http.user_agent) contains "barkrowler") or
@@ -206,7 +219,7 @@
 (lower(http.user_agent) contains "zgrab")
 ```
 
-## 🌍 Part 4 - Block bots, ASNs and IPs
+## 🌍 Part 5 - Block bots, ASNs and IPs
 > **Action:** Block
 ```
 (ip.geoip.country eq "T1" and http.host ne "blocklist.sefinek.net") or
@@ -256,6 +269,6 @@
     51.145.176.250        52.169.23.0           52.178.159.39
     77.238.225.41         82.80.249.249         91.215.85.29
     93.91.196.190         94.179.141.78         176.102.144.126
-    103.28.253.19         89.228.193.116
+    103.28.253.19         89.228.193.116        88.218.62.29
 })
 ```

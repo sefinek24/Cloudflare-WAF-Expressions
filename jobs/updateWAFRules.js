@@ -73,7 +73,6 @@ const updateWAFCustomRulesForZone = async (expressions, zone) => {
 		log(0, `=================== CHECKING THE ZONE ${zone.name.toUpperCase()} (${zone.id}) ===================`);
 
 		const rules = await fetchWAFRules(zone.id);
-		if (rules.length === 0) return log(0, '-> No WAF rules available for the specified zone. Ensure rules are available for modification.');
 
 		for (const [indexString, block] of Object.entries(expressions)) {
 			const index = parseInt(indexString);
@@ -99,7 +98,7 @@ const updateWAFCustomRulesForZone = async (expressions, zone) => {
 module.exports = async () => {
 	try {
 		const expressions = await expressionParser();
-		if (!expressions || Object.keys(expressions).length === 0) return log(0, 'No expressions found.');
+		if (!expressions || !Object.keys(expressions).length) return log(0, 'No expressions found.');
 
 		const zones = await getZones();
 		for (const zone of zones) {

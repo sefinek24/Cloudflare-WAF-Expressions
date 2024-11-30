@@ -12,7 +12,7 @@ const executeCommand = cmd =>
 module.exports = async () => {
 	try {
 		console.log(await executeCommand('npm install --omit=dev'));
-		console.log(await executeCommand(`pm2 stop ${ecosystem.apps[0].name} && pm2 start ${ecosystem.apps[0].name}`));
+		console.log(await executeCommand(`pm2 restart ${ecosystem.apps[0].name}`));
 	} catch (err) {
 		console.error(err);
 	}
