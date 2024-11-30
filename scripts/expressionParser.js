@@ -1,5 +1,5 @@
 const fs = require('node:fs/promises');
-const log = require('./log');
+const log = require('./log.js');
 const PATTERN = /(## [^\n]*\n> \*\*Action:\*\* ([^\n]*)\n?)```([\s\S]*?)```/gi;
 
 const expressionParser = text => {
