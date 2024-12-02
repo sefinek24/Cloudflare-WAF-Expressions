@@ -55,6 +55,9 @@ There's no need to add them manually because the script takes care of everything
    cp .env.default .env
    ```
 4. Open the `.env` file and ensure `NODE_ENV` is set to `production`. Paste your Cloudflare token in place of `CF_API_TOKEN`.<br><br>
+   ```bash
+   mcedit .env
+   ```
    ![brave_JDyTDLnUFonD.png](assets/images/brave_JDyTDLnUFonD.png)
 5. Run the script 24/7 using PM2:
    ```bash
