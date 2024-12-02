@@ -54,7 +54,7 @@ There's no need to add them manually because the script takes care of everything
    ```bash
    cp .env.default .env
    ```
-4. Open the `.env` file and ensure `NODE_ENV` is set to `production`. Paste your Cloudflare token in place of `CF_API_TOKEN`.<br><br>
+4. Open the `.env` file and ensure `NODE_ENV` is set to `production`. Paste your Cloudflare token in place of `CF_API_TOKEN`.
    ```bash
    mcedit .env
    ```
