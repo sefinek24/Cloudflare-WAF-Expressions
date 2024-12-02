@@ -6,7 +6,8 @@ By using these WAF expressions, you can effectively block all unnecessary and po
 If you find this repository useful, I would greatly appreciate it if you could give it a **star** ⭐. Thank you!
 
 > [!TIP]  
-> Use a [dedicated script](#automatic-installation) to automatically update rules for each zone.
+> - Use a [dedicated script](#automatic-installation) to automatically update rules for each zone.
+> - Join my [Discord server](https://discord.gg/53DBjTuzgZ) if you need help or want to receive notifications about important updates.
 
 <img src="assets/images/brave_zIW170CTdne5.png" alt="Cloudflare Web Application Firewall (WAF)"> 
 
@@ -88,10 +89,6 @@ Enabling DDoS protection in the `Security` tab is also recommended. Navigate to 
 1. **Override name:** DDoS L7 ruleset
 2. **Ruleset action:** Block
 3. **Ruleset sensitivity:** Default
-
-
-## 🤔 Help
-If you have any questions or need help with the expressions, feel free to open an [Issue](https://github.com/sefinek/Cloudflare-WAF-Expressions/issues). I'll be happy to assist you.
 
 
 ## 🤝 Pull requests
