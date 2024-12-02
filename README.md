@@ -40,6 +40,7 @@ There's no need to add them manually because the script takes care of everything
 1. [Node.js + npm](https://nodejs.org/en)
 2. [PM2](https://www.npmjs.com/package/pm2) (`npm i pm2 -g`)
 3. [Git](https://git-scm.com/downloads)
+4. Linux (recommended) or Windows
 
 #### Tutorial
 1. Clone this repository:
