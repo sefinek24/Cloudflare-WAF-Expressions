@@ -42,7 +42,7 @@ There's no need to add them manually because the script takes care of everything
 3. [Git](https://git-scm.com/downloads)
 4. Linux (recommended) or Windows
 
-#### Tutorial
+#### Tutorial (for Linux)
 1. Clone this repository:
    ```bash
    git clone https://github.com/sefinek/Cloudflare-WAF-Expressions.git
