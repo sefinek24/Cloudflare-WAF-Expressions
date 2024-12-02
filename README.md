@@ -76,7 +76,7 @@ There's no need to add them manually because the script takes care of everything
 2. Select the domain where you want to add the expressions.
 3. Click on the `Security` tab, then choose `WAF` from the dropdown menu.
 4. In the `Custom rules` tab, click the `Create rule` button.
-5. Copy the expressions from the [markdown/expressions.md](markdown/expressions) file.
+5. Copy the expressions from the [markdown/expressions.md](markdown/expressions.md) file.
 6. Click `Edit expression` and paste the copied expressions.
 7. Click `Deploy` to save the changes. Repeat this process for the remaining parts of the expressions, ensuring you select the appropriate action (Block or Managed Challenge) as specified in the file.
 8. Done! The expressions are now active and will start blocking unwanted traffic to your origin server. Check that your website functions correctly, and visit this repository periodically for the latest updates.
