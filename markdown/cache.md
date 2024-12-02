@@ -1,6 +1,6 @@
-# Bypass cache for CDNs
+## Cache for CDNs
 ```js
-(starts_with(http.request.full_uri, "cdn.")) or (starts_with(http.request.full_uri, "screenshots."))
+(starts_with(http.host, "cdn.")) or (starts_with(http.host, "screenshots."))
 ```
 
 - Eligible for cache
@@ -10,7 +10,7 @@
     - Respect origin TTL
 
 
-# Cache default file extensions
+## Cache default file extensions
 ```js
 (http.request.uri.path.extension in {"7z" "avi" "avif" "apk" "bin" "bmp" "bz2" "class" "css" "csv" "doc" "docx" "dmg" "ejs" "eot" "eps" "exe" "flac" "gif" "gz" "ico" "iso" "jar" "jpg" "jpeg" "js" "mid" "midi" "mkv" "mp3" "mp4" "ogg" "otf" "pdf" "pict" "pls" "png" "ppt" "pptx" "ps" "rar" "svg" "svgz" "swf" "tar" "tif" "tiff" "ttf" "webm" "webp" "woff" "woff2" "xls" "xlsx" "zip" "zst"})
 ```
@@ -18,7 +18,7 @@
 - Eligible for cache
 
 
-[//]: # (# Bypass cache for blocklist.sefinek.net)
+[//]: # (## Bypass cache for blocklist.sefinek.net)
 [//]: # (```js)
 [//]: # (&#40;http.host eq "blocklist.sefinek.net" and http.request.uri.path.extension in {"txt" "conf"}&#41;)
 [//]: # (```)
