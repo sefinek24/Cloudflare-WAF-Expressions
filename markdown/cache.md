@@ -1,6 +1,8 @@
-## Cache for CDNs
+## Cache for CDN and some extensions
 ```js
-(starts_with(http.host, "cdn.")) or (starts_with(http.host, "screenshots."))
+(starts_with(http.host, "cdn.")) or
+(starts_with(http.host, "screenshots.")) or
+(http.request.uri.path.extension in {"avi" "avif" "mp3" "mp4" "wav" "jpg" "jpeg" "png" "bmp" "webm" "webp" "woff" "woff2"})
 ```
 
 - Eligible for cache
