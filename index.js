@@ -4,6 +4,9 @@ const simpleGit = require('simple-git');
 const gitClient = simpleGit();
 const executeWAFRuleUpdate = require('./jobs/updateWAFRules.js');
 const log = require('./scripts/log.js');
+const { version } = require('./package.json');
+
+log(0, `Cloned version: v${version}`);
 
 const pullAndUpdateWAFRules = async () => {
 	try {
@@ -12,7 +15,7 @@ const pullAndUpdateWAFRules = async () => {
 
 		await executeWAFRuleUpdate();
 	} catch (err) {
-		console.error('Git pull failed:', err.message);
+		log(3, 'Git pull failed:', err.message);
 	}
 
 	log(0, '========= New update (30.10.2024). Consider removing all rules and make sure you have the latest version of this script. Then, run it again. =========');
