@@ -2,14 +2,26 @@ const fs = require('node:fs/promises');
 const log = require('./log.js');
 const PATTERN = /(## [^\n]*\n> \*\*Action:\*\* ([^\n]*)\n?)```([\s\S]*?)```/gi;
 
-const expressionParser = text => {
-	return [...text.matchAll(PATTERN)].map(match => {
-		const name = match[1].split('\n')[0].replace(/^##\s*/, '').trim();
-		const action = match[2].trim().toLowerCase().replace(/\s+/g, '_');
-		const expressions = match[3].replace(/[\n\r]+/g, ' ').trim();
-		return { name, action, expressions };
-	});
-};
+const expressionParser = text => [...text.matchAll(PATTERN)].map(([, name, action, expressions]) => {
+	const quotedParts = [];
+
+	const cleanExpressions = expressions
+		.replace(/"([^"]*)"/g, (_, quote) => {
+			quotedParts.push(quote);
+			return '__QUOTE_PLACEHOLDER__';
+		})
+		.replace(/[\n\r]+/g, ' ')
+		.replace(/\s+/g, ' ')
+		.replace(/\{\s+/g, '{')
+		.replace(/\s+\}/g, '}')
+		.replace(/__QUOTE_PLACEHOLDER__/g, () => `"${quotedParts.shift()}"`);
+
+	return {
+		name: name.split('\n', 1)[0].replace(/^##\s*/, '').trim(),
+		action: action.trim().toLowerCase().replace(/\s+/g, '_'),
+		expressions: cleanExpressions.trim(),
+	};
+});
 
 module.exports = async () => {
 	log(0, 'Parsing expressions from the markdown file...');
@@ -17,13 +29,17 @@ module.exports = async () => {
 	try {
 		const data = await fs.readFile('markdown/expressions.md', 'utf8');
 		const codeBlocks = expressionParser(data);
-		if (!codeBlocks.length) {
-			console.log('Failed! No code blocks found.');
+		if (codeBlocks.length === 0) {
+			log(2, 'No code blocks found.');
 			return null;
 		}
 
-		return Object.fromEntries(codeBlocks.map((block, index) => [index + 1, block]));
+		return codeBlocks.reduce((acc, block, index) => {
+			acc[index + 1] = block;
+			return acc;
+		}, {});
 	} catch (err) {
-		console.error('Error reading the file:', err.message);
+		log(3, 'Error reading the file:', err.message);
+		return null;
 	}
 };
