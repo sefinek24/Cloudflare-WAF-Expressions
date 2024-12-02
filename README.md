@@ -37,7 +37,7 @@ You can use the JavaScript code from this repository to automatically update the
 There's no need to add them manually because the script takes care of everything for you (:
 
 #### Requirements
-1. [Node.js + npm](https://nodejs.org/en)
+1. [Node.js LTS + npm](https://nodejs.org)
 2. [PM2](https://www.npmjs.com/package/pm2) (`npm i pm2 -g`)
 3. [Git](https://git-scm.com/downloads)
 4. Linux (recommended) or Windows
