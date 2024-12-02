@@ -2,7 +2,7 @@
 ```js
 (starts_with(http.host, "cdn.")) or
 (starts_with(http.host, "screenshots.")) or
-(http.request.uri.path.extension in {"avi" "avif" "mp3" "mp4" "wav" "jpg" "jpeg" "png" "gif" "bmp" "webm" "webp" "woff" "woff2"})
+(http.request.uri.path.extension in {"avi" "avif" "mp3" "mp4" "wav" "jpg" "jpeg" "png" "gif" "ico" "bmp" "webm" "webp" "woff" "woff2"})
 ```
 
 - Eligible for cache
