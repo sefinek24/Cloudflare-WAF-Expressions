@@ -48,7 +48,7 @@ There's no need to add them manually because the script takes care of everything
    ```
 2. Install the necessary dependencies:
    ```bash
-   cd Cloudflare-WAF-Expressions && npm i
+   cd Cloudflare-WAF-Expressions && npm install
    ```
 3. Copy the `.env.default` file and rename it to `.env`:
    ```bash
@@ -63,7 +63,12 @@ There's no need to add them manually because the script takes care of everything
    ```bash
    pm2 start && pm2 save
    ```
-
+6. Add PM2 to autostart:
+   ```bash
+   pm2 startup
+   Then execute the generated command from the output.
+   ```
+   
 ### Manually
 1. Log in to your [Cloudflare](https://dash.cloudflare.com) account.
 2. Select the domain where you want to add the expressions.
