@@ -1,4 +1,4 @@
-const axios = require('../services/axios.js');
+const { axios } = require('../services/axios.js');
 const fetchWAFCustomRules = require('./fetchWAFRules.js');
 const log = require('../scripts/log.js');
 

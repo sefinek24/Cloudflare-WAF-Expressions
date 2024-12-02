@@ -1,4 +1,4 @@
-const axios = require('../services/axios.js');
+const { axios, getRequestCount } = require('../services/axios.js');
 const log = require('../scripts/log.js');
 const expressionParser = require('../scripts/expressionParser.js');
 const fetchWAFRules = require('../cloudflare/fetchWAFRules.js');
@@ -105,7 +105,7 @@ module.exports = async () => {
 			await updateWAFCustomRulesForZone(expressions, zone);
 		}
 
-		log(1, 'Successfully!');
+		log(1, `Successfully! All API requests: ${getRequestCount()}`);
 	} catch (err) {
 		log(3, `Error during update for all zones: ${err.message}`);
 	}
