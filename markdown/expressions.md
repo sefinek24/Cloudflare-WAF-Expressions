@@ -160,8 +160,8 @@
 (lower(http.user_agent) contains "firefox/79") or
 (lower(http.user_agent) contains "firefox/83") or
 (lower(http.user_agent) contains "firefox/84") or
-(lower(http.user_agent) contains "html5plus" and not http.host contains "api.") or
-(lower(http.user_agent) contains "mac os x 10_15") or
+(lower(http.user_agent) contains "html5plus") or
+(lower(http.user_agent) contains "mac os x 10_15" and not http.host contains "api.") or
 (lower(http.user_agent) contains "mac os x 10_9") or
 (lower(http.user_agent) contains "mac os x 12_5") or
 (lower(http.user_agent) contains "msie 9.0") or
