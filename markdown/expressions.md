@@ -1,5 +1,5 @@
 <div align="right">
-    <h4>📥 » Last update: 03.12.2024 [DD.MM.YYYY]</h4>
+    <h4>📥 » Last update: 05.12.2024 [DD.MM.YYYY]</h4>
 </div>
 
 ## 🔥 Part 1 - Main firewall
@@ -172,6 +172,7 @@
 ## 🤖 Part 4 - Block unnecessary bots
 > **Action:** Block
 ```
+(http.referer eq "binance.com") or
 (lower(http.user_agent) contains "barkrowler") or
 (lower(http.user_agent) contains "blexbot") or
 (lower(http.user_agent) contains "bomborabot") or
