@@ -98,6 +98,7 @@
 (http.request.uri.query contains "..%5c") or
 (http.request.uri.query contains "crlfinjection") or
 (http.request.uri.query contains "Set-Cookie:") or
+(http.request.uri.query contains "wget+") or
 (lower(http.user_agent) contains "masscan/")
 ```
 
