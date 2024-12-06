@@ -96,6 +96,7 @@
 (http.request.uri.query contains "%0D") or
 (http.request.uri.query contains "%2e%2e") or
 (http.request.uri.query contains "..%5c") or
+(http.request.uri.query contains "auto_prepend_file") or
 (http.request.uri.query contains "crlfinjection") or
 (http.request.uri.query contains "Set-Cookie:") or
 (http.request.uri.query contains "wget+") or
