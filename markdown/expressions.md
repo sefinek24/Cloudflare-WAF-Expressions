@@ -235,6 +235,7 @@
 > **Action:** Block
 ```
 (ip.geoip.country eq "T1" and http.host ne "blocklist.sefinek.net") or
+(ip.geoip.asnum in {10630}) or
 (ip.src in {
     102.22.20.58          102.68.128.195        103.106.114.106
     103.151.30.155        103.153.134.22        103.156.70.38
