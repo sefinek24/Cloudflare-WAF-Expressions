@@ -18,7 +18,7 @@ const pullAndUpdateWAFRules = async () => {
 		log(3, 'Git pull failed:', err.message);
 	}
 
-	log(0, '========= New update (30.10.2024). Consider removing all rules and make sure you have the latest version of this script. Then, run it again. =========');
+	// log(0, '========= New update (30.10.2024). Consider removing all rules and make sure you have the latest version of this script. Then, run it again. =========');
 };
 
 new CronJob(process.env.RULES_UPDATE_SCHEDULE || '0 11,14,16,18,20 * * *', pullAndUpdateWAFRules, null, true, 'UTC'); // At minute 0 past hour 11, 14, 16, 18, and 20.
