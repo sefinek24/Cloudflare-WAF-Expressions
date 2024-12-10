@@ -86,7 +86,7 @@
 ## 🔥 Part 2 - Main firewall
 > **Action:** Block
 ```
-(http.request.uri.path contains ".log" and not http.request.uri.path contains "ReShade.log") or
+(http.request.uri.path contains ".log" and not http.request.uri.path contains "ReShade.log" and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
 (http.request.uri.path contains ".sh") or
 (http.request.uri.path contains "auth.json") or
 (http.request.uri.path contains "crlfinjection") or
