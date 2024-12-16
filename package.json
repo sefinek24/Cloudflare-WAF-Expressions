@@ -1,6 +1,6 @@
 {
   "name": "cf-waf-expressions",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Cloudflare WAF (Web Application Firewall) rules + a script for their automatic updates. Block unwanted and malicious requests to enhance the security of your origin server!",
   "homepage": "https://github.com/sefinek/Cloudflare-WAF-Expressions#readme",
   "bugs": {
@@ -18,13 +18,13 @@
     "up": "ncu -u && npm i && npm update && npm audit fix"
   },
   "dependencies": {
-    "axios": "^1.7.8",
-    "cron": "^3.2.1",
-    "dotenv": "^16.4.5",
+    "axios": "^1.7.9",
+    "cron": "^3.3.1",
+    "dotenv": "^16.4.7",
     "simple-git": "^3.27.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.16.0",
+    "@eslint/js": "^9.17.0",
     "globals": "^15.13.0"
   }
 }
