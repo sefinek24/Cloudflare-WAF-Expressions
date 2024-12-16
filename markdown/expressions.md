@@ -37,7 +37,6 @@
 (http.request.uri.path contains "/debug") or
 (http.request.uri.path contains "/env") or
 (http.request.uri.path contains "/login.action") or
-(http.request.uri.path contains "/old") or
 (http.request.uri.path contains "/phpmyadmin") or
 (http.request.uri.path contains "/readme") or
 (http.request.uri.path contains "/sito") or
@@ -70,6 +69,7 @@
 (http.request.uri.path contains "~tmp") or
 (http.request.uri.path eq "/dbadmin") or
 (http.request.uri.path eq "/git") or
+(http.request.uri.path eq "/old") or
 (http.request.uri.path eq "/ssh") or
 (http.user_agent contains "   ") or
 (http.user_agent eq "" and not http.host contains "api." and not http.host contains "cdn." and http.host ne "blocklist.sefinek.net") or
