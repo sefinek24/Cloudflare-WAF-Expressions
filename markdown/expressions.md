@@ -112,6 +112,8 @@
 (http.user_agent contains "/113.0") or
 (http.user_agent contains "/114.0" and not http.user_agent contains "OPR/114.0") or
 (http.user_agent contains "/118.0") or
+(http.user_agent contains "Chrome/101.") or
+(http.user_agent contains "Chrome/104.") or
 (http.user_agent contains "Chrome/74" and not http.user_agent contains "Better Uptime Bot" and not http.host contains "api.") or
 (http.user_agent contains "Windows NT 5" and not http.user_agent contains "(via ggpht.com GoogleImageProxy)" and not http.host contains "api.") or
 (lower(http.user_agent) contains "android 8" and not http.host contains "api.") or
